@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap');
+@import "~ngx-toastr/toastr.css";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: 'Noto Sans TC', sans-serif;
+  zoom: 100%;
+}
+
+/////////////////////////////////////
+// main color pattern
+$main-color: #F4F4FB;
+$white: #FAFAFA;
+$dark-purple: #1A2744;
+$light-blue: #45ADFF;
+$blue: #0278D4;
+$light-green: #73FFE0;
+$green: #50E3C2;
+$light-sun-red: #FF8975;
+$sun-red: #FF5436;
+$bar-color: #ddd;
+$dark-black: #424242;
+/////////////////////////////////////
+// diff
+$light-purple: #F0EEFF;
+$purple: #6B4BFF;
+$grey: #BDBDBD;
+$light-grey: #EEEEEE;
+$dark-grey: #757575;
+$green: #2CC337;
+$dark-green: #43A047;
+$red: #FF475D;
+
+$aurora-orange: #EA4609;
+$erp-green: #C7EDCC;
+$erp-purple: #8C98CC;
+$erp-brown: #A5937B;
+$erp-pink: #FF7B6E;
+$erp-orange-yellow: #F18D01;
+
+$smart: #E1F5FE;
+$title: #EFEBE9;
+
+.aurora-orange {
+  background-color: $aurora-orange !important;
+}
+
+.aurora-orange-color {
+  color: $aurora-orange !important;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.move {
+  cursor: move;
+}
+
+.nocursor {
+  cursor: none !important;
+}
+
+.notouch {
+  cursor: not-allowed;
+}
+
+.ag-header-cell-filtered {
+  background-color: #1b6d85 !important;
+  color: #fff !important;
+}
+
+.ag-header-cell-filtered span {
+  color: #fff !important;
+}
+
+// custom
+.btn-custom {
+  // background-color: $dark-purple;
+  // color: $main-color;
+  background-color: $erp-green;
+}
+
+.btn-erp-purple {
+  background-color: $erp-purple !important;
+}
+
+.modal-header {
+  background-color: $erp-purple;
+  color: $main-color;
+}
+
+.modal-header-erp-green {
+  background-color: $erp-green;
+  color: $dark-black;
+}
+
+.btn-default {
+  background-color: $erp-purple;
+  color: $main-color;
+}
+
+.page-title {
+  color: $dark-black !important;
+}
+
+// modal
+.modal-md {
+  max-width: 1000px !important;
+  width: 1000px !important;
+}
+
+.modal-md-sm {
+  max-width: 800px !important;
+  width: 800px !important;
+}
+
+.h-30-scroll {
+  height: 30vh;
+  overflow: auto;
+}
+
+.h-40-scroll {
+  height: 40vh;
+  overflow: auto;
+}
+
+.h-60-scroll {
+  height: 60vh;
+  overflow: auto;
+}
+
+.btn-erp-purple {
+  background-color: $erp-purple !important;
+  color: $main-color !important;
+}
+
+.btn-erp-green {
+  background-color: $erp-green !important;
+  color: $dark-black !important;
+}

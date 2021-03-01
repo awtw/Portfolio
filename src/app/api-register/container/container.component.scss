@@ -1,0 +1,121 @@
+@import '~ag-grid-community/dist/styles/ag-grid.min.css';
+@import '~ag-grid-community/dist/styles/ag-theme-alpine.min.css';
+
+@import '../../btag-common/main.scss';
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~ngx-bootstrap/datepicker/bs-datepicker.css';
+
+$wd-list: (50, 80);
+
+@each $wd in $wd-list {
+  .ngx-modal-#{$wd} {
+    max-width: $wd + 0%;
+  }
+}
+
+
+
+.name {
+  color: $main-color;
+  padding-right: 5px;
+}
+
+.ag-grid-size {
+  width: 100%;
+  // min-width: 70vw;
+  height: 80vh;
+  font-style: 1em;
+}
+
+.ag-row .ag-cell {
+  display: flex;
+  justify-content: flex-start;
+  /* align horizontal */
+  align-items: center;
+}
+
+.scroll-menu {
+  min-width: 220px;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.demo-chart {
+  height: 260px;
+}
+
+.pt-8 {
+  margin-top: 8.5vh;
+  height: 80vh;
+  margin-left: -1vw;
+}
+
+.btn,
+.btn-hover,
+.dropdown-item:hover {
+  background-color: $erp-green !important;
+  color: $dark-black !important;
+}
+
+.close:focus {
+  outline-color: transparent !important;
+  background-color: $main-color !important;
+}
+
+.searchBtn {
+  width: 300px !important;
+  // height: 50px;
+}
+
+.info {
+  font-size: 0.9em;
+  color: $sun-red;
+}
+
+// .ag-pivot-off .ag-header-group-cell {
+//     font-size: 1.5em;
+// }
+
+// .ag-floating-filter-body input {
+//     font-size: 15px;
+//     font-weight: bold;
+// }
+.ag-theme-balham .ag-row {
+  font-size: 1.1em !important;
+}
+
+.alert-snip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  z-index: 100;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.notAd {
+  background-color: $grey !important;
+  color: $main-color !important;
+}
+
+#tool-tip {
+  width: 180px;
+}
+
+.btn-erp-green {
+  background-color: $erp-green !important;
+  color: $dark-black !important;
+}
+
+.btn-erp-purple {
+  background-color: $erp-purple !important;
+  color: $main-color !important;
+}
