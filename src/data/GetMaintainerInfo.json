@@ -1,0 +1,63 @@
+{
+  "User": {
+      "EMPNO": "00046959",
+      "EMP_NAME": "王崇宇",
+      "DPT": null
+  },
+  "MantainerList": [
+      {
+          "EMPNO": "00046959",
+          "EMP_NAME": "王崇宇",
+          "DPT": null
+      }
+  ],
+  "MantainerDPTList": [
+      {
+          "EMPNO": "00037313",
+          "EMP_NAME": "陳冠州",
+          "DPT": null
+      },
+      {
+          "EMPNO": "00042852",
+          "EMP_NAME": "李俊霖",
+          "DPT": null
+      },
+      {
+          "EMPNO": "00044680",
+          "EMP_NAME": "葉豐儀",
+          "DPT": null
+      },
+      {
+          "EMPNO": "00046455",
+          "EMP_NAME": "呂豪笙",
+          "DPT": null
+      },
+      {
+          "EMPNO": "00046959",
+          "EMP_NAME": "王崇宇",
+          "DPT": null
+      },
+      {
+          "EMPNO": "00047543",
+          "EMP_NAME": "劉興禎",
+          "DPT": null
+      },
+      {
+          "EMPNO": "VC000685",
+          "EMP_NAME": "徐曼V",
+          "DPT": null
+      },
+      {
+          "EMPNO": "VC007283",
+          "EMP_NAME": "谭竹君V",
+          "DPT": null
+      },
+      {
+          "EMPNO": "VR000250",
+          "EMP_NAME": "沈穎V       ",
+          "DPT": null
+      }
+  ],
+  "NextPerson": "00037313",
+  "IsNextPerson": false
+}

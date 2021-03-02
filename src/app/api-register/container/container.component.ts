@@ -7,6 +7,9 @@ import { GridOptions } from 'ag-grid-community';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 import { ApiRegisterService } from '../api-register.service';
+import { EditComponentComponent } from '../edit-component/edit-component.component';
+import { EditHeaderComponent } from '../edit-header/edit-header.component';
+import { AddNewComponent } from '../add-new/add-new.component';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -88,6 +91,7 @@ export class ContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.title.setTitle('API管控表');
+    this.getData();
   }
 
 
@@ -106,7 +110,12 @@ export class ContainerComponent implements OnInit {
 			checkIfCN: this.checkIfCN
 		};
 		const apiListRequest = this.apiRegisterService.GetAPiInfoListRequest(checkCnInsert);
-    this.gridOptions.api.showLoadingOverlay();
+    const temp2: string[] = [];
+    const temp = this.apiRegisterService.GetOwnerListRequest(checkCnInsert)
+    temp.forEach(data => {
+      temp2.push(data.OWNER_NAME);
+    });
+    // this.gridOptions.api.showLoadingOverlay();
     apiListRequest.forEach(x => {
       x._ownerToken = x.OwnerInfo.OWNER_TOKEN;
       x._ownerName = x.OwnerInfo.OWNER_NAME;
@@ -141,302 +150,253 @@ export class ContainerComponent implements OnInit {
     });
     this.apiList = apiListRequest;
     this.rowData = apiListRequest;
+    console.log(apiListRequest);
 
-
-		apiListRequest.subscribe(data => {
-			this.gridOptions.api.showLoadingOverlay();
-			data.forEach(x => {
-				x._ownerToken = x.OwnerInfo.OWNER_TOKEN;
-				x._ownerName = x.OwnerInfo.OWNER_NAME;
-				x.checkIfCN = this.checkIfCN;
-				// x._OwnerIsInternal = x.OwnerInfo.OwnerIsInternal;
-				if (x.ApiIsEnable === 'Y') {
-					x.ApiIsEnable = '啟用';
-				}
-				if (x.ApiIsEnable === 'N') {
-					x.ApiIsEnable = '不啟用';
-				}
-				if (x.OwnerInfo.OwnerIsInternal === 'Y') {
-					x._OwnerIsInternal = '內部';
-				}
-				if (x.OwnerInfo.OwnerIsInternal === 'N') {
-					x._OwnerIsInternal = '外部';
-				}
-				x.ApiQueryStringInfo.forEach(data2 => {
-					if (data2.ApiQueryKeyRequired.trim() !== '') {
-						data2.Mandatory = true;
-					} else {
-						data2.Mandatory = false;
-					}
-				});
-				x.ApiHeaderInfo.forEach(data2 => {
-					if (data2.ApiHeaderKeyRequired.trim() !== '') {
-						data2.Mandatory = true;
-					} else {
-						data2.Mandatory = false;
-					}
-				});
-			});
-			this.apiList = data;
-			this.rowData = data;
-
-      this.columnDefs = [
-        {
-          headerName: 'API 基本資訊',
-          children: [
-            {
-              headerName: 'API名稱',
-              field: 'API_NAME',
-              width: 300,
-              suppressSizeToFit: false,
-              editable: true,
-              // checkboxSelection: true
-              filterParams: {
-                buttons: ['reset', 'apply'],
-                debounceMs: 200
-              }
-            },
-            {
-              headerName: 'URL',
-              field: 'API_URL',
-              width: 550,
-              // suppressSizeToFit: false,
-              editable: true,
-              filterParams: {
-                buttons: ['reset', 'apply'],
-                debounceMs: 200
-              }
-            },
-            {
-              headerName: '啟用狀態',
-              field: 'ApiIsEnable',
-              columnGroupShow: 'open',
-              editable: true,
-              width: 120,
-              cellEditor: 'agSelectCellEditor',
-              cellEditorParams: {
-                cellHeight: 50,
-                values: ['啟用', '不啟用'],
-              },
-              filterParams: {
-                buttons: ['reset', 'apply'],
-                debounceMs: 200
-              }
-            },
-            {
-              headerName: 'API Token',
-              field: 'API_TOKEN',
-              columnGroupShow: 'open',
-              editable: true,
-              width: 120,
-              // cellEditor: 'agSelectCellEditor',
-              // cellEditorParams: {
-              // 	cellHeight: 50,
-              // 	values: ['啟用', '不啟用'],
-              // },
-              // filterParams: {
-              // 	buttons: ['reset', 'apply'],
-              // 	debounceMs: 200
-              // }
-              cellRenderer: 'CellRenderComponent',
-              cellRendererParams: {
-                clicked: (field: any) => {
-                  // this.toastr.success( '複製', 'Token', {
-                  // 	timeOut: 500,
-                  // 	positionClass: 'toast-top-right',
-                  // 	closeButton: true
-                  // });
-                  this.copyToClipboard(field.API_TOKEN);
-                }
-              },
-            },
-            {
-              headerName: 'Owner Token',
-              field: '_ownerToken',
-              columnGroupShow: 'open',
-              editable: true,
-              width: 120,
-              // cellEditor: 'agSelectCellEditor',
-              // cellEditorParams: {
-              // 	cellHeight: 50,
-              // 	values: ['啟用', '不啟用'],
-              // },
-              // filterParams: {
-              // 	buttons: ['reset', 'apply'],
-              // 	debounceMs: 200
-              // }
-              cellRenderer: 'CellRenderComponent',
-              cellRendererParams: {
-                clicked: (field: any) => {
-                  // this.toastr.success( '複製', 'Token', {
-                  // 	timeOut: 500,
-                  // 	positionClass: 'toast-top-right',
-                  // 	closeButton: true
-                  // });
-                  this.copyToClipboard(field._ownerToken);
-                }
-              },
-            },
-            {
-              headerName: '內外部API',
-              field: '_OwnerIsInternal',
-              width: 120,
-              filterParams: this.btagCommonService.createOwnerFIlterParams(this.apiOutsideList)
-            },
-            {
-              headerName: '呼叫方法',
-              field: 'REQUEST_METHOD',
-              editable: true,
-              width: 120,
-              suppressSizeToFit: false,
-              cellEditor: 'agSelectCellEditor',
-              cellEditorParams: {
-                cellHeight: 50,
-                values: ['POST', 'GET', 'PUT'],
-              },
-              filterParams: this.btagCommonService.createOwnerFIlterParams(this.methodList)
-            },
-            {
-              headerName: '擁有單位',
-              field: '_ownerName',
-              width: 120,
-              cellEditor: 'agSelectCellEditor',
-              editable: true,
-              cellEditorParams: {
-                values: temp2
-              },
-              // filterParams: {
-              // 	buttons: ['reset', 'apply'],
-              // 	debounceMs: 200
-              // },
-              filterParams: this.btagCommonService.createOwnerFIlterParams(this.ownerListName)
-            },
-            {
-              headerName: '被使用專案數量',
-              field: 'ProjectCount',
-              columnGroupShow: 'open',
-              filter: false,
-              // editable: true,
-              width: 130,
-              filterParams: {
-                buttons: ['reset', 'apply'],
-                debounceMs: 200
-              }
-            },
-          ],
-        },
-        {
-          headerName: '發布環境',
-          // width: 50,
-          children: [
-            {
-              headerName: 'EDU',
-              field: 'EduCount',
-              filter: false,
-              width: 80,
-              // cellStyle: this.styleIncrease,
-            },
-            {
-              headerName: 'IT',
-              field: 'ItCount',
-              filter: false,
-              width: 80,
-              // cellStyle: this.styleIncrease,
-            },
-            {
-              headerName: 'SYS',
-              // columnGroupShow: 'open',
-              field: 'SysCount',
-              filter: false,
-              width: 80,
-              // cellStyle: this.styleIncrease,
+    this.columnDefs = [
+      {
+        headerName: 'API 基本資訊',
+        children: [
+          {
+            headerName: 'API名稱',
+            field: 'API_NAME',
+            width: 300,
+            suppressSizeToFit: false,
+            editable: true,
+            // checkboxSelection: true
+            filterParams: {
+              buttons: ['reset', 'apply'],
+              debounceMs: 200
             }
-          ],
-        },
-        {
-          headerName: '參數設定',
-          // width: 50,
-          children: [
-            {
-              headerName: 'QueryString',
-              field: 'QueryStringCount',
-              width: 150,
-              filter: false,
-              cellRenderer: 'CellRenderComponent',
-              cellRendererParams: {
-                clicked: (field: any) => {
-                  const initialState = {
-                    message: field,
-                    title: 'QueryString'
-                  };
-                  this.modalRef = this.modalService.show(EditComponentComponent, { initialState });
-                  this.modalRef.content.onClose.subscribe((result: boolean) => {
-                    if (result) {
-                      this.ngOnInit();
-                    }
-                  });
-                }
-              },
+          },
+          {
+            headerName: 'URL',
+            field: 'API_URL',
+            width: 550,
+            // suppressSizeToFit: false,
+            editable: true,
+            filterParams: {
+              buttons: ['reset', 'apply'],
+              debounceMs: 200
+            }
+          },
+          {
+            headerName: '啟用狀態',
+            field: 'ApiIsEnable',
+            columnGroupShow: 'open',
+            editable: true,
+            width: 120,
+            cellEditor: 'agSelectCellEditor',
+            cellEditorParams: {
+              cellHeight: 50,
+              values: ['啟用', '不啟用'],
             },
-            {
-              headerName: 'Header',
-              field: 'HeaderCount',
-              width: 120,
-              filter: false,
-              cellRenderer: 'CellRenderComponent',
-              cellRendererParams: {
-                clicked: (field: any) => {
-                  const initialState = {
-                    message: field,
-                    title: 'Header'
-                  };
-                  this.modalRef = this.modalService.show(EditHeaderComponent, { initialState });
-                  this.modalRef.content.onClose.subscribe((result: boolean) => {
-                    if (result) {
-                      this.ngOnInit();
-                    }
-                  });
-                }
-              },
+            filterParams: {
+              buttons: ['reset', 'apply'],
+              debounceMs: 200
             }
-          ],
-        },
-        {
-          headerName: '編輯',
-          // width: 50,
-          children: [
-            {
-              headerName: '刪除',
-              field: 'QueryStringCount',
-              width: 120,
-              cellRenderer: 'CellDeleteComponent',
-              cellRendererParams: {
-                clicked: (field: any) => {
-                  this.toastr.success('API刪除成功', field.API_NAME, {
-                    timeOut: 1500,
-                    positionClass: 'toast-top-right',
-                  });
-                  this.ngOnInit();
-                }
-              },
+          },
+          {
+            headerName: 'API Token',
+            field: 'API_TOKEN',
+            columnGroupShow: 'open',
+            editable: true,
+            width: 120,
+            // cellEditor: 'agSelectCellEditor',
+            // cellEditorParams: {
+            // 	cellHeight: 50,
+            // 	values: ['啟用', '不啟用'],
+            // },
+            // filterParams: {
+            // 	buttons: ['reset', 'apply'],
+            // 	debounceMs: 200
+            // }
+            cellRenderer: 'CellRenderComponent',
+            cellRendererParams: {
+              clicked: (field: any) => {
+                // this.toastr.success( '複製', 'Token', {
+                // 	timeOut: 500,
+                // 	positionClass: 'toast-top-right',
+                // 	closeButton: true
+                // });
+                this.copyToClipboard(field.API_TOKEN);
+              }
+            },
+          },
+          {
+            headerName: 'Owner Token',
+            field: '_ownerToken',
+            columnGroupShow: 'open',
+            editable: true,
+            width: 120,
+            // cellEditor: 'agSelectCellEditor',
+            // cellEditorParams: {
+            // 	cellHeight: 50,
+            // 	values: ['啟用', '不啟用'],
+            // },
+            // filterParams: {
+            // 	buttons: ['reset', 'apply'],
+            // 	debounceMs: 200
+            // }
+            cellRenderer: 'CellRenderComponent',
+            cellRendererParams: {
+              clicked: (field: any) => {
+                // this.toastr.success( '複製', 'Token', {
+                // 	timeOut: 500,
+                // 	positionClass: 'toast-top-right',
+                // 	closeButton: true
+                // });
+                this.copyToClipboard(field._ownerToken);
+              }
+            },
+          },
+          {
+            headerName: '內外部API',
+            field: '_OwnerIsInternal',
+            width: 120,
+            filterParams: this.commonService.createOwnerFIlterParams(this.apiOutsideList)
+          },
+          {
+            headerName: '呼叫方法',
+            field: 'REQUEST_METHOD',
+            editable: true,
+            width: 120,
+            suppressSizeToFit: false,
+            cellEditor: 'agSelectCellEditor',
+            cellEditorParams: {
+              cellHeight: 50,
+              values: ['POST', 'GET', 'PUT'],
+            },
+            filterParams: this.commonService.createOwnerFIlterParams(this.methodList)
+          },
+          {
+            headerName: '擁有單位',
+            field: '_ownerName',
+            width: 120,
+            cellEditor: 'agSelectCellEditor',
+            editable: true,
+            cellEditorParams: {
+              values: temp2
+            },
+            // filterParams: {
+            // 	buttons: ['reset', 'apply'],
+            // 	debounceMs: 200
+            // },
+            filterParams: this.commonService.createOwnerFIlterParams(this.ownerListName)
+          },
+          {
+            headerName: '被使用專案數量',
+            field: 'ProjectCount',
+            columnGroupShow: 'open',
+            filter: false,
+            // editable: true,
+            width: 130,
+            filterParams: {
+              buttons: ['reset', 'apply'],
+              debounceMs: 200
             }
-          ],
-        },
-      ];
+          },
+        ],
+      },
+      {
+        headerName: '發布環境',
+        // width: 50,
+        children: [
+          {
+            headerName: 'EDU',
+            field: 'EduCount',
+            filter: false,
+            width: 80,
+            // cellStyle: this.styleIncrease,
+          },
+          {
+            headerName: 'IT',
+            field: 'ItCount',
+            filter: false,
+            width: 80,
+            // cellStyle: this.styleIncrease,
+          },
+          {
+            headerName: 'SYS',
+            // columnGroupShow: 'open',
+            field: 'SysCount',
+            filter: false,
+            width: 80,
+            // cellStyle: this.styleIncrease,
+          }
+        ],
+      },
+      {
+        headerName: '參數設定',
+        // width: 50,
+        children: [
+          {
+            headerName: 'QueryString',
+            field: 'QueryStringCount',
+            width: 150,
+            filter: false,
+            cellRenderer: 'CellRenderComponent',
+            cellRendererParams: {
+              clicked: (field: any) => {
+                const initialState = {
+                  message: field,
+                  title: 'QueryString'
+                };
+                this.modalRef = this.modalService.show(EditComponentComponent, { initialState });
+                this.modalRef.content.onClose.subscribe((result: boolean) => {
+                  if (result) {
+                    this.ngOnInit();
+                  }
+                });
+              }
+            },
+          },
+          {
+            headerName: 'Header',
+            field: 'HeaderCount',
+            width: 120,
+            filter: false,
+            cellRenderer: 'CellRenderComponent',
+            cellRendererParams: {
+              clicked: (field: any) => {
+                const initialState = {
+                  message: field,
+                  title: 'Header'
+                };
+                this.modalRef = this.modalService.show(EditHeaderComponent, { initialState });
+                this.modalRef.content.onClose.subscribe((result: boolean) => {
+                  if (result) {
+                    this.ngOnInit();
+                  }
+                });
+              }
+            },
+          }
+        ],
+      },
+      {
+        headerName: '編輯',
+        // width: 50,
+        children: [
+          {
+            headerName: '刪除',
+            field: 'QueryStringCount',
+            width: 120,
+            cellRenderer: 'CellDeleteComponent',
+            cellRendererParams: {
+              clicked: (field: any) => {
+                this.toastr.success('API刪除成功', field.API_NAME, {
+                  timeOut: 1500,
+                  positionClass: 'toast-top-right',
+                });
+                this.ngOnInit();
+              }
+            },
+          }
+        ],
+      },
+    ];
 
 
-			// const temp = this.apiManageService.GetOwnerListRequest(checkCnInsert);
-			// const temp2: string[] = [];
-			// temp.subscribe(data1 => {
-			// 	this.ownerList = data1;
-			// 	data1.forEach(data2 => {
-			// 		temp2.push(data2.OWNER_NAME);
-			// 	});
-			// 	this.ownerListName = temp2;
-
-			// });
-
-		});
 	}
 
 

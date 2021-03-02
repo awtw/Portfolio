@@ -298,6 +298,7 @@ export class UserInfo {
 	NextPerson: string;
 	User: EmpInfo;
 	MantainerList: EmpInfo[];
+  MantainerDPTList: any[];
 }
 
 export class EmpInfo {
@@ -409,6 +410,7 @@ export class ApiQueryStringInfo {
 }
 
 export class HierarchicalApiInfo {
+  OWNER_TOKEN?: string;
 	OwnerInfo: ApiOwnerInfo;
 	ProjectInfo: ApiProjectInfo[];
 	ApiHeaderInfo: ApiHeaderInfo[];
@@ -426,7 +428,7 @@ export class HierarchicalApiInfo {
 	SysCount: number;
 	QueryStringCount: number;
 	HeaderCount: number;
-	ProjectCount: number;
+	ProjectCount: any;
 	_ownerName?: string;
 	_OwnerIsInternal?: string;
 	_ownerToken?: string;
@@ -459,6 +461,9 @@ export class OwnerInfo {
 	bgc?: string;
 	ProjectCount: string;
 	OwnerEnvList: OwnerEnvList[];
+  EDIT_TIME?: string;
+  ProjectList?: any;
+  checkIfCN?: any;
 }
 
 export class OwnerEnvList {
@@ -471,6 +476,20 @@ export class OwnerEnvList {
 	OWNER_ENV_TOKEN: string;
 	OWNER_TOKEN: string;
 	OWNER_NAME: string;
+  DESCRIPTION?: string;
+  IS_INTERNAL: string;
+  IS_ENABLE: string;
+  CREATOR: string;
+  CREATE_TIME: string;
+  EDITOR: string;
+  EDIT_TIME: string;
+  // EnvCreateTime: string;
+  // EnvCreator: string;
+  // EnvDescription: string;
+  // EnvIsEnable: string;
+  // ENV_BaseUrl:string;
+  // OWNER_ENV: string;
+  // OWNER_ENV_TOKEN: string;
 }
 export class DeleteApi {
 	API_TOKEN: string;

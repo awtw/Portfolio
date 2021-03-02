@@ -1,0 +1,31 @@
+<div class="modal-header modal-header-erp-green">
+	<h4 class="modal-title pull-left">{{message.API_NAME}}</h4>
+	<button type="button" class="close pull-right" aria-label="Close" (click)="notSave()">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+<div class="modal-body">
+	<!-- <ul *ngIf="list.length">
+		<li *ngFor="let item of list">{{item}}</li>
+	</ul> -->
+	<div class="col-12 pb-2">
+		API URL: {{message.API_URL}}
+	</div>
+	<div class="col-12 pb-2">
+		<button type="button" class="btn btn-erp-green" (click)="addQuery()">{{title}}驗證添加</button>
+	</div>
+	<form class="form-inline row" *ngFor="let item of message.ApiQueryStringInfo; index as i">
+		<div class="form-group col-12 pb-1 ml-3">
+			<label class="col-form-label  text-left pr-2">{{title}}驗證</label>
+			<input type="text" class="form-control" [(ngModel)]="item.ApiQueryKey" name="ApiQueryKey">
+			<input type="checkbox" class="form-check-input ml-1" [(ngModel)]="item.Mandatory" name="isEnable"
+				id="exampleCheck1">
+			<label class="form-check-label" for="exampleCheck1">必要</label>
+			<button type="button" class="btn btn-erp-green ml-1" (click)="deleteQuery(i)">刪除</button>
+		</div>
+	</form>
+
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-erp-green" (click)="add()">修改</button>
+</div>

@@ -1,1 +1,90 @@
-<p>add-new works!</p>
+<div class="modal-header modal-header-erp-green">
+	<h4 class="modal-title pull-left">{{title}}</h4>
+	<button type="button" class="close pull-right" aria-label="Close" (click)="notSave()">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+<div class="modal-body h-60-scroll">
+	<form class="form">
+		<div class="form-group col-12 pb-1">
+			<label class="col-form-label  text-left pr-2">API名稱</label>
+			<input type="text" class="form-control" [(ngModel)]="message.API_NAME" name="API_NAME">
+		</div>
+	</form>
+	<form class="form">
+		<div class="form-group col-12 pb-1">
+			<label class="col-form-label  text-left pr-2">API描述</label>
+			<input type="text" class="form-control" [(ngModel)]="message.ApiDescription" name="ApiDescription">
+		</div>
+	</form>
+	<form class="form">
+		<div class="form-group col-12 pb-1">
+			<label class="col-form-label  text-left pr-2">API URL</label>
+			<input type="text" class="form-control" [(ngModel)]="message.API_URL" name="API_URL">
+		</div>
+	</form>
+	<form class="form">
+		<div class="form-group col-12 pb-1">
+			<label for="exampleFormControlSelect1">呼叫方式</label>
+			<select class="form-control" id="exampleFormControlSelect1"  [(ngModel)]="message.REQUEST_METHOD" name="REQUEST_METHOD">
+				<option value="Post">Post</option>
+				<option value="Get">Get</option>
+				<option value="Put">Put</option>
+			</select>
+		</div>
+	</form>
+	<form class="form">
+		<div class="form-group col-12 pb-1">
+			<label for="exampleFormControlSelect1">資料交換擁有單位</label>
+			<select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="message.OwnerInfo.OWNER_TOKEN" name="OWNER_TOKEN">
+				<option *ngFor="let item of ownerList" [value]="item.OWNER_TOKEN" >{{item.OWNER_NAME}}</option>
+			</select>
+		</div>
+	</form>
+	<form class="form-inline">
+		<div class="form-group form-check pl-3">
+			<input type="checkbox" class="form-check-input" [(ngModel)]="isEnable" name="isEnable">
+			<label class="form-check-label" for="exampleCheck1">啟用</label>
+		</div>
+	</form>
+
+
+
+	<div class="col-12 pb-2">
+		<button type="button" class="btn btn-erp-purple" (click)="addQuery()">QueryString 驗證添加</button>
+	</div>
+	<form class="form-inline row" *ngFor="let item of message.ApiQueryStringInfo; index as i">
+		<div class="form-group col-12 pb-1 ml-3">
+			<label class="col-form-label  text-left pr-2">QueryString驗證</label>
+			<input type="text" class="form-control" [(ngModel)]="item.ApiQueryKey" name="ApiQueryKey">
+			<input type="checkbox" class="form-check-input ml-1" [(ngModel)]="item.Mandatory" name="isEnable" id="exampleCheck1">
+			<label class="form-check-label" for="exampleCheck1">強制</label>
+			<button type="button" class="btn btn-erp-purple ml-1" (click)="deleteQuery(i)">刪除</button>
+		</div>
+	</form>
+
+	<div class="col-12 pb-2">
+		<button type="button" class="btn btn-erp-purple" (click)="addHeader()">Header 驗證添加</button>
+	</div>
+	<form class="form-inline row" *ngFor="let item of message.ApiHeaderInfo; index as i">
+		<div class="form-group col-12 pb-1 ml-3">
+			<label class="col-form-label  text-left pr-2">Header驗證</label>
+			<input type="text" class="form-control" [(ngModel)]="item.ApiHeaderKey" name="ApiHeaderKey">
+			<input type="checkbox" class="form-check-input ml-1" [(ngModel)]="item.Mandatory" name="isEnable" id="exampleCheck1">
+			<label class="form-check-label" for="exampleCheck1">強制</label>
+			<button type="button" class="btn btn-erp-purple ml-1" (click)="deleteHeader(i)">刪除</button>
+		</div>
+	</form>
+
+</div>
+<div class="modal-footer">
+	<button type="submit" class="btn btn-erp-green" (click)="add()"
+			*ngIf="message.API_NAME && message.ApiDescription && message.API_URL && message.REQUEST_METHOD && message.OwnerInfo.OWNER_TOKEN">
+		新增
+	</button>
+	<button type="submit" class="btn btn-erp-green" (click)="add()"
+			disabled
+			*ngIf="!message.API_NAME || !message.ApiDescription || !message.API_URL || !message.REQUEST_METHOD || !message.OwnerInfo.OWNER_TOKEN">
+		新增
+	</button>
+</div>

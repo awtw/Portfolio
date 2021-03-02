@@ -10,12 +10,16 @@ import { AgGridModule } from 'ag-grid-angular';
 import { ApiRegisterService } from './api-register.service';
 import { ContainerComponent } from './container/container.component';
 import { AddNewComponent } from './add-new/add-new.component';
+import { EditComponentComponent } from './edit-component/edit-component.component';
+import { EditHeaderComponent } from './edit-header/edit-header.component';
 
 
 @NgModule({
   declarations: [
     ContainerComponent,
-    AddNewComponent
+    AddNewComponent,
+    EditComponentComponent,
+    EditHeaderComponent
   ],
   imports: [
     ToastrModule.forRoot(),
