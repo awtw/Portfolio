@@ -1,0 +1,41 @@
+{
+  "caseId": "00000215",
+  "caseType": "B",
+  "title": "測試採購",
+  "subtitle": "測試",
+  "status": "進行中",
+  "ctno": "",
+  "srno": "",
+  "caseBeginTime": "2021-02-22",
+  "caseEndTime": "",
+  "servEmpName": "中彰-陳翊瑄",
+  "servEmpNo": "00035615",
+  "servItemName": "家具",
+  "servItems": "C",
+  "custName": "里德美學室內空間設計有限公司",
+  "custno": "00939012",
+  "appShow": true,
+  "takeCaseShow": false,
+  "insertEvent": true,
+  "ofContactList": [
+      {
+          "contact": true,
+          "name": "陳翊瑄",
+          "empno": "00035615",
+          "cno": 215
+      }
+  ],
+  "custContactList": [
+      {
+          "contact": true,
+          "name": "郝佳姖",
+          "loginToken": "42D5EE64-F05C-45C6-A8C8-FAE8AF0AC0F6",
+          "cno": 31
+      }
+  ],
+  "eventNameList": [
+      {
+          "eventName": "展示"
+      }
+  ]
+}

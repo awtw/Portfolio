@@ -1,0 +1,28 @@
+{
+  "SD712List": [
+      {
+          "loginToken": "0581789B-6380-41F2-BDDA-E4590752ACDD",
+          "contactName": "陳小姐",
+          "cno": 0,
+          "joinStatus": "已綁定"
+      },
+      {
+          "loginToken": "942284B7-F2BD-435D-8B6A-DC23D9F11A81",
+          "contactName": "TEDDY",
+          "cno": 0,
+          "joinStatus": "已綁定"
+      },
+      {
+          "loginToken": "E8DB9623-5B88-4AF8-BE5F-DCB55F17D93B",
+          "contactName": "測試安卓",
+          "cno": 0,
+          "joinStatus": "已綁定"
+      },
+      {
+          "loginToken": "F3A726FE-A414-4CCE-B8CA-1C92398A884D",
+          "contactName": "郝佳姖",
+          "cno": 0,
+          "joinStatus": "已綁定"
+      }
+  ]
+}

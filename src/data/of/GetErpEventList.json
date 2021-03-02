@@ -1,0 +1,30 @@
+{
+  "eventList": [
+      {
+          "eventId": 33,
+          "eventType": "L",
+          "eventName": "展示",
+          "title": "測試1",
+          "meetingBeginTime": "2021-02-27 08:00",
+          "meetingEndTime": "2021-02-27 08:00",
+          "messageContent": "",
+          "newMessage": false,
+          "fileName": "",
+          "appShow": true,
+          "messageStatus": "Y"
+      },
+      {
+          "eventId": 34,
+          "eventType": "L",
+          "eventName": "展示",
+          "title": "測試2",
+          "meetingBeginTime": "2021-02-23 08:00",
+          "meetingEndTime": "2021-02-23 08:00",
+          "messageContent": "OKK",
+          "newMessage": true,
+          "fileName": "",
+          "appShow": true,
+          "messageStatus": "Y"
+      }
+  ]
+}

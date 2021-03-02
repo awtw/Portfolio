@@ -1,0 +1,2184 @@
+[
+  {
+      "DIVISION_ID": "A0",
+      "DIVISION_NAME": "幕僚處",
+      "DptList": [
+          {
+              "DIVISION_ID": "A0",
+              "DPT_ID": "0005",
+              "DPT_NAME": "行政部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "00009732",
+                      "EMPNO_NAME": "王婉珍"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "00039137",
+                      "EMPNO_NAME": "陳耀"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "00047606",
+                      "EMPNO_NAME": "趙培華"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "VR000164",
+                      "EMPNO_NAME": "張秋香V"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "VR000255",
+                      "EMPNO_NAME": "藍國鴻V"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "VR000340",
+                      "EMPNO_NAME": "何延發V"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "VR000560",
+                      "EMPNO_NAME": "陳耀V"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "VR000761",
+                      "EMPNO_NAME": "李佳鴻V"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "VR002367",
+                      "EMPNO_NAME": "陳詩涵V"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "VR002502",
+                      "EMPNO_NAME": "沈怡婷V"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "VR002804",
+                      "EMPNO_NAME": "潘惠雯V"
+                  },
+                  {
+                      "DPT_ID": "0005",
+                      "EMPNO_ID": "VR002818",
+                      "EMPNO_NAME": "洪雅綺V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "A0",
+              "DPT_ID": "0012",
+              "DPT_NAME": "組裝部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0012",
+                      "EMPNO_ID": "VR000750",
+                      "EMPNO_NAME": "馬錦雲V"
+                  },
+                  {
+                      "DPT_ID": "0012",
+                      "EMPNO_ID": "VR002846",
+                      "EMPNO_NAME": "林志餘V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "A0",
+              "DPT_ID": "0014",
+              "DPT_NAME": "商品部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00005754",
+                      "EMPNO_NAME": "鍾國宏"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00022847",
+                      "EMPNO_NAME": "張碧堂"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00025938",
+                      "EMPNO_NAME": "許永斌"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00027359",
+                      "EMPNO_NAME": "吳帥鋒"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00029660",
+                      "EMPNO_NAME": "陳美齡"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00031009",
+                      "EMPNO_NAME": "韋香君"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00033618",
+                      "EMPNO_NAME": "莊佩珊"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00036562",
+                      "EMPNO_NAME": "尤甄霞"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00038767",
+                      "EMPNO_NAME": "陳嘉倫"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00044263",
+                      "EMPNO_NAME": "陳予揚"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00045744",
+                      "EMPNO_NAME": "郭苡芹"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00046409",
+                      "EMPNO_NAME": "王琬晴"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "00047602",
+                      "EMPNO_NAME": "潘尚琪"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR000136",
+                      "EMPNO_NAME": "沈慧珍V"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR000343",
+                      "EMPNO_NAME": "許永斌V"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR000409",
+                      "EMPNO_NAME": "莊佩珊V"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR000608",
+                      "EMPNO_NAME": "潘惠雯V"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR000970",
+                      "EMPNO_NAME": "陳嘉倫V"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR000971",
+                      "EMPNO_NAME": "陳美齡V"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR000972",
+                      "EMPNO_NAME": "張碧堂V"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR001504",
+                      "EMPNO_NAME": "陳秉賢V"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR002766",
+                      "EMPNO_NAME": "陳慧瑛V"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR002848",
+                      "EMPNO_NAME": "尤甄霞V"
+                  },
+                  {
+                      "DPT_ID": "0014",
+                      "EMPNO_ID": "VR002863",
+                      "EMPNO_NAME": "韋香君V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "A0",
+              "DPT_ID": "0060",
+              "DPT_NAME": "服務部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00007438",
+                      "EMPNO_NAME": "陳慶忠"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00018048",
+                      "EMPNO_NAME": "柳滄彬"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00024353",
+                      "EMPNO_NAME": "林子溦"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00029477",
+                      "EMPNO_NAME": "江國佃"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00036690",
+                      "EMPNO_NAME": "陳嘉慶"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00039325",
+                      "EMPNO_NAME": "袁健倫"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00039413",
+                      "EMPNO_NAME": "陳振曜"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00043095",
+                      "EMPNO_NAME": "顏哲彬"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00044105",
+                      "EMPNO_NAME": "陳耀國"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00044627",
+                      "EMPNO_NAME": "黃世忠"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00044910",
+                      "EMPNO_NAME": "許文龍"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00047348",
+                      "EMPNO_NAME": "何柏力"
+                  },
+                  {
+                      "DPT_ID": "0060",
+                      "EMPNO_ID": "00047572",
+                      "EMPNO_NAME": "余家輝"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "A0",
+              "DPT_ID": "0A21",
+              "DPT_NAME": "總經理室",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0A21",
+                      "EMPNO_ID": "00009182",
+                      "EMPNO_NAME": "王錠鋒"
+                  },
+                  {
+                      "DPT_ID": "0A21",
+                      "EMPNO_ID": "00015494",
+                      "EMPNO_NAME": "游炎林"
+                  },
+                  {
+                      "DPT_ID": "0A21",
+                      "EMPNO_ID": "00017119",
+                      "EMPNO_NAME": "游超群"
+                  },
+                  {
+                      "DPT_ID": "0A21",
+                      "EMPNO_ID": "00018007",
+                      "EMPNO_NAME": "陳秉賢"
+                  },
+                  {
+                      "DPT_ID": "0A21",
+                      "EMPNO_ID": "00030019",
+                      "EMPNO_NAME": "陳國仲"
+                  },
+                  {
+                      "DPT_ID": "0A21",
+                      "EMPNO_ID": "00032212",
+                      "EMPNO_NAME": "楊瑜凡"
+                  },
+                  {
+                      "DPT_ID": "0A21",
+                      "EMPNO_ID": "00035715",
+                      "EMPNO_NAME": "連家慧"
+                  },
+                  {
+                      "DPT_ID": "0A21",
+                      "EMPNO_ID": "VR002629",
+                      "EMPNO_NAME": "許祐豪V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "A0",
+              "DPT_ID": "0A23",
+              "DPT_NAME": "財務部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000013",
+                      "EMPNO_NAME": "潘素真V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000172",
+                      "EMPNO_NAME": "杜美玲V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000175",
+                      "EMPNO_NAME": "黃淑美V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000177",
+                      "EMPNO_NAME": "張淑華V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000184",
+                      "EMPNO_NAME": "高純芬V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000185",
+                      "EMPNO_NAME": "宋欣儒V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000191",
+                      "EMPNO_NAME": "林雅玲V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000200",
+                      "EMPNO_NAME": "范碧珠V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000227",
+                      "EMPNO_NAME": "王秀文V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000242",
+                      "EMPNO_NAME": "孫嘉吟V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000269",
+                      "EMPNO_NAME": "游玉婷V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000279",
+                      "EMPNO_NAME": "陳淑貞V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000644",
+                      "EMPNO_NAME": "張淑媛V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR000864",
+                      "EMPNO_NAME": "林于絹V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR001235",
+                      "EMPNO_NAME": "廖婉君V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR001399",
+                      "EMPNO_NAME": "游玉婷V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR001400",
+                      "EMPNO_NAME": "陳淑貞V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR001635",
+                      "EMPNO_NAME": "徐佳薇V"
+                  },
+                  {
+                      "DPT_ID": "0A23",
+                      "EMPNO_ID": "VR002816",
+                      "EMPNO_NAME": "林毓茹V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "A0",
+              "DPT_ID": "0A27",
+              "DPT_NAME": "行銷部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0A27",
+                      "EMPNO_ID": "00035617",
+                      "EMPNO_NAME": "廖妍雅"
+                  },
+                  {
+                      "DPT_ID": "0A27",
+                      "EMPNO_ID": "00036365",
+                      "EMPNO_NAME": "鄭伊茹"
+                  },
+                  {
+                      "DPT_ID": "0A27",
+                      "EMPNO_ID": "00037338",
+                      "EMPNO_NAME": "樊溫聖"
+                  },
+                  {
+                      "DPT_ID": "0A27",
+                      "EMPNO_ID": "00038697",
+                      "EMPNO_NAME": "張宸嘉"
+                  },
+                  {
+                      "DPT_ID": "0A27",
+                      "EMPNO_ID": "00047042",
+                      "EMPNO_NAME": "盧冠蓁"
+                  },
+                  {
+                      "DPT_ID": "0A27",
+                      "EMPNO_ID": "VR000967",
+                      "EMPNO_NAME": "廖妍雅V"
+                  },
+                  {
+                      "DPT_ID": "0A27",
+                      "EMPNO_ID": "VR002856",
+                      "EMPNO_NAME": "廖本智V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "A0",
+              "DPT_ID": "VR11",
+              "DPT_NAME": "資訊組V",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000003",
+                      "EMPNO_NAME": "歐健和V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000004",
+                      "EMPNO_NAME": "曾正鈞V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000005",
+                      "EMPNO_NAME": "周建樺V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000007",
+                      "EMPNO_NAME": "卓俊彥V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000009",
+                      "EMPNO_NAME": "李鳳珠V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000285",
+                      "EMPNO_NAME": "李忠耿V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000287",
+                      "EMPNO_NAME": "蕭旭成V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000289",
+                      "EMPNO_NAME": "郭芝均V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000299",
+                      "EMPNO_NAME": "劉明坤V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000301",
+                      "EMPNO_NAME": "林祐群V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000304",
+                      "EMPNO_NAME": "郭怡君V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000308",
+                      "EMPNO_NAME": "陳怡伶V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000316",
+                      "EMPNO_NAME": "陳冠州V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000418",
+                      "EMPNO_NAME": "梁耀謙V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000569",
+                      "EMPNO_NAME": "林祐生V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR000880",
+                      "EMPNO_NAME": "賴相宇V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR001460",
+                      "EMPNO_NAME": "林佩璇V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR001478",
+                      "EMPNO_NAME": "賴緯澤V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR001552",
+                      "EMPNO_NAME": "李瑞津V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR001565",
+                      "EMPNO_NAME": "李俊霖V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR001735",
+                      "EMPNO_NAME": "陳柄志V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR001766",
+                      "EMPNO_NAME": "魏嘉緯V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR002365",
+                      "EMPNO_NAME": "葉豐儀V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR002643",
+                      "EMPNO_NAME": "周子鑫V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR002647",
+                      "EMPNO_NAME": "吳凱倫V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR002682",
+                      "EMPNO_NAME": "陳沛祺V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR002708",
+                      "EMPNO_NAME": "王崇宇V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR002710",
+                      "EMPNO_NAME": "鍾俊賢V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VR002808",
+                      "EMPNO_NAME": "張芝涵V"
+                  },
+                  {
+                      "DPT_ID": "VR11",
+                      "EMPNO_ID": "VRSYSTEM",
+                      "EMPNO_NAME": "系統產生"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "A0",
+              "DPT_ID": "VRT1",
+              "DPT_NAME": "虛擬部門",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VC000740",
+                      "EMPNO_NAME": "戴嵘V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VC002202",
+                      "EMPNO_NAME": "袁蕙华V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000027",
+                      "EMPNO_NAME": "白玉華V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000042",
+                      "EMPNO_NAME": "林鳳親V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000070",
+                      "EMPNO_NAME": "江玉雯V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000071",
+                      "EMPNO_NAME": "陳碧儀V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000167",
+                      "EMPNO_NAME": "孔慶樺V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000168",
+                      "EMPNO_NAME": "林美銖V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000186",
+                      "EMPNO_NAME": "黃彰玲V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000197",
+                      "EMPNO_NAME": "王順慧V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000234",
+                      "EMPNO_NAME": "杜美玲V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000237",
+                      "EMPNO_NAME": "王玉玲V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000243",
+                      "EMPNO_NAME": "王錠鋒V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000270",
+                      "EMPNO_NAME": "張淑華V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000391",
+                      "EMPNO_NAME": "陳惠芳V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000433",
+                      "EMPNO_NAME": "王玉治V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000565",
+                      "EMPNO_NAME": "廖慶章V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000598",
+                      "EMPNO_NAME": "會計師用V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000700",
+                      "EMPNO_NAME": "陳永泰V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000709",
+                      "EMPNO_NAME": "溫慧珊V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000854",
+                      "EMPNO_NAME": "孫龍駒V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000869",
+                      "EMPNO_NAME": "杜美玲V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000888",
+                      "EMPNO_NAME": "俞欣潔V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR000903",
+                      "EMPNO_NAME": "洪育琳V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001002",
+                      "EMPNO_NAME": "王順慧V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001045",
+                      "EMPNO_NAME": "袁蕙華V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001055",
+                      "EMPNO_NAME": "陳琦V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001284",
+                      "EMPNO_NAME": "楊惠敏V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001319",
+                      "EMPNO_NAME": "董事會V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001401",
+                      "EMPNO_NAME": "陳淑貞V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001402",
+                      "EMPNO_NAME": "黃淑美V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001403",
+                      "EMPNO_NAME": "高純芬V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001404",
+                      "EMPNO_NAME": "宋欣儒V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001472",
+                      "EMPNO_NAME": "王知懷V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001636",
+                      "EMPNO_NAME": "徐佳薇V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001662",
+                      "EMPNO_NAME": "馬珮琪V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001690",
+                      "EMPNO_NAME": "陳譽太V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR001703",
+                      "EMPNO_NAME": "吳敏瑄V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR002276",
+                      "EMPNO_NAME": "陳麗珍V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR002534",
+                      "EMPNO_NAME": "劉芮?V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR002571",
+                      "EMPNO_NAME": "許祐睿V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR002719",
+                      "EMPNO_NAME": "趙苡辰V"
+                  },
+                  {
+                      "DPT_ID": "VRT1",
+                      "EMPNO_ID": "VR002849",
+                      "EMPNO_NAME": "簡家新V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "A0",
+              "DPT_ID": "VRT2",
+              "DPT_NAME": "檢核部門",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "VRT2",
+                      "EMPNO_ID": "VR000229",
+                      "EMPNO_NAME": "林美銖V"
+                  },
+                  {
+                      "DPT_ID": "VRT2",
+                      "EMPNO_ID": "VR000652",
+                      "EMPNO_NAME": "張淑媛V"
+                  },
+                  {
+                      "DPT_ID": "VRT2",
+                      "EMPNO_ID": "VR000881",
+                      "EMPNO_NAME": "潘素真V"
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "DIVISION_ID": "A1",
+      "DIVISION_NAME": "後勤處",
+      "DptList": [
+          {
+              "DIVISION_ID": "A1",
+              "DPT_ID": "0020",
+              "DPT_NAME": "產銷部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0020",
+                      "EMPNO_ID": "VR000131",
+                      "EMPNO_NAME": "尤甄霞V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "A1",
+              "DPT_ID": "0050",
+              "DPT_NAME": "物流部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00015152",
+                      "EMPNO_NAME": "李育培"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00015322",
+                      "EMPNO_NAME": "張和光"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00015339",
+                      "EMPNO_NAME": "陳義雄"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00015422",
+                      "EMPNO_NAME": "林志餘"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00016378",
+                      "EMPNO_NAME": "馬錦雲"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00016409",
+                      "EMPNO_NAME": "何國龍"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00016439",
+                      "EMPNO_NAME": "鄧應誠"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00016757",
+                      "EMPNO_NAME": "徐士平"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00016802",
+                      "EMPNO_NAME": "胡國正"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00018788",
+                      "EMPNO_NAME": "許文生"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00022831",
+                      "EMPNO_NAME": "陳世宏"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00025637",
+                      "EMPNO_NAME": "陳啟明"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00027555",
+                      "EMPNO_NAME": "周昌俊"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00028112",
+                      "EMPNO_NAME": "林育德"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00028909",
+                      "EMPNO_NAME": "李正春"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00029086",
+                      "EMPNO_NAME": "蔡俊銘"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00029656",
+                      "EMPNO_NAME": "賴敬閔"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00029993",
+                      "EMPNO_NAME": "劉政璋"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00030239",
+                      "EMPNO_NAME": "蘇滄琪"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00034678",
+                      "EMPNO_NAME": "蔡清貴"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00039526",
+                      "EMPNO_NAME": "劉奕辰"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00046462",
+                      "EMPNO_NAME": "王譽錡"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00046771",
+                      "EMPNO_NAME": "賴麒宇"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00046772",
+                      "EMPNO_NAME": "郭士宏"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "00047176",
+                      "EMPNO_NAME": "黎原志"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "VR000119",
+                      "EMPNO_NAME": "尤甄霞V"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "VR000121",
+                      "EMPNO_NAME": "陳秉賢V"
+                  },
+                  {
+                      "DPT_ID": "0050",
+                      "EMPNO_ID": "VR000966",
+                      "EMPNO_NAME": "馬錦雲V"
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "DIVISION_ID": "B1",
+      "DIVISION_NAME": "營一處",
+      "DptList": [
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0030",
+              "DPT_NAME": "信義分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0030",
+                      "EMPNO_ID": "VR001302",
+                      "EMPNO_NAME": "謝威震V"
+                  },
+                  {
+                      "DPT_ID": "0030",
+                      "EMPNO_ID": "VR002505",
+                      "EMPNO_NAME": "蔡孟儒V"
+                  },
+                  {
+                      "DPT_ID": "0030",
+                      "EMPNO_ID": "VR002749",
+                      "EMPNO_NAME": "張珮玲V"
+                  },
+                  {
+                      "DPT_ID": "0030",
+                      "EMPNO_ID": "VR002750",
+                      "EMPNO_NAME": "楊雅馨V"
+                  },
+                  {
+                      "DPT_ID": "0030",
+                      "EMPNO_ID": "VR002751",
+                      "EMPNO_NAME": "簡凱靖V"
+                  },
+                  {
+                      "DPT_ID": "0030",
+                      "EMPNO_ID": "VR002752",
+                      "EMPNO_NAME": "林柏均V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0033",
+              "DPT_NAME": "桃園分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0033",
+                      "EMPNO_ID": "00019093",
+                      "EMPNO_NAME": "許素梅"
+                  },
+                  {
+                      "DPT_ID": "0033",
+                      "EMPNO_ID": "00036624",
+                      "EMPNO_NAME": "温慧珊"
+                  },
+                  {
+                      "DPT_ID": "0033",
+                      "EMPNO_ID": "00039262",
+                      "EMPNO_NAME": "李政哲"
+                  },
+                  {
+                      "DPT_ID": "0033",
+                      "EMPNO_ID": "00044603",
+                      "EMPNO_NAME": "侯佳希"
+                  },
+                  {
+                      "DPT_ID": "0033",
+                      "EMPNO_ID": "00045919",
+                      "EMPNO_NAME": "徐瑋華"
+                  },
+                  {
+                      "DPT_ID": "0033",
+                      "EMPNO_ID": "00047052",
+                      "EMPNO_NAME": "張力庭"
+                  },
+                  {
+                      "DPT_ID": "0033",
+                      "EMPNO_ID": "00047536",
+                      "EMPNO_NAME": "盧筱嬙"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0035",
+              "DPT_NAME": "新竹分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0035",
+                      "EMPNO_ID": "00017491",
+                      "EMPNO_NAME": "馮錦昌"
+                  },
+                  {
+                      "DPT_ID": "0035",
+                      "EMPNO_ID": "00037941",
+                      "EMPNO_NAME": "黃雅玲"
+                  },
+                  {
+                      "DPT_ID": "0035",
+                      "EMPNO_ID": "00038202",
+                      "EMPNO_NAME": "曾筠雅"
+                  },
+                  {
+                      "DPT_ID": "0035",
+                      "EMPNO_ID": "00039156",
+                      "EMPNO_NAME": "劉文盛"
+                  },
+                  {
+                      "DPT_ID": "0035",
+                      "EMPNO_ID": "00042042",
+                      "EMPNO_NAME": "魏嘉逸"
+                  },
+                  {
+                      "DPT_ID": "0035",
+                      "EMPNO_ID": "00046656",
+                      "EMPNO_NAME": "陳郁婷"
+                  },
+                  {
+                      "DPT_ID": "0035",
+                      "EMPNO_ID": "VR002782",
+                      "EMPNO_NAME": "王毅智V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0054",
+              "DPT_NAME": "中壢分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0054",
+                      "EMPNO_ID": "00037906",
+                      "EMPNO_NAME": "趙珮玲"
+                  },
+                  {
+                      "DPT_ID": "0054",
+                      "EMPNO_ID": "00044419",
+                      "EMPNO_NAME": "吳庭豐"
+                  },
+                  {
+                      "DPT_ID": "0054",
+                      "EMPNO_ID": "00045137",
+                      "EMPNO_NAME": "李曉琪"
+                  },
+                  {
+                      "DPT_ID": "0054",
+                      "EMPNO_ID": "00045255",
+                      "EMPNO_NAME": "柯名駿"
+                  },
+                  {
+                      "DPT_ID": "0054",
+                      "EMPNO_ID": "00046988",
+                      "EMPNO_NAME": "宋易勳"
+                  },
+                  {
+                      "DPT_ID": "0054",
+                      "EMPNO_ID": "00047354",
+                      "EMPNO_NAME": "洪心玫"
+                  },
+                  {
+                      "DPT_ID": "0054",
+                      "EMPNO_ID": "VR001600",
+                      "EMPNO_NAME": "許素梅V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0065",
+              "DPT_NAME": "雙和分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0065",
+                      "EMPNO_ID": "00021228",
+                      "EMPNO_NAME": "張群豐"
+                  },
+                  {
+                      "DPT_ID": "0065",
+                      "EMPNO_ID": "00031540",
+                      "EMPNO_NAME": "馮琬玲"
+                  },
+                  {
+                      "DPT_ID": "0065",
+                      "EMPNO_ID": "00033020",
+                      "EMPNO_NAME": "蔡孟儒"
+                  },
+                  {
+                      "DPT_ID": "0065",
+                      "EMPNO_ID": "00043085",
+                      "EMPNO_NAME": "林良柔"
+                  },
+                  {
+                      "DPT_ID": "0065",
+                      "EMPNO_ID": "00045845",
+                      "EMPNO_NAME": "江品萱"
+                  },
+                  {
+                      "DPT_ID": "0065",
+                      "EMPNO_ID": "00046272",
+                      "EMPNO_NAME": "凌英茜"
+                  },
+                  {
+                      "DPT_ID": "0065",
+                      "EMPNO_ID": "00046536",
+                      "EMPNO_NAME": "簡凡鈞"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0067",
+              "DPT_NAME": "台北專戶分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0067",
+                      "EMPNO_ID": "00017435",
+                      "EMPNO_NAME": "謝一正"
+                  },
+                  {
+                      "DPT_ID": "0067",
+                      "EMPNO_ID": "00018598",
+                      "EMPNO_NAME": "蘇裕中"
+                  },
+                  {
+                      "DPT_ID": "0067",
+                      "EMPNO_ID": "00020628",
+                      "EMPNO_NAME": "郭彥宏"
+                  },
+                  {
+                      "DPT_ID": "0067",
+                      "EMPNO_ID": "00025636",
+                      "EMPNO_NAME": "林佩玲"
+                  },
+                  {
+                      "DPT_ID": "0067",
+                      "EMPNO_ID": "00040591",
+                      "EMPNO_NAME": "邱光銓"
+                  },
+                  {
+                      "DPT_ID": "0067",
+                      "EMPNO_ID": "00044480",
+                      "EMPNO_NAME": "陸躍"
+                  },
+                  {
+                      "DPT_ID": "0067",
+                      "EMPNO_ID": "00046197",
+                      "EMPNO_NAME": "林文豪"
+                  },
+                  {
+                      "DPT_ID": "0067",
+                      "EMPNO_ID": "VR001410",
+                      "EMPNO_NAME": "楊雅馨V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0068",
+              "DPT_NAME": "新板分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0068",
+                      "EMPNO_ID": "VR002333",
+                      "EMPNO_NAME": "吳怡蒨V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0086",
+              "DPT_NAME": "特銷分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0086",
+                      "EMPNO_ID": "00028149",
+                      "EMPNO_NAME": "李顏佑"
+                  },
+                  {
+                      "DPT_ID": "0086",
+                      "EMPNO_ID": "00029234",
+                      "EMPNO_NAME": "陳佑銘"
+                  },
+                  {
+                      "DPT_ID": "0086",
+                      "EMPNO_ID": "00039666",
+                      "EMPNO_NAME": "楊雅馨"
+                  },
+                  {
+                      "DPT_ID": "0086",
+                      "EMPNO_ID": "00044355",
+                      "EMPNO_NAME": "陳宗華"
+                  },
+                  {
+                      "DPT_ID": "0086",
+                      "EMPNO_ID": "00045649",
+                      "EMPNO_NAME": "莊鈞傑"
+                  },
+                  {
+                      "DPT_ID": "0086",
+                      "EMPNO_ID": "00045836",
+                      "EMPNO_NAME": "林柏均"
+                  },
+                  {
+                      "DPT_ID": "0086",
+                      "EMPNO_ID": "00046290",
+                      "EMPNO_NAME": "熊浩廷"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0090",
+              "DPT_NAME": "松山分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0090",
+                      "EMPNO_ID": "00020785",
+                      "EMPNO_NAME": "蘇惠敏"
+                  },
+                  {
+                      "DPT_ID": "0090",
+                      "EMPNO_ID": "00024870",
+                      "EMPNO_NAME": "張珮玲"
+                  },
+                  {
+                      "DPT_ID": "0090",
+                      "EMPNO_ID": "00039249",
+                      "EMPNO_NAME": "劉曉燕"
+                  },
+                  {
+                      "DPT_ID": "0090",
+                      "EMPNO_ID": "00043710",
+                      "EMPNO_NAME": "張漪婷"
+                  },
+                  {
+                      "DPT_ID": "0090",
+                      "EMPNO_ID": "00043841",
+                      "EMPNO_NAME": "陳奕圻"
+                  },
+                  {
+                      "DPT_ID": "0090",
+                      "EMPNO_ID": "00045699",
+                      "EMPNO_NAME": "蔡依玲"
+                  },
+                  {
+                      "DPT_ID": "0090",
+                      "EMPNO_ID": "00046031",
+                      "EMPNO_NAME": "陳丕銓"
+                  },
+                  {
+                      "DPT_ID": "0090",
+                      "EMPNO_ID": "VR001721",
+                      "EMPNO_NAME": "張漪婷V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0091",
+              "DPT_NAME": "內湖分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0091",
+                      "EMPNO_ID": "00031409",
+                      "EMPNO_NAME": "邱顯朝"
+                  },
+                  {
+                      "DPT_ID": "0091",
+                      "EMPNO_ID": "00038157",
+                      "EMPNO_NAME": "王毅智"
+                  },
+                  {
+                      "DPT_ID": "0091",
+                      "EMPNO_ID": "00043415",
+                      "EMPNO_NAME": "謝威震"
+                  },
+                  {
+                      "DPT_ID": "0091",
+                      "EMPNO_ID": "00045140",
+                      "EMPNO_NAME": "許存孝"
+                  },
+                  {
+                      "DPT_ID": "0091",
+                      "EMPNO_ID": "00045371",
+                      "EMPNO_NAME": "林品翰"
+                  },
+                  {
+                      "DPT_ID": "0091",
+                      "EMPNO_ID": "00045747",
+                      "EMPNO_NAME": "范綱杰"
+                  },
+                  {
+                      "DPT_ID": "0091",
+                      "EMPNO_ID": "00046368",
+                      "EMPNO_NAME": "林辰"
+                  },
+                  {
+                      "DPT_ID": "0091",
+                      "EMPNO_ID": "VR000048",
+                      "EMPNO_NAME": "張珮玲V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0092",
+              "DPT_NAME": "中山分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0092",
+                      "EMPNO_ID": "00012743",
+                      "EMPNO_NAME": "陳勇仁"
+                  },
+                  {
+                      "DPT_ID": "0092",
+                      "EMPNO_ID": "00020784",
+                      "EMPNO_NAME": "簡川棋"
+                  },
+                  {
+                      "DPT_ID": "0092",
+                      "EMPNO_ID": "00035430",
+                      "EMPNO_NAME": "林宜緯"
+                  },
+                  {
+                      "DPT_ID": "0092",
+                      "EMPNO_ID": "00035764",
+                      "EMPNO_NAME": "吳怡蒨"
+                  },
+                  {
+                      "DPT_ID": "0092",
+                      "EMPNO_ID": "00040435",
+                      "EMPNO_NAME": "黃于韶"
+                  },
+                  {
+                      "DPT_ID": "0092",
+                      "EMPNO_ID": "00042926",
+                      "EMPNO_NAME": "黃香綾"
+                  },
+                  {
+                      "DPT_ID": "0092",
+                      "EMPNO_ID": "00043498",
+                      "EMPNO_NAME": "陳俊豪"
+                  },
+                  {
+                      "DPT_ID": "0092",
+                      "EMPNO_ID": "00046058",
+                      "EMPNO_NAME": "羅堉綸"
+                  },
+                  {
+                      "DPT_ID": "0092",
+                      "EMPNO_ID": "00046321",
+                      "EMPNO_NAME": "王重凱"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0094",
+              "DPT_NAME": "新北分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0094",
+                      "EMPNO_ID": "00037852",
+                      "EMPNO_NAME": "林廷勳"
+                  },
+                  {
+                      "DPT_ID": "0094",
+                      "EMPNO_ID": "00041757",
+                      "EMPNO_NAME": "王薇雅"
+                  },
+                  {
+                      "DPT_ID": "0094",
+                      "EMPNO_ID": "00043568",
+                      "EMPNO_NAME": "林辰威"
+                  },
+                  {
+                      "DPT_ID": "0094",
+                      "EMPNO_ID": "00043814",
+                      "EMPNO_NAME": "韓承叡"
+                  },
+                  {
+                      "DPT_ID": "0094",
+                      "EMPNO_ID": "00045448",
+                      "EMPNO_NAME": "賴威雅"
+                  },
+                  {
+                      "DPT_ID": "0094",
+                      "EMPNO_ID": "00046572",
+                      "EMPNO_NAME": "賴子崴"
+                  },
+                  {
+                      "DPT_ID": "0094",
+                      "EMPNO_ID": "00046688",
+                      "EMPNO_NAME": "許芳瑜"
+                  },
+                  {
+                      "DPT_ID": "0094",
+                      "EMPNO_ID": "00047313",
+                      "EMPNO_NAME": "陳孜盛"
+                  },
+                  {
+                      "DPT_ID": "0094",
+                      "EMPNO_ID": "VR000668",
+                      "EMPNO_NAME": "吳怡蒨V"
+                  },
+                  {
+                      "DPT_ID": "0094",
+                      "EMPNO_ID": "VR002635",
+                      "EMPNO_NAME": "王薇雅V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B1",
+              "DPT_ID": "0099",
+              "DPT_NAME": "南港分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0099",
+                      "EMPNO_ID": "00036031",
+                      "EMPNO_NAME": "盛永弘"
+                  },
+                  {
+                      "DPT_ID": "0099",
+                      "EMPNO_ID": "00039709",
+                      "EMPNO_NAME": "蔣培蓉"
+                  },
+                  {
+                      "DPT_ID": "0099",
+                      "EMPNO_ID": "00046276",
+                      "EMPNO_NAME": "賴冠銘"
+                  },
+                  {
+                      "DPT_ID": "0099",
+                      "EMPNO_ID": "00046936",
+                      "EMPNO_NAME": "李宗育"
+                  },
+                  {
+                      "DPT_ID": "0099",
+                      "EMPNO_ID": "VR002778",
+                      "EMPNO_NAME": "蔣培蓉V"
+                  },
+                  {
+                      "DPT_ID": "0099",
+                      "EMPNO_ID": "VR002783",
+                      "EMPNO_NAME": "蔡孟儒V"
+                  },
+                  {
+                      "DPT_ID": "0099",
+                      "EMPNO_ID": "VR002787",
+                      "EMPNO_NAME": "廖本智V"
+                  },
+                  {
+                      "DPT_ID": "0099",
+                      "EMPNO_ID": "VR002859",
+                      "EMPNO_NAME": "許存孝V"
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "DIVISION_ID": "B4",
+      "DIVISION_NAME": "營二處",
+      "DptList": [
+          {
+              "DIVISION_ID": "B4",
+              "DPT_ID": "0041",
+              "DPT_NAME": "中彰分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0041",
+                      "EMPNO_ID": "00012482",
+                      "EMPNO_NAME": "林庭羽"
+                  },
+                  {
+                      "DPT_ID": "0041",
+                      "EMPNO_ID": "00028771",
+                      "EMPNO_NAME": "洪育琳"
+                  },
+                  {
+                      "DPT_ID": "0041",
+                      "EMPNO_ID": "00035615",
+                      "EMPNO_NAME": "陳翊瑄"
+                  },
+                  {
+                      "DPT_ID": "0041",
+                      "EMPNO_ID": "00037166",
+                      "EMPNO_NAME": "蔡贏億"
+                  },
+                  {
+                      "DPT_ID": "0041",
+                      "EMPNO_ID": "00038567",
+                      "EMPNO_NAME": "張婉珍"
+                  },
+                  {
+                      "DPT_ID": "0041",
+                      "EMPNO_ID": "00041073",
+                      "EMPNO_NAME": "陳政賢"
+                  },
+                  {
+                      "DPT_ID": "0041",
+                      "EMPNO_ID": "00046035",
+                      "EMPNO_NAME": "楊世平"
+                  },
+                  {
+                      "DPT_ID": "0041",
+                      "EMPNO_ID": "00046647",
+                      "EMPNO_NAME": "潘奕伸"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B4",
+              "DPT_ID": "0047",
+              "DPT_NAME": "中投分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0047",
+                      "EMPNO_ID": "00014654",
+                      "EMPNO_NAME": "周義盛"
+                  },
+                  {
+                      "DPT_ID": "0047",
+                      "EMPNO_ID": "00017512",
+                      "EMPNO_NAME": "王憲文"
+                  },
+                  {
+                      "DPT_ID": "0047",
+                      "EMPNO_ID": "00042463",
+                      "EMPNO_NAME": "葉玲君"
+                  },
+                  {
+                      "DPT_ID": "0047",
+                      "EMPNO_ID": "00042726",
+                      "EMPNO_NAME": "李沛軒"
+                  },
+                  {
+                      "DPT_ID": "0047",
+                      "EMPNO_ID": "00043342",
+                      "EMPNO_NAME": "楊鎮維"
+                  },
+                  {
+                      "DPT_ID": "0047",
+                      "EMPNO_ID": "00044194",
+                      "EMPNO_NAME": "何宗翰"
+                  },
+                  {
+                      "DPT_ID": "0047",
+                      "EMPNO_ID": "00046712",
+                      "EMPNO_NAME": "林鈞尉"
+                  },
+                  {
+                      "DPT_ID": "0047",
+                      "EMPNO_ID": "VR000046",
+                      "EMPNO_NAME": "林庭羽V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B4",
+              "DPT_ID": "0051",
+              "DPT_NAME": "嘉義分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0051",
+                      "EMPNO_ID": "00028225",
+                      "EMPNO_NAME": "沈瓊華"
+                  },
+                  {
+                      "DPT_ID": "0051",
+                      "EMPNO_ID": "00038290",
+                      "EMPNO_NAME": "吳洵丞"
+                  },
+                  {
+                      "DPT_ID": "0051",
+                      "EMPNO_ID": "00040216",
+                      "EMPNO_NAME": "林泰安"
+                  },
+                  {
+                      "DPT_ID": "0051",
+                      "EMPNO_ID": "00045420",
+                      "EMPNO_NAME": "余靜芬"
+                  },
+                  {
+                      "DPT_ID": "0051",
+                      "EMPNO_ID": "00046118",
+                      "EMPNO_NAME": "吳爭俞"
+                  },
+                  {
+                      "DPT_ID": "0051",
+                      "EMPNO_ID": "00046622",
+                      "EMPNO_NAME": "廖敏秀"
+                  },
+                  {
+                      "DPT_ID": "0051",
+                      "EMPNO_ID": "00047423",
+                      "EMPNO_NAME": "陳恩庭"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B4",
+              "DPT_ID": "0063",
+              "DPT_NAME": "西台南分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0063",
+                      "EMPNO_ID": "00024998",
+                      "EMPNO_NAME": "羅維雄"
+                  },
+                  {
+                      "DPT_ID": "0063",
+                      "EMPNO_ID": "00034453",
+                      "EMPNO_NAME": "莊士諒"
+                  },
+                  {
+                      "DPT_ID": "0063",
+                      "EMPNO_ID": "00041841",
+                      "EMPNO_NAME": "潘奕驊"
+                  },
+                  {
+                      "DPT_ID": "0063",
+                      "EMPNO_ID": "00044605",
+                      "EMPNO_NAME": "郭建均"
+                  },
+                  {
+                      "DPT_ID": "0063",
+                      "EMPNO_ID": "00046244",
+                      "EMPNO_NAME": "王薏婷"
+                  },
+                  {
+                      "DPT_ID": "0063",
+                      "EMPNO_ID": "00046364",
+                      "EMPNO_NAME": "郭芳妤"
+                  },
+                  {
+                      "DPT_ID": "0063",
+                      "EMPNO_ID": "00047421",
+                      "EMPNO_NAME": "張宸寧"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B4",
+              "DPT_ID": "0072",
+              "DPT_NAME": "南高雄分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0072",
+                      "EMPNO_ID": "00014967",
+                      "EMPNO_NAME": "謝耀進"
+                  },
+                  {
+                      "DPT_ID": "0072",
+                      "EMPNO_ID": "00038815",
+                      "EMPNO_NAME": "陳崇裕"
+                  },
+                  {
+                      "DPT_ID": "0072",
+                      "EMPNO_ID": "00042114",
+                      "EMPNO_NAME": "郭展維"
+                  },
+                  {
+                      "DPT_ID": "0072",
+                      "EMPNO_ID": "00043759",
+                      "EMPNO_NAME": "呂靜惠"
+                  },
+                  {
+                      "DPT_ID": "0072",
+                      "EMPNO_ID": "00044492",
+                      "EMPNO_NAME": "黃開元"
+                  },
+                  {
+                      "DPT_ID": "0072",
+                      "EMPNO_ID": "00045200",
+                      "EMPNO_NAME": "林意翔"
+                  },
+                  {
+                      "DPT_ID": "0072",
+                      "EMPNO_ID": "00045835",
+                      "EMPNO_NAME": "林宇芃"
+                  },
+                  {
+                      "DPT_ID": "0072",
+                      "EMPNO_ID": "00047424",
+                      "EMPNO_NAME": "林昀萱"
+                  },
+                  {
+                      "DPT_ID": "0072",
+                      "EMPNO_ID": "VR002745",
+                      "EMPNO_NAME": "葉姿君V"
+                  },
+                  {
+                      "DPT_ID": "0072",
+                      "EMPNO_ID": "VR002756",
+                      "EMPNO_NAME": "林意翔V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B4",
+              "DPT_ID": "0073",
+              "DPT_NAME": "北高雄分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0073",
+                      "EMPNO_ID": "00001645",
+                      "EMPNO_NAME": "葉姿君"
+                  },
+                  {
+                      "DPT_ID": "0073",
+                      "EMPNO_ID": "00015446",
+                      "EMPNO_NAME": "陳映君"
+                  },
+                  {
+                      "DPT_ID": "0073",
+                      "EMPNO_ID": "00022792",
+                      "EMPNO_NAME": "黎萬通"
+                  },
+                  {
+                      "DPT_ID": "0073",
+                      "EMPNO_ID": "00040722",
+                      "EMPNO_NAME": "吳冠翰"
+                  },
+                  {
+                      "DPT_ID": "0073",
+                      "EMPNO_ID": "00043902",
+                      "EMPNO_NAME": "蘇怡菁"
+                  },
+                  {
+                      "DPT_ID": "0073",
+                      "EMPNO_ID": "00046003",
+                      "EMPNO_NAME": "賴依旻"
+                  },
+                  {
+                      "DPT_ID": "0073",
+                      "EMPNO_ID": "00046930",
+                      "EMPNO_NAME": "賴炫佑"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B4",
+              "DPT_ID": "0075",
+              "DPT_NAME": "高雄專戶分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0075",
+                      "EMPNO_ID": "00037300",
+                      "EMPNO_NAME": "涂招城"
+                  },
+                  {
+                      "DPT_ID": "0075",
+                      "EMPNO_ID": "00037957",
+                      "EMPNO_NAME": "吳涵詩"
+                  },
+                  {
+                      "DPT_ID": "0075",
+                      "EMPNO_ID": "00047464",
+                      "EMPNO_NAME": "余虹蕾"
+                  },
+                  {
+                      "DPT_ID": "0075",
+                      "EMPNO_ID": "00047497",
+                      "EMPNO_NAME": "陳奕慧"
+                  },
+                  {
+                      "DPT_ID": "0075",
+                      "EMPNO_ID": "VR002005",
+                      "EMPNO_NAME": "葉姿君V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B4",
+              "DPT_ID": "0096",
+              "DPT_NAME": "東台南分公司",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0096",
+                      "EMPNO_ID": "00019038",
+                      "EMPNO_NAME": "李倖如"
+                  },
+                  {
+                      "DPT_ID": "0096",
+                      "EMPNO_ID": "00043989",
+                      "EMPNO_NAME": "潘晏芳"
+                  },
+                  {
+                      "DPT_ID": "0096",
+                      "EMPNO_ID": "00046377",
+                      "EMPNO_NAME": "張芳婕"
+                  },
+                  {
+                      "DPT_ID": "0096",
+                      "EMPNO_ID": "00046533",
+                      "EMPNO_NAME": "姚子揚"
+                  },
+                  {
+                      "DPT_ID": "0096",
+                      "EMPNO_ID": "00046617",
+                      "EMPNO_NAME": "林奕捷"
+                  },
+                  {
+                      "DPT_ID": "0096",
+                      "EMPNO_ID": "VR002522",
+                      "EMPNO_NAME": "王薏婷V"
+                  },
+                  {
+                      "DPT_ID": "0096",
+                      "EMPNO_ID": "VR002568",
+                      "EMPNO_NAME": "郭芳妤V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "B4",
+              "DPT_ID": "0097",
+              "DPT_NAME": "專案部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0097",
+                      "EMPNO_ID": "VR002524",
+                      "EMPNO_NAME": "蔡孟儒V"
+                  },
+                  {
+                      "DPT_ID": "0097",
+                      "EMPNO_ID": "VR002850",
+                      "EMPNO_NAME": "謝一正V"
+                  },
+                  {
+                      "DPT_ID": "0097",
+                      "EMPNO_ID": "VR002851",
+                      "EMPNO_NAME": "林曉玫V"
+                  },
+                  {
+                      "DPT_ID": "0097",
+                      "EMPNO_ID": "VR002852",
+                      "EMPNO_NAME": "洪逸恬V"
+                  },
+                  {
+                      "DPT_ID": "0097",
+                      "EMPNO_ID": "VR002853",
+                      "EMPNO_NAME": "郭采媛V"
+                  },
+                  {
+                      "DPT_ID": "0097",
+                      "EMPNO_ID": "VR002854",
+                      "EMPNO_NAME": "陳畇安V"
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "DIVISION_ID": "B5",
+      "DIVISION_NAME": "營業處",
+      "DptList": [
+          {
+              "DIVISION_ID": "B5",
+              "DPT_ID": "000F",
+              "DPT_NAME": "營業部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "000F",
+                      "EMPNO_ID": "00042132",
+                      "EMPNO_NAME": "許祐豪"
+                  },
+                  {
+                      "DPT_ID": "000F",
+                      "EMPNO_ID": "VR000360",
+                      "EMPNO_NAME": "廖妍雅V"
+                  },
+                  {
+                      "DPT_ID": "000F",
+                      "EMPNO_ID": "VR000744",
+                      "EMPNO_NAME": "鍾國宏V"
+                  },
+                  {
+                      "DPT_ID": "000F",
+                      "EMPNO_ID": "VR000911",
+                      "EMPNO_NAME": "謝一正V"
+                  },
+                  {
+                      "DPT_ID": "000F",
+                      "EMPNO_ID": "VR001539",
+                      "EMPNO_NAME": "蔡孟儒V"
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "DIVISION_ID": "P1",
+      "DIVISION_NAME": "鋼製廠",
+      "DptList": [
+          {
+              "DIVISION_ID": "P1",
+              "DPT_ID": "000P",
+              "DPT_NAME": "主管室",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "000P",
+                      "EMPNO_ID": "VR000397",
+                      "EMPNO_NAME": "王偉民V"
+                  },
+                  {
+                      "DPT_ID": "000P",
+                      "EMPNO_ID": "VR002368",
+                      "EMPNO_NAME": "陳詩涵V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "P1",
+              "DPT_ID": "0P01",
+              "DPT_NAME": "生產部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0P01",
+                      "EMPNO_ID": "VR000225",
+                      "EMPNO_NAME": "鄭志文V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "P1",
+              "DPT_ID": "0P02",
+              "DPT_NAME": "鋼製課",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0P02",
+                      "EMPNO_ID": "VR000553",
+                      "EMPNO_NAME": "李瀛澤V"
+                  },
+                  {
+                      "DPT_ID": "0P02",
+                      "EMPNO_ID": "VR000851",
+                      "EMPNO_NAME": "黃俊順V"
+                  },
+                  {
+                      "DPT_ID": "0P02",
+                      "EMPNO_ID": "VR001012",
+                      "EMPNO_NAME": "蔡儀振V"
+                  },
+                  {
+                      "DPT_ID": "0P02",
+                      "EMPNO_ID": "VR001115",
+                      "EMPNO_NAME": "葉政男V"
+                  },
+                  {
+                      "DPT_ID": "0P02",
+                      "EMPNO_ID": "VR001989",
+                      "EMPNO_NAME": "鄭琨元V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "P1",
+              "DPT_ID": "0P03",
+              "DPT_NAME": "屏風課",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0P03",
+                      "EMPNO_ID": "VR000554",
+                      "EMPNO_NAME": "郭玉美V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "P1",
+              "DPT_ID": "0P05",
+              "DPT_NAME": "生管課",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0P05",
+                      "EMPNO_ID": "VR000230",
+                      "EMPNO_NAME": "呂奇允V"
+                  },
+                  {
+                      "DPT_ID": "0P05",
+                      "EMPNO_ID": "VR000398",
+                      "EMPNO_NAME": "莊翠芳V"
+                  },
+                  {
+                      "DPT_ID": "0P05",
+                      "EMPNO_ID": "VR000400",
+                      "EMPNO_NAME": "陳慧瑛V"
+                  },
+                  {
+                      "DPT_ID": "0P05",
+                      "EMPNO_ID": "VR002748",
+                      "EMPNO_NAME": "鄭冬妮V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "P1",
+              "DPT_ID": "0P06",
+              "DPT_NAME": "品管課",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0P06",
+                      "EMPNO_ID": "VR000401",
+                      "EMPNO_NAME": "陳鈺婷V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "P1",
+              "DPT_ID": "0P07",
+              "DPT_NAME": "生技課",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0P07",
+                      "EMPNO_ID": "VR000596",
+                      "EMPNO_NAME": "洪東地V"
+                  }
+              ]
+          },
+          {
+              "DIVISION_ID": "P1",
+              "DPT_ID": "0P10",
+              "DPT_NAME": "品管部",
+              "EmpnoList": [
+                  {
+                      "DPT_ID": "0P10",
+                      "EMPNO_ID": "VR001988",
+                      "EMPNO_NAME": "劉居漢V"
+                  }
+              ]
+          }
+      ]
+  }
+]

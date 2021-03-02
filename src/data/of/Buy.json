@@ -1,0 +1,36 @@
+{
+  "eventNameList": [
+      {
+          "eventType": "A",
+          "eventName": "產品介紹/洽談"
+      },
+      {
+          "eventType": "K",
+          "eventName": "丈量"
+      },
+      {
+          "eventType": "C",
+          "eventName": "解圖"
+      },
+      {
+          "eventType": "L",
+          "eventName": "展示"
+      },
+      {
+          "eventType": "B",
+          "eventName": "報/議價"
+      },
+      {
+          "eventType": "D",
+          "eventName": "合約"
+      },
+      {
+          "eventType": "E",
+          "eventName": "交貨"
+      },
+      {
+          "eventType": "Z",
+          "eventName": "其他"
+      }
+  ]
+}
