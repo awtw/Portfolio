@@ -1,0 +1,679 @@
+{
+  "CompanyOwner": [
+      {
+          "OWNER_TOKEN": "72d8b7a6-f9a9-4b63-a6ed-0e521835522e",
+          "OWNER_NAME": "測試王",
+          "OWNER_DESCRIPTION": "測試王",
+          "ProjectList": []
+      },
+      {
+          "OWNER_TOKEN": "e0865c6c-e889-493a-83f8-2f9d5d21edf5",
+          "OWNER_NAME": "研發部服務",
+          "OWNER_DESCRIPTION": "ErpNextADAPI",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "主管小Me",
+                  "PROJECT_TOKEN": "bd58e410-613a-48ee-b3ba-b7e24bbe2aa9",
+                  "OWNER_TOKEN": "e0865c6c-e889-493a-83f8-2f9d5d21edf5",
+                  "OWNER_NAME": "研發部服務",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 3,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "好棒棒"
+              },
+              {
+                  "PROJECT_NAME": "研發部共用服務",
+                  "PROJECT_TOKEN": "28dcceca-8cfe-400c-8d2a-a637321126db",
+                  "OWNER_TOKEN": "e0865c6c-e889-493a-83f8-2f9d5d21edf5",
+                  "OWNER_NAME": "研發部服務",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 3,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "研發部共用服務"
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "3aaab13e-3d62-4c0b-acb3-36123257fddf",
+          "OWNER_NAME": "測試王2",
+          "OWNER_DESCRIPTION": "測試王2",
+          "ProjectList": []
+      },
+      {
+          "OWNER_TOKEN": "8d5e4ec5-7382-4601-8420-96c6050c5f4f",
+          "OWNER_NAME": "資訊室系統部",
+          "OWNER_DESCRIPTION": "資訊室系統部",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "研發部共用服務",
+                  "PROJECT_TOKEN": "28dcceca-8cfe-400c-8d2a-a637321126db",
+                  "OWNER_TOKEN": "8d5e4ec5-7382-4601-8420-96c6050c5f4f",
+                  "OWNER_NAME": "資訊室系統部",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 2,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "研發部共用服務"
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "29f89dbf-5245-4cb7-8fa0-ab3a770a7dbb",
+          "OWNER_NAME": "後勤系統部服務",
+          "OWNER_DESCRIPTION": "ErpNextMMAPI",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "聯強物流資料交換",
+                  "PROJECT_TOKEN": "a911a1bc-0339-465a-867d-15919d120bff",
+                  "OWNER_TOKEN": "29f89dbf-5245-4cb7-8fa0-ab3a770a7dbb",
+                  "OWNER_NAME": "後勤系統部服務",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 0,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "震旦電信與聯強資料交換"
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "c7b231d7-2769-4dbc-8ebd-ab4e6abc251f",
+          "OWNER_NAME": "測試擁有者01",
+          "OWNER_DESCRIPTION": "測試擁有者01",
+          "ProjectList": []
+      },
+      {
+          "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+          "OWNER_NAME": "營服系統部服務(蛋寶)",
+          "OWNER_DESCRIPTION": "",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "顧客小ME",
+                  "PROJECT_TOKEN": "aba53064-8589-4de4-a5e7-8035289dd62e",
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 21,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": ""
+              },
+              {
+                  "PROJECT_NAME": "電信官網資料交換專案",
+                  "PROJECT_TOKEN": "ea7826df-d623-4069-ae38-8b15b632b5a8",
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 21,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "與廠商魁亨做資料交換官網與會員資料"
+              },
+              {
+                  "PROJECT_NAME": "營業小Me",
+                  "PROJECT_TOKEN": "7139e64c-0b75-4f17-96c6-d9a254c6f09f",
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 21,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "很厲害*3"
+              },
+              {
+                  "PROJECT_NAME": "服務小ME",
+                  "PROJECT_TOKEN": "a96e3741-2c9d-41b8-af58-1737bebcbf2e",
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 21,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": ""
+              },
+              {
+                  "PROJECT_NAME": "OA-EDM合作案",
+                  "PROJECT_TOKEN": "ebb14712-e538-4b18-8f62-38475d39db99",
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 21,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "委託外部廠商發EDM，並透過API取得E-mail開啟、廣告點閱等等資訊。"
+              },
+              {
+                  "PROJECT_NAME": "主管小Me",
+                  "PROJECT_TOKEN": "bd58e410-613a-48ee-b3ba-b7e24bbe2aa9",
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 21,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "好棒棒"
+              },
+              {
+                  "PROJECT_NAME": "A0A2之銷售雲",
+                  "PROJECT_TOKEN": "015b79be-3239-460f-8dc4-631643cb0aaf",
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 21,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "提供A0A2部門人員資料、同仁帳密驗證"
+              },
+              {
+                  "PROJECT_NAME": "聯強物流資料交換",
+                  "PROJECT_TOKEN": "a911a1bc-0339-465a-867d-15919d120bff",
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 21,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "震旦電信與聯強資料交換"
+              },
+              {
+                  "PROJECT_NAME": "家具顧客APP",
+                  "PROJECT_TOKEN": "9d46d36a-b310-475e-a46d-3adad117bdfb",
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "TrustCount": 21,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "創新規劃顧客應用場景包含強化家具形象傳遞、提供項目管理，針對約訪、設計、報價、交貨即時互動、專屬顧客服務，自動化產生報修，培養忠誠顧客"
+              }
+          ]
+      }
+  ],
+  "OutSideOwner": [
+      {
+          "OWNER_TOKEN": "09b15b94-da29-4986-9e7c-04b42df28f94",
+          "OWNER_NAME": "魁亨ALL",
+          "OWNER_DESCRIPTION": "各事業部共用資料交換",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "電信官網資料交換專案",
+                  "PROJECT_TOKEN": "ea7826df-d623-4069-ae38-8b15b632b5a8",
+                  "OWNER_TOKEN": "09b15b94-da29-4986-9e7c-04b42df28f94",
+                  "OWNER_NAME": "魁亨ALL",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 0,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "與廠商魁亨做資料交換官網與會員資料"
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "bd27ea8d-5d12-4525-88c5-1cd4b81959d3",
+          "OWNER_NAME": "電子豹",
+          "OWNER_DESCRIPTION": "EDM的廠商",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "OA-EDM合作案",
+                  "PROJECT_TOKEN": "ebb14712-e538-4b18-8f62-38475d39db99",
+                  "OWNER_TOKEN": "bd27ea8d-5d12-4525-88c5-1cd4b81959d3",
+                  "OWNER_NAME": "電子豹",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 0,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "委託外部廠商發EDM，並透過API取得E-mail開啟、廣告點閱等等資訊。"
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "0bbba119-5c7a-45c3-895c-74d2f8891abd",
+          "OWNER_NAME": "魁亨",
+          "OWNER_DESCRIPTION": "A0A2之銷售雲",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "A0A2之銷售雲",
+                  "PROJECT_TOKEN": "015b79be-3239-460f-8dc4-631643cb0aaf",
+                  "OWNER_TOKEN": "0bbba119-5c7a-45c3-895c-74d2f8891abd",
+                  "OWNER_NAME": "魁亨",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 2,
+                  "EnvCount": 2,
+                  "Project_DESCRIPTION": "提供A0A2部門人員資料、同仁帳密驗證"
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "cc12e9f3-6b52-45b4-b33b-80cc1c95474a",
+          "OWNER_NAME": "夏普(SHARP)",
+          "OWNER_DESCRIPTION": "夏普公司",
+          "ProjectList": []
+      },
+      {
+          "OWNER_TOKEN": "5d6803db-004b-478c-876e-840235fd94b7",
+          "OWNER_NAME": "HelloBossWebView",
+          "OWNER_DESCRIPTION": "HelloBossWebView",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "主管小Me",
+                  "PROJECT_TOKEN": "bd58e410-613a-48ee-b3ba-b7e24bbe2aa9",
+                  "OWNER_TOKEN": "5d6803db-004b-478c-876e-840235fd94b7",
+                  "OWNER_NAME": "HelloBossWebView",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 2,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "好棒棒"
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "32a8b9f0-469d-4180-8813-840527e4be29",
+          "OWNER_NAME": "聯強",
+          "OWNER_DESCRIPTION": "聯強資料交換使用",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "聯強物流資料交換",
+                  "PROJECT_TOKEN": "a911a1bc-0339-465a-867d-15919d120bff",
+                  "OWNER_TOKEN": "32a8b9f0-469d-4180-8813-840527e4be29",
+                  "OWNER_NAME": "聯強",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 1,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "震旦電信與聯強資料交換"
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "acafee84-ed94-47fd-89e9-93e6a46dc756",
+          "OWNER_NAME": "果思設計",
+          "OWNER_DESCRIPTION": "主管APP的廠商",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "主管小Me",
+                  "PROJECT_TOKEN": "bd58e410-613a-48ee-b3ba-b7e24bbe2aa9",
+                  "OWNER_TOKEN": "acafee84-ed94-47fd-89e9-93e6a46dc756",
+                  "OWNER_NAME": "果思設計",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 157,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "好棒棒"
+              },
+              {
+                  "PROJECT_NAME": "家具顧客APP",
+                  "PROJECT_TOKEN": "9d46d36a-b310-475e-a46d-3adad117bdfb",
+                  "OWNER_TOKEN": "acafee84-ed94-47fd-89e9-93e6a46dc756",
+                  "OWNER_NAME": "果思設計",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 157,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "創新規劃顧客應用場景包含強化家具形象傳遞、提供項目管理，針對約訪、設計、報價、交貨即時互動、專屬顧客服務，自動化產生報修，培養忠誠顧客"
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "c295cc6f-fd6f-40a7-94b2-a5d86dd81514",
+          "OWNER_NAME": "魁亨",
+          "OWNER_DESCRIPTION": "魁亨公司",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "電信官網資料交換專案",
+                  "PROJECT_TOKEN": "ea7826df-d623-4069-ae38-8b15b632b5a8",
+                  "OWNER_TOKEN": "c295cc6f-fd6f-40a7-94b2-a5d86dd81514",
+                  "OWNER_NAME": "魁亨",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 4,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "與廠商魁亨做資料交換官網與會員資料"
+              },
+              {
+                  "PROJECT_NAME": "顧客小ME",
+                  "PROJECT_TOKEN": "aba53064-8589-4de4-a5e7-8035289dd62e",
+                  "OWNER_TOKEN": "c295cc6f-fd6f-40a7-94b2-a5d86dd81514",
+                  "OWNER_NAME": "魁亨",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 4,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": ""
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "b35c36e3-690e-42b7-86f2-c802b07d25bc",
+          "OWNER_NAME": "契约锁",
+          "OWNER_DESCRIPTION": "契约锁站点",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "大陆契约锁专案",
+                  "PROJECT_TOKEN": "6182e408-6677-40df-b8b0-7287d77aea46",
+                  "OWNER_TOKEN": "b35c36e3-690e-42b7-86f2-c802b07d25bc",
+                  "OWNER_NAME": "契约锁",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 0,
+                  "EnvCount": 1,
+                  "Project_DESCRIPTION": "大陆契约锁(QIYUESUO)合同用印专案"
+              }
+          ]
+      },
+      {
+          "OWNER_TOKEN": "c6e016ea-8b4b-4f26-924b-d9901816325a",
+          "OWNER_NAME": "風行天",
+          "OWNER_DESCRIPTION": "",
+          "ProjectList": [
+              {
+                  "PROJECT_NAME": "營業小Me",
+                  "PROJECT_TOKEN": "7139e64c-0b75-4f17-96c6-d9a254c6f09f",
+                  "OWNER_TOKEN": "c6e016ea-8b4b-4f26-924b-d9901816325a",
+                  "OWNER_NAME": "風行天",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 186,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": "很厲害*3"
+              },
+              {
+                  "PROJECT_NAME": "顧客小ME",
+                  "PROJECT_TOKEN": "aba53064-8589-4de4-a5e7-8035289dd62e",
+                  "OWNER_TOKEN": "c6e016ea-8b4b-4f26-924b-d9901816325a",
+                  "OWNER_NAME": "風行天",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 186,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": ""
+              },
+              {
+                  "PROJECT_NAME": "服務小ME",
+                  "PROJECT_TOKEN": "a96e3741-2c9d-41b8-af58-1737bebcbf2e",
+                  "OWNER_TOKEN": "c6e016ea-8b4b-4f26-924b-d9901816325a",
+                  "OWNER_NAME": "風行天",
+                  "IS_INTERNAL": "N",
+                  "TrustCount": 186,
+                  "EnvCount": 3,
+                  "Project_DESCRIPTION": ""
+              }
+          ]
+      }
+  ],
+  "ProjectList": [
+      {
+          "PROJECT_NAME": "顧客小ME",
+          "PROJECT_TOKEN": "aba53064-8589-4de4-a5e7-8035289dd62e",
+          "Project_DESCRIPTION": "",
+          "TrustCount": 57,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "c295cc6f-fd6f-40a7-94b2-a5d86dd81514",
+                  "OWNER_NAME": "魁亨",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "顧客小ME",
+                  "PROJECT_TOKEN": "aba53064-8589-4de4-a5e7-8035289dd62e",
+                  "Project_DESCRIPTION": ""
+              },
+              {
+                  "OWNER_TOKEN": "c6e016ea-8b4b-4f26-924b-d9901816325a",
+                  "OWNER_NAME": "風行天",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "顧客小ME",
+                  "PROJECT_TOKEN": "aba53064-8589-4de4-a5e7-8035289dd62e",
+                  "Project_DESCRIPTION": ""
+              },
+              {
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "顧客小ME",
+                  "PROJECT_TOKEN": "aba53064-8589-4de4-a5e7-8035289dd62e",
+                  "Project_DESCRIPTION": ""
+              }
+          ]
+      },
+      {
+          "PROJECT_NAME": "營業小Me",
+          "PROJECT_TOKEN": "7139e64c-0b75-4f17-96c6-d9a254c6f09f",
+          "Project_DESCRIPTION": "很厲害*3",
+          "TrustCount": 76,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "c6e016ea-8b4b-4f26-924b-d9901816325a",
+                  "OWNER_NAME": "風行天",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "營業小Me",
+                  "PROJECT_TOKEN": "7139e64c-0b75-4f17-96c6-d9a254c6f09f",
+                  "Project_DESCRIPTION": "很厲害*3"
+              },
+              {
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "營業小Me",
+                  "PROJECT_TOKEN": "7139e64c-0b75-4f17-96c6-d9a254c6f09f",
+                  "Project_DESCRIPTION": "很厲害*3"
+              }
+          ]
+      },
+      {
+          "PROJECT_NAME": "電信官網資料交換專案",
+          "PROJECT_TOKEN": "ea7826df-d623-4069-ae38-8b15b632b5a8",
+          "Project_DESCRIPTION": "與廠商魁亨做資料交換官網與會員資料",
+          "TrustCount": 22,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "c295cc6f-fd6f-40a7-94b2-a5d86dd81514",
+                  "OWNER_NAME": "魁亨",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "電信官網資料交換專案",
+                  "PROJECT_TOKEN": "ea7826df-d623-4069-ae38-8b15b632b5a8",
+                  "Project_DESCRIPTION": "與廠商魁亨做資料交換官網與會員資料"
+              },
+              {
+                  "OWNER_TOKEN": "09b15b94-da29-4986-9e7c-04b42df28f94",
+                  "OWNER_NAME": "魁亨ALL",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "電信官網資料交換專案",
+                  "PROJECT_TOKEN": "ea7826df-d623-4069-ae38-8b15b632b5a8",
+                  "Project_DESCRIPTION": "與廠商魁亨做資料交換官網與會員資料"
+              },
+              {
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "電信官網資料交換專案",
+                  "PROJECT_TOKEN": "ea7826df-d623-4069-ae38-8b15b632b5a8",
+                  "Project_DESCRIPTION": "與廠商魁亨做資料交換官網與會員資料"
+              }
+          ]
+      },
+      {
+          "PROJECT_NAME": "服務小ME",
+          "PROJECT_TOKEN": "a96e3741-2c9d-41b8-af58-1737bebcbf2e",
+          "Project_DESCRIPTION": "",
+          "TrustCount": 46,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "c6e016ea-8b4b-4f26-924b-d9901816325a",
+                  "OWNER_NAME": "風行天",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "服務小ME",
+                  "PROJECT_TOKEN": "a96e3741-2c9d-41b8-af58-1737bebcbf2e",
+                  "Project_DESCRIPTION": ""
+              },
+              {
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "服務小ME",
+                  "PROJECT_TOKEN": "a96e3741-2c9d-41b8-af58-1737bebcbf2e",
+                  "Project_DESCRIPTION": ""
+              }
+          ]
+      },
+      {
+          "PROJECT_NAME": "OA-EDM合作案",
+          "PROJECT_TOKEN": "ebb14712-e538-4b18-8f62-38475d39db99",
+          "Project_DESCRIPTION": "委託外部廠商發EDM，並透過API取得E-mail開啟、廣告點閱等等資訊。",
+          "TrustCount": 3,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "bd27ea8d-5d12-4525-88c5-1cd4b81959d3",
+                  "OWNER_NAME": "電子豹",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "OA-EDM合作案",
+                  "PROJECT_TOKEN": "ebb14712-e538-4b18-8f62-38475d39db99",
+                  "Project_DESCRIPTION": "委託外部廠商發EDM，並透過API取得E-mail開啟、廣告點閱等等資訊。"
+              },
+              {
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "OA-EDM合作案",
+                  "PROJECT_TOKEN": "ebb14712-e538-4b18-8f62-38475d39db99",
+                  "Project_DESCRIPTION": "委託外部廠商發EDM，並透過API取得E-mail開啟、廣告點閱等等資訊。"
+              }
+          ]
+      },
+      {
+          "PROJECT_NAME": "主管小Me",
+          "PROJECT_TOKEN": "bd58e410-613a-48ee-b3ba-b7e24bbe2aa9",
+          "Project_DESCRIPTION": "好棒棒",
+          "TrustCount": 101,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "acafee84-ed94-47fd-89e9-93e6a46dc756",
+                  "OWNER_NAME": "果思設計",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "主管小Me",
+                  "PROJECT_TOKEN": "bd58e410-613a-48ee-b3ba-b7e24bbe2aa9",
+                  "Project_DESCRIPTION": "好棒棒"
+              },
+              {
+                  "OWNER_TOKEN": "5d6803db-004b-478c-876e-840235fd94b7",
+                  "OWNER_NAME": "HelloBossWebView",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "主管小Me",
+                  "PROJECT_TOKEN": "bd58e410-613a-48ee-b3ba-b7e24bbe2aa9",
+                  "Project_DESCRIPTION": "好棒棒"
+              },
+              {
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "主管小Me",
+                  "PROJECT_TOKEN": "bd58e410-613a-48ee-b3ba-b7e24bbe2aa9",
+                  "Project_DESCRIPTION": "好棒棒"
+              },
+              {
+                  "OWNER_TOKEN": "e0865c6c-e889-493a-83f8-2f9d5d21edf5",
+                  "OWNER_NAME": "研發部服務",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "主管小Me",
+                  "PROJECT_TOKEN": "bd58e410-613a-48ee-b3ba-b7e24bbe2aa9",
+                  "Project_DESCRIPTION": "好棒棒"
+              }
+          ]
+      },
+      {
+          "PROJECT_NAME": "A0A2之銷售雲",
+          "PROJECT_TOKEN": "015b79be-3239-460f-8dc4-631643cb0aaf",
+          "Project_DESCRIPTION": "提供A0A2部門人員資料、同仁帳密驗證",
+          "TrustCount": 2,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "0bbba119-5c7a-45c3-895c-74d2f8891abd",
+                  "OWNER_NAME": "魁亨",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "A0A2之銷售雲",
+                  "PROJECT_TOKEN": "015b79be-3239-460f-8dc4-631643cb0aaf",
+                  "Project_DESCRIPTION": "提供A0A2部門人員資料、同仁帳密驗證"
+              },
+              {
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "A0A2之銷售雲",
+                  "PROJECT_TOKEN": "015b79be-3239-460f-8dc4-631643cb0aaf",
+                  "Project_DESCRIPTION": "提供A0A2部門人員資料、同仁帳密驗證"
+              }
+          ]
+      },
+      {
+          "PROJECT_NAME": "大陆契约锁专案",
+          "PROJECT_TOKEN": "6182e408-6677-40df-b8b0-7287d77aea46",
+          "Project_DESCRIPTION": "大陆契约锁(QIYUESUO)合同用印专案",
+          "TrustCount": 1,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "b35c36e3-690e-42b7-86f2-c802b07d25bc",
+                  "OWNER_NAME": "契约锁",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "大陆契约锁专案",
+                  "PROJECT_TOKEN": "6182e408-6677-40df-b8b0-7287d77aea46",
+                  "Project_DESCRIPTION": "大陆契约锁(QIYUESUO)合同用印专案"
+              }
+          ]
+      },
+      {
+          "PROJECT_NAME": "聯強物流資料交換",
+          "PROJECT_TOKEN": "a911a1bc-0339-465a-867d-15919d120bff",
+          "Project_DESCRIPTION": "震旦電信與聯強資料交換",
+          "TrustCount": 1,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "32a8b9f0-469d-4180-8813-840527e4be29",
+                  "OWNER_NAME": "聯強",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "聯強物流資料交換",
+                  "PROJECT_TOKEN": "a911a1bc-0339-465a-867d-15919d120bff",
+                  "Project_DESCRIPTION": "震旦電信與聯強資料交換"
+              },
+              {
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "聯強物流資料交換",
+                  "PROJECT_TOKEN": "a911a1bc-0339-465a-867d-15919d120bff",
+                  "Project_DESCRIPTION": "震旦電信與聯強資料交換"
+              },
+              {
+                  "OWNER_TOKEN": "29f89dbf-5245-4cb7-8fa0-ab3a770a7dbb",
+                  "OWNER_NAME": "後勤系統部服務",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "聯強物流資料交換",
+                  "PROJECT_TOKEN": "a911a1bc-0339-465a-867d-15919d120bff",
+                  "Project_DESCRIPTION": "震旦電信與聯強資料交換"
+              }
+          ]
+      },
+      {
+          "PROJECT_NAME": "家具顧客APP",
+          "PROJECT_TOKEN": "9d46d36a-b310-475e-a46d-3adad117bdfb",
+          "Project_DESCRIPTION": "創新規劃顧客應用場景包含強化家具形象傳遞、提供項目管理，針對約訪、設計、報價、交貨即時互動、專屬顧客服務，自動化產生報修，培養忠誠顧客",
+          "TrustCount": 60,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "acafee84-ed94-47fd-89e9-93e6a46dc756",
+                  "OWNER_NAME": "果思設計",
+                  "IS_INTERNAL": "N",
+                  "PROJECT_NAME": "家具顧客APP",
+                  "PROJECT_TOKEN": "9d46d36a-b310-475e-a46d-3adad117bdfb",
+                  "Project_DESCRIPTION": "創新規劃顧客應用場景包含強化家具形象傳遞、提供項目管理，針對約訪、設計、報價、交貨即時互動、專屬顧客服務，自動化產生報修，培養忠誠顧客"
+              },
+              {
+                  "OWNER_TOKEN": "69c4bdee-afac-4788-abc9-c961c30b21ea",
+                  "OWNER_NAME": "營服系統部服務(蛋寶)",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "家具顧客APP",
+                  "PROJECT_TOKEN": "9d46d36a-b310-475e-a46d-3adad117bdfb",
+                  "Project_DESCRIPTION": "創新規劃顧客應用場景包含強化家具形象傳遞、提供項目管理，針對約訪、設計、報價、交貨即時互動、專屬顧客服務，自動化產生報修，培養忠誠顧客"
+              }
+          ]
+      },
+      {
+          "PROJECT_NAME": "研發部共用服務",
+          "PROJECT_TOKEN": "28dcceca-8cfe-400c-8d2a-a637321126db",
+          "Project_DESCRIPTION": "研發部共用服務",
+          "TrustCount": 2,
+          "OnwerList": [
+              {
+                  "OWNER_TOKEN": "e0865c6c-e889-493a-83f8-2f9d5d21edf5",
+                  "OWNER_NAME": "研發部服務",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "研發部共用服務",
+                  "PROJECT_TOKEN": "28dcceca-8cfe-400c-8d2a-a637321126db",
+                  "Project_DESCRIPTION": "研發部共用服務"
+              },
+              {
+                  "OWNER_TOKEN": "8d5e4ec5-7382-4601-8420-96c6050c5f4f",
+                  "OWNER_NAME": "資訊室系統部",
+                  "IS_INTERNAL": "Y",
+                  "PROJECT_NAME": "研發部共用服務",
+                  "PROJECT_TOKEN": "28dcceca-8cfe-400c-8d2a-a637321126db",
+                  "Project_DESCRIPTION": "研發部共用服務"
+              }
+          ]
+      }
+  ]
+}

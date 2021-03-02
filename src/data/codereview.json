@@ -1,0 +1,65 @@
+[
+  {
+      "DPT": "0030",
+      "DPT_NAME_SHORT": "營服系統",
+      "ReviewerEMPNO": "00029072",
+      "ReviewerName": "卓俊彥",
+      "UpdateDate": "2020-05-25T00:00:00"
+  },
+  {
+      "DPT": "0038",
+      "DPT_NAME_SHORT": "後勤系統",
+      "ReviewerEMPNO": "00029103",
+      "ReviewerName": "李鳳珠",
+      "UpdateDate": "2020-05-25T00:00:00"
+  },
+  {
+      "DPT": "0039",
+      "DPT_NAME_SHORT": "幕僚系統",
+      "ReviewerEMPNO": "00033372",
+      "ReviewerName": "郭紓睿",
+      "UpdateDate": "2020-05-25T00:00:00"
+  },
+  {
+      "DPT": "0040",
+      "DPT_NAME_SHORT": "網路通訊",
+      "ReviewerEMPNO": "00022333",
+      "ReviewerName": "周建樺",
+      "UpdateDate": "2020-05-25T00:00:00"
+  },
+  {
+      "DPT": "0042",
+      "DPT_NAME_SHORT": "服務系統",
+      "ReviewerEMPNO": "00018272",
+      "ReviewerName": "曾正鈞",
+      "UpdateDate": "2020-05-25T00:00:00"
+  },
+  {
+      "DPT": "0047",
+      "DPT_NAME_SHORT": "應用系統",
+      "ReviewerEMPNO": "00036761",
+      "ReviewerName": "陳怡伶",
+      "UpdateDate": "2020-05-25T00:00:00"
+  },
+  {
+      "DPT": "0B40",
+      "DPT_NAME_SHORT": "資訊室 ",
+      "ReviewerEMPNO": "00017761",
+      "ReviewerName": "歐健和",
+      "UpdateDate": "2020-05-25T00:00:00"
+  },
+  {
+      "DPT": "0041",
+      "DPT_NAME_SHORT": "軟體研發",
+      "ReviewerEMPNO": "00046959",
+      "ReviewerName": "王崇宇",
+      "UpdateDate": "2020-08-26T00:00:00"
+  },
+  {
+      "DPT": "0041",
+      "DPT_NAME_SHORT": "軟體研發",
+      "ReviewerEMPNO": "00037313",
+      "ReviewerName": "陳冠州",
+      "UpdateDate": "2020-09-29T00:00:00"
+  }
+]
