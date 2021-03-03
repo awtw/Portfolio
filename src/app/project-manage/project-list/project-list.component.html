@@ -1,1 +1,173 @@
-<p>project-list works!</p>
+
+<div class="container-fluid">
+	<div class="col-12 mt-3">
+		<tabset #staticTabs>
+			<tab [active]=""
+				 customClass="customClass">
+				<ng-template tabHeading>
+					<img [src]="imagePurchaseSafeUrl"
+						 width="25"
+						 height="25"
+						 class="d-inline-block align-top click mr-1"
+						 alt="案件管理"
+						 loading="lazy">
+					<span class="font-weight-bold">採購案件>
+            <span class="badge badge-secondary mr-1"> 10 進行中</span>
+						<span class="badge badge-secondary mr-1" > 2本月完成</span>
+						<span class="badge badge-secondary mr-1"> 5 完成</span>
+
+					</span>
+					<button type="button"
+							(click)="addNew('B')"
+							class="btn btn-outline-success select-btn ml-2 bgc-white">
+						新增
+					</button>
+				</ng-template>
+
+				<div class="container-fluid d-flex flex-row flex-wrap">
+					<div class="card mx-3 my-3"
+						 [class.active]="true">
+						<div class="card-body">
+							<h5 class="card-title text-center">測試專案</h5>
+							<h6 class="card-subtitle mb-2 text-muted d-flex grey-subtitle"></h6>
+							<ul class="list-group">
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">顧客名稱</li>
+										<li class="list-group-item list-content">全能測試王</li>
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">顧客窗口</li>
+										<li class="list-group-item list-content">測試小幫手</li>
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">狀態</li>
+										<!-- <li *ngIf="item.status == '1'" class="list-group-item list-content">啟動中</li>
+										<li *ngIf="item.status == '3'" class="list-group-item list-content">結案</li> -->
+										<li class="list-group-item list-content">建立</li>
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">類型</li>
+										<li
+											class="list-group-item list-content">統包</li>
+										<!-- <li *ngIf="item.servItems == 'B'"
+											class="list-group-item list-content">裝修</li>
+										<li *ngIf="item.servItems == 'C'"
+											class="list-group-item list-content">家具</li>
+										<li *ngIf="item.servItems == 'R'"
+											class="list-group-item list-content">維修</li> -->
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">案件負責人</li>
+										<li class="list-group-item list-content">測試王主管</li>
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">起始日</li>
+										<li class="list-group-item list-content">2021.03.03</li>
+									</ul>
+								</li>
+							</ul>
+							<button type="button"
+									class="btn btn-primary btn-block mt-2 btn-100"
+									(click)="goToProject('go')">前往案件</button>
+						</div>
+					</div>
+
+				</div>
+			</tab>
+			<tab (click)="clickTab()"
+				 customClass="customClass">
+				<ng-template tabHeading>
+					<div>
+						<img [src]="imageFixSafeUrl2"
+							 width="25"
+							 height="25"
+							 class="d-inline-block align-top click mr-1 "
+							 alt="案件管理"
+							 loading="lazy">
+						<span class="font-weight-bold">報修案件
+							<span class="badge badge-secondary mr-1">10 建單</span>
+							<span class="badge badge-secondary mr-1" >5 進行中</span>
+							<span class="badge badge-secondary mr-1">10 本月完成</span>
+							<span class="badge badge-secondary mr-1">20 完成</span>
+
+						</span>
+					</div>
+				</ng-template>
+
+
+				<div class="container-fluid d-flex flex-row flex-wrap">
+					<div class="card mx-3 my-3"
+						 [class.active]="true">
+						<div class="card-body">
+							<h5 class="card-title text-center">測試專案</h5>
+							<h6 class="card-subtitle mb-2 text-muted d-flex grey-subtitle"></h6>
+							<ul class="list-group">
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">顧客名稱</li>
+										<li class="list-group-item list-content">全能測試王</li>
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">顧客窗口</li>
+										<li class="list-group-item list-content">測試小幫手</li>
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">狀態</li>
+										<!-- <li *ngIf="item.status == '1'" class="list-group-item list-content">啟動中</li>
+										<li *ngIf="item.status == '3'" class="list-group-item list-content">結案</li> -->
+										<li class="list-group-item list-content">建立</li>
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">類型</li>
+										<li
+											class="list-group-item list-content">統包</li>
+										<!-- <li *ngIf="item.servItems == 'B'"
+											class="list-group-item list-content">裝修</li>
+										<li *ngIf="item.servItems == 'C'"
+											class="list-group-item list-content">家具</li>
+										<li *ngIf="item.servItems == 'R'"
+											class="list-group-item list-content">維修</li> -->
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">案件負責人</li>
+										<li class="list-group-item list-content">測試王主管</li>
+									</ul>
+								</li>
+								<li class="list-group-item">
+									<ul class="list-group list-group-horizontal horizontal-width">
+										<li class="list-group-item list-name">起始日</li>
+										<li class="list-group-item list-content">2021.03.03</li>
+									</ul>
+								</li>
+							</ul>
+							<button type="button"
+									class="btn btn-primary btn-block mt-2 btn-100"
+									(click)="goToProject('go')">前往案件</button>
+						</div>
+					</div>
+
+				</div>
+
+			</tab>
+		</tabset>
+	</div>
+</div>

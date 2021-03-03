@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -18,16 +19,37 @@ import { EditProjectComponent } from './edit-project/edit-project.component';
 import { EditParticipantComponent } from './edit-participant/edit-participant.component';
 import { AddNewProjectComponent } from './add-new-project/add-new-project.component';
 import { AddNewEventComponent } from './add-new-event/add-new-event.component';
-
+import { BsDatepickerModule, BsLocaleService } from 'ngx-bootstrap/datepicker';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { AlertModule } from 'ngx-bootstrap/alert';
 
 @NgModule({
-  declarations: [ContainerComponent, ProjectListComponent, ProjectContentComponent, SearchPageComponent, EventContentComponent, EditProjectComponent, EditParticipantComponent, AddNewProjectComponent, AddNewEventComponent],
+  declarations: [
+    ContainerComponent,
+    ProjectListComponent,
+    ProjectContentComponent,
+    SearchPageComponent,
+    EventContentComponent,
+    EditProjectComponent,
+    EditParticipantComponent,
+    AddNewProjectComponent,
+    AddNewEventComponent],
   imports: [
-    ToastrModule.forRoot(),
+    TabsModule.forRoot(),
+    BsDatepickerModule.forRoot(),
 		ModalModule.forRoot(),
+		ToastrModule.forRoot(),
 		TooltipModule.forRoot(),
+		TypeaheadModule.forRoot(),
+		BsDatepickerModule.forRoot(),
+		ProgressbarModule.forRoot(),
+		AccordionModule.forRoot(),
+		AlertModule.forRoot(),
+    AgGridModule.withComponents(),
     FormsModule,
-		AgGridModule.withComponents(),
 		ReactiveFormsModule,
     CommonModule,
     ProjectManageRoutingModule

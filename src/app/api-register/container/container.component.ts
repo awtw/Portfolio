@@ -10,6 +10,7 @@ import { ApiRegisterService } from '../api-register.service';
 import { EditComponentComponent } from '../edit-component/edit-component.component';
 import { EditHeaderComponent } from '../edit-header/edit-header.component';
 import { AddNewComponent } from '../add-new/add-new.component';
+import { AlertComponent } from 'ngx-bootstrap/alert';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -19,7 +20,7 @@ import { AddNewComponent } from '../add-new/add-new.component';
 })
 export class ContainerComponent implements OnInit {
 
-  imageUrl = '../../../assets/btag-api/browser.png';
+  imageUrl = '../assets/images/btag-api/browser.png';
 	filterImage = '../../../assets/btag-api/filter1.png';
 	imageSafeUrl: SafeUrl;
 	filterImageSafeUrl: SafeUrl;
@@ -399,9 +400,6 @@ export class ContainerComponent implements OnInit {
 
 	}
 
-
-
-
   copyToClipboard(item: string) {
 		const isIEOrEdge = /msie\s|trident\/|edge\//i.test(window.navigator.userAgent);
 		if (isIEOrEdge) {
@@ -603,18 +601,12 @@ export class ContainerComponent implements OnInit {
 	}
 
 	changeCN() {
-		const urlLen = this.router.url.split('/').length;
-		const env = this.router.url.split('/');
-		env.forEach(data => {
-			if (data === 'TW') {
-				this.router.navigate(['/A0A1/ADUP020S00A/CN/manage']);
-				this.checkIfCN = true;
-			}
-			if (data === 'CN') {
-				this.router.navigate(['/A0A1/ADUP020S00A/TW/manage']);
-				this.checkIfCN = false;
-			}
-		});
+		this.checkIfCN = !this.checkIfCN;
+    if(this.checkIfCN){
+      this.addAlert('info', '切換至 CN');
+    } else {
+      this.addAlert('info', '切換至 TW');
+    }
 	}
 
 	downloadExcel() {
@@ -635,4 +627,20 @@ export class ContainerComponent implements OnInit {
 	downloadFile() {
 		window.open('./assets/file/api.pdf', '_blank');
 	}
+
+  // alert
+	alerts: any[] = [];
+	dismissible = true;
+
+  addAlert(type: string, msg: string ): void {
+  this.alerts.push({
+    type: type,
+    msg: msg,
+    timeout: 1500
+  });
+  }
+
+  onClosed(dismissedAlert: AlertComponent): void {
+  this.alerts = this.alerts.filter(alert => alert !== dismissedAlert);
+  }
 }

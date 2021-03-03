@@ -1,0 +1,99 @@
+@import "../main.scss";
+.nav-link.active {
+	background-color: red;
+}
+
+.tagActive {
+	background-color: black;
+}
+
+.tagUnactive {
+	background-color: gray;
+}
+
+.card {
+	position: relative;
+	width: 25rem;
+	height: 27.5rem;
+}
+.horizontal-width {
+	width: 100%;
+}
+.list-group-item {
+	padding: 5px;
+}
+.list-name {
+	width: 100px;
+}
+
+.list-content {
+	width: 250px;
+}
+.card.active::after {
+	content: "";
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	width: 15px;
+	height: 15px;
+	border-radius: 3em;
+	background-color: $red;
+}
+.card-top {
+	width: 18rem;
+	height: 7.5rem;
+	border-radius: 0.5rem;
+	border: 2px solid $main-blue;
+	cursor: pointer;
+}
+.card-subtitle {
+	height: 2px;
+	background-color: $main-blue;
+	margin-bottom: 10px;
+}
+.green-subtitle {
+	background-color: $main-green;
+}
+.card-title {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.card-body {
+	padding: 1rem;
+	h5 {
+		font-size: 1.1rem;
+	}
+	h6 {
+		font-size: 1rem;
+	}
+}
+.card-link {
+	padding-top: 10px;
+	color: $black;
+	.number {
+		font-size: 1.9rem;
+		font-weight: bold;
+	}
+}
+.green {
+	border: 2px solid $main-green;
+}
+.btn-outline-success {
+	font-weight: bold;
+}
+.grey-subtitle {
+	background-color: $main-grey;
+}
+
+.select-btn {
+	height: 30px;
+	padding: 0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-weight: bold;
+}
+.bgc-white{
+	background-color: $main-white;
+}

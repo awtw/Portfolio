@@ -12,6 +12,7 @@ import { ContainerComponent } from './container/container.component';
 import { AddNewComponent } from './add-new/add-new.component';
 import { EditComponentComponent } from './edit-component/edit-component.component';
 import { EditHeaderComponent } from './edit-header/edit-header.component';
+import { AlertModule } from 'ngx-bootstrap/alert';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { EditHeaderComponent } from './edit-header/edit-header.component';
     ToastrModule.forRoot(),
 		ModalModule.forRoot(),
 		TooltipModule.forRoot(),
+    AlertModule.forRoot(),
     CommonModule,
     FormsModule,
 		AgGridModule.withComponents(),

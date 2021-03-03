@@ -149,3 +149,23 @@ $title: #EFEBE9;
   background-color: $erp-green !important;
   color: $dark-black !important;
 }
+
+:host ::ng-deep .alert {
+  // margin-top: 8vh;
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+}
+.alert {
+  margin-top: 2vh;
+  position: absolute !important;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  font-size: 1rem;
+  .close{
+    font-size: 1rem;
+  }
+}

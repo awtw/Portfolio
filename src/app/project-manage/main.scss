@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap');
+@import "~ngx-toastr/toastr.css";
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~ngx-bootstrap/datepicker/bs-datepicker.css';
+@import '~ag-grid-community/dist/styles/ag-grid.min.css';
+@import '~ag-grid-community/dist/styles/ag-theme-alpine.min.css';
+
+
+
+/////////////////////////////////////
+$main-blue: #1E88E5;
+$main-white: #F4F4FB;
+$secondary-blue: #039BE5;
+$main-green: #43A047;
+$secondary-green: #66BB6A;
+$main-grey: #E0E0E0;
+$main-grey-2: #F5F5F5;
+$black: #212121;
+$black-2: #757575;
+$red: #f44336;
+.bg-dark{
+	background-color: $main-blue !important;
+}
+.bg-secondary-dark{
+	background-color: $main-grey !important;
+}
+.touch{
+	cursor: pointer;
+}
+.nav-link, .nav-link:hover{
+	color: $black;
+}
+.btn{
+	width: 60px;
+}
+.btn-100{
+	width: 100px;
+}
+.btn-150{
+	min-width: 150px;
+	width: 150px;
+}
+.btn-120{
+	width: 120px;
+}
+.btn-130{
+	width: 130px;
+}
+.btn-110{
+	width: 110px;
+}
+.btn-block{
+	width: 100%;
+}
+.fix-h{
+	height: 50px;
+}
+.file{
+	background-color: $main-grey;
+	border: 0px ;
+}
+.file-add{
+	// background-color: $main-grey-2;
+	border: 2px solid $main-grey-2;
+	cursor: pointer;
+}
+.file-bill{
+	background-color: $main-grey-2;
+	border: 2px solid $main-grey;
+}
+.file-card{
+	width: 550px;
+	height: 50px;
+}
+.modal-md{
+	max-width: 1000px !important;
+    width: 1000px !important;
+}
+.h-70-scroll{
+	height: 70vh;
+	overflow: auto;
+}
+.h-60-scroll{
+	height: 60vh;
+	overflow: auto;
+}
+.h-40-scroll{
+	height: 40vh;
+	overflow: auto;
+}
+.h-20-scroll{
+	height: 20vh;
+	overflow: auto;
+}
+.customClass.active > a {
+	background-color: $main-grey !important;
+}
+.loading{
+	padding-top: 50px;
+}
+.bg-dark-grey{
+	background-color: $black-2 !important;
+	color: $main-white !important;
+	.btn-link{
+		color: $main-white !important;
+	}
+}
+.bg-white-grey{
+	background-color: $main-grey !important;
+	color: $black !important;
+	.btn-link{
+		color: $black !important;
+	}
+}
+:host ::ng-deep .alert {
+	margin-top: 8vh;
+	width: 100%;
+    position: absolute;
+	top: 0;
+	z-index: 1000;
+}

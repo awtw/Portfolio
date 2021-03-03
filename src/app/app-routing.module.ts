@@ -8,6 +8,10 @@ const routes: Routes = [
       {
         path: 'api-register',
         loadChildren: ()=> import('./api-register/api-register.module').then(m => m.ApiRegisterModule)
+      },
+      {
+        path: 'project-manage',
+        loadChildren: ()=> import('./project-manage/project-manage.module').then(m => m.ProjectManageModule)
       }
     ]
   }

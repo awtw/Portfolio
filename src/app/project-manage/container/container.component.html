@@ -1,1 +1,82 @@
-<p>container works!</p>
+<nav class="navbar navbar-light bg-dark">
+	<a class="navbar-brand d-flex justify-content-center align-items-center">
+		<img [src]="imageSafeUrl"
+			 width="30"
+			 height="30"
+			 class="d-inline-block align-top click touch"
+			 alt="案件管理"
+			 loading="lazy"
+			 >
+		<span class="name pl-2 touch"
+			  (click)="clickedMain()">案件管理</span>
+		<button *ngIf="!checkIfMain"
+				type="button"
+				class="btn select-btn btn-dark btn-100 ml-3 mb-1"
+				(click)="backClicked()">
+			<img [src]="imageArrowSafeUrl"
+				 width="25"
+				 height="25"
+				 class="d-inline-block align-top touch click"
+				 alt="search"
+				 loading="lazy"
+				 (click)="backClicked()">
+			返回
+		</button>
+		<!-- <span class="badge badge-secondary nav-item ml-3" (click)="notify()">教學提示</span> -->
+	</a>
+	<form class="form-inline pr-1">
+		<label for="exampleFormControlSelect1"
+			   class="select-label">區別</label>
+		<select class="form-control py-2 select"
+				id="exampleFormControlSelect1"
+				name="區"
+				[(ngModel)]="SelectDivision">
+			<option value="">全部</option>
+			<option value="">幕僚處</option>
+			<option value="">後勤處</option>
+			<option value="">營一處</option>
+			<option value="">營二處</option>
+			<option value="">營三處</option>
+
+		</select>
+		<label for="exampleFormControlSelect2"
+			   class="select-label">責任中心</label>
+		<select class="form-control py-2 select"
+				id="exampleFormControlSelect2"
+				name="責任中心"
+				[(ngModel)]="SelectDpt">
+			<option value="">行政部</option>
+			<option value="">組裝部</option>
+			<option value="">商品部</option>
+			<option value="">服務部</option>
+			<option value="">財務部</option>
+			<option value="">行銷部</option>
+		</select>
+		<label for="exampleFormControlSelect3"
+			   class="select-label">同仁</label>
+		<select class="form-control py-2 select"
+				id="exampleFormControlSelect3"
+				name="同仁"
+				>
+			<option value="">全部</option>
+			<option value="">周論炳</option>
+			<option value="">陳大旺</option>
+			<option value="">大吉嶺</option>
+			<option value="">深被紅茶</option>
+		</select>
+		<button type="submit"
+				class="btn btn-outline-light select-btn mr-2"
+				(click)="sampleSearch()">搜尋</button>
+		<button type="submit"
+				class="btn btn-dark select-btn touch btn-120"
+				(click)="search()">
+			<img [src]="imageSearchSafeUrl"
+				 width="15"
+				 height="15"
+				 class="d-inline-block align-top click mt-1"
+				 alt="search"
+				 loading="lazy">
+			進階搜尋</button>
+	</form>
+</nav>
+<router-outlet></router-outlet>
