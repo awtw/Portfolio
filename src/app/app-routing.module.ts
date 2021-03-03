@@ -12,6 +12,9 @@ const routes: Routes = [
       {
         path: 'project-manage',
         loadChildren: ()=> import('./project-manage/project-manage.module').then(m => m.ProjectManageModule)
+      },{
+        path: 'info',
+        loadChildren: ()=> import('./info/info.module').then(m => m.InfoModule)
       }
     ]
   }
