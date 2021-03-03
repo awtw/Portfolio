@@ -1,0 +1,41 @@
+{
+  "meetingYN": true,
+  "appShow": true,
+  "eventType": "L",
+  "eventTitle": "測試1",
+  "subject": "",
+  "beginTime": "0800",
+  "endTime": "0800",
+  "location": "",
+  "meetingMoreYN": false,
+  "eventBeginTime": "20210222173326",
+  "eventmemo": "測試",
+  "messageStatus": "Y",
+  "caseType": "B",
+  "notifyYN": "N",
+  "eventNameList": [
+      {
+          "eventName": "展示"
+      }
+  ],
+  "fileList": [],
+  "SD711List": [
+      {
+          "name": "趙培華",
+          "empno": "00047606",
+          "cno": 47
+      },
+      {
+          "name": "王婉珍",
+          "empno": "00009732",
+          "cno": 48
+      }
+  ],
+  "SD712List": [
+      {
+          "name": "郝佳姖",
+          "loginToken": "42D5EE64-F05C-45C6-A8C8-FAE8AF0AC0F6",
+          "cno": 36
+      }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "meetingList": [
+      {
+          "subject": "",
+          "beginTime": "202102270800",
+          "endTime": "202102270800",
+          "location": "",
+          "thisTime": true
+      },
+      {
+          "subject": "ttt",
+          "beginTime": "202102240800",
+          "endTime": "202102240800",
+          "location": "tttt",
+          "thisTime": false
+      },
+      {
+          "subject": "ss",
+          "beginTime": "202103311000",
+          "endTime": "202103310800",
+          "location": "測試0111",
+          "thisTime": false
+      },
+      {
+          "subject": "test04",
+          "beginTime": "202102260800",
+          "endTime": "202102260800",
+          "location": "test",
+          "thisTime": false
+      },
+      {
+          "subject": "test04",
+          "beginTime": "202102280800",
+          "endTime": "202102280800",
+          "location": "test",
+          "thisTime": false
+      },
+      {
+          "subject": "test04",
+          "beginTime": "202102260800",
+          "endTime": "202102260800",
+          "location": "測試0111",
+          "thisTime": false
+      },
+      {
+          "subject": "",
+          "beginTime": "202102240800",
+          "endTime": "202102240800",
+          "location": "",
+          "thisTime": false
+      }
+  ]
+}
