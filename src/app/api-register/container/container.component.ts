@@ -91,7 +91,7 @@ export class ContainerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.title.setTitle('API管控表');
+    this.title.setTitle('API register');
     this.getData();
   }
 

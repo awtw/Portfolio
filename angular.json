@@ -31,6 +31,7 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
+              "src/brainstorming.png",
               "src/assets"
             ],
             "styles": [
@@ -94,6 +95,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
+              "src/brainstorming.png",
               "src/assets"
             ],
             "styles": [

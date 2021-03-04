@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-panel.component.scss']
 })
 export class LeftPanelComponent implements OnInit {
-
+  image = '../../../assets/images/info/me-red.png';
+  bookmark = '../../../assets/images/info/bookmark2.png';
   constructor() { }
 
   ngOnInit(): void {

@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap');
+@import "~ngx-toastr/toastr.css";
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~ngx-bootstrap/datepicker/bs-datepicker.css';
+@import '~ag-grid-community/dist/styles/ag-grid.min.css';
+@import '~ag-grid-community/dist/styles/ag-theme-alpine.min.css';
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: 'Noto Sans TC', sans-serif;
+  zoom: 100%;
+  box-sizing: border-box;
+}
