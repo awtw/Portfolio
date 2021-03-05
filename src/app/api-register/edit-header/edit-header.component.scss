@@ -1,2 +1,8 @@
 @import '../../btag-common/main.scss';
-
+.btn{
+	font-size: 1em;
+}
+.btn, .btn-hover{
+	background-color: $mBlue !important;
+  color: $mWhite !important;
+}

@@ -1,8 +1,35 @@
-<div class="bg">
+<div class="">
   <div class="container mt-4">
    <div class="col-md-12 text-center">
-      <h2 class="h3">INFO ABOUT ME</h2>
+      <h2 class="h3">EXPERIENCE 經歷</h2>
    </div>
+   <div class="col-md-12 mt-4">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend transparent">
+          <span class="input-group-text transparent" id="basic-addon1">
+            <img [src]="searchImage" alt="..." class=" img-fluid icon-s-size">
+          </span>
+        </div>
+        <input type="text" class="form-control" aria-label="search experience">
+      </div>
+   </div>
+  </div>
+  <div class="container h-70-scroll overflow-auto position-relative">
+    <!-- <div class="line"></div> -->
+    <div class="card mx-3 bg-true-White opacity-9" *ngFor="let item of content">
+      <div class="line"></div>
+      <div class="mx-2 my-2">
+        <div class="col-md-12 my-1">{{item.title}} . {{item.Date | date}}</div>
+        <div class="col-md-12 my-1">
+          <img [src]="projectImage" alt="..." class=" img-fluid icon-s-size mr-2">
+          <span class="badge badge-primary">{{item.project | enumToString}}</span>
+        </div>
+        <div class="col-md-12 my-1">
+          <img [src]="roleImage" alt="..." class=" img-fluid icon-s-size mr-2">
+          <span *ngFor="let item of item.role" class="badge badge-secondary mx-1">{{item | roleToString}}</span>
+        </div>
+      </div>
+    </div>
   </div>
    <img [src]="person" alt="..." class="rounded person-image img-fluid">
    <img [src]="building" alt="..." class="rounded building-image img-fluid">

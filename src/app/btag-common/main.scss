@@ -1,123 +1,105 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap');
-@import "~ngx-toastr/toastr.css";
 
-@import '~bootstrap/dist/css/bootstrap.min.css';
-@import '~ngx-bootstrap/datepicker/bs-datepicker.css';
-@import '~ag-grid-community/dist/styles/ag-grid.min.css';
-@import '~ag-grid-community/dist/styles/ag-theme-alpine.min.css';
+/////////////////////////////////////
+// self color pattern
+$mWhite: #FAFAFA;
+$mBlue: #8FACFF;
+$mYellow: #FFCC3E;
+$mPink: #E34BA7;
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  font-size: 100%;
-  font-family: 'Noto Sans TC', sans-serif;
-  zoom: 100%;
+/////////////////////////////////////
+// slef bg color set
+.bg-mWhite{
+  background-color: $mWhite !important;
+}
+.bg-true-White{
+  background-color: white !important;
+}
+.bg-mBlue{
+  background-color: $mBlue !important;
+}
+.bg-mYellow{
+  background-color: $mYellow !important;
+}
+.bg-mPink{
+  background-color: $mPink !important;
+}
+.opacity-8{
+  opacity: 0.8;
+}
+.opacity-9{
+  opacity: 0.9;
 }
 
 /////////////////////////////////////
-// main color pattern
-$main-color: #F4F4FB;
-$white: #FAFAFA;
-$dark-purple: #1A2744;
-$light-blue: #45ADFF;
-$blue: #0278D4;
-$light-green: #73FFE0;
-$green: #50E3C2;
-$light-sun-red: #FF8975;
-$sun-red: #FF5436;
-$bar-color: #ddd;
-$dark-black: #424242;
+// text color
+.text-white{
+  color: $mWhite !important;
+}
+.text-black{
+  color: black !important;
+}
+
 /////////////////////////////////////
-// diff
-$light-purple: #F0EEFF;
-$purple: #6B4BFF;
-$grey: #BDBDBD;
-$light-grey: #EEEEEE;
-$dark-grey: #757575;
-$green: #2CC337;
-$dark-green: #43A047;
-$red: #FF475D;
-
-$aurora-orange: #EA4609;
-$erp-green: #C7EDCC;
-$erp-purple: #8C98CC;
-$erp-brown: #A5937B;
-$erp-pink: #FF7B6E;
-$erp-orange-yellow: #F18D01;
-
-$smart: #E1F5FE;
-$title: #EFEBE9;
-
-.aurora-orange {
-  background-color: $aurora-orange !important;
+// page size
+.vh-100{
+  height: 100vh;
+}
+/////////////////////////////////////
+// icon size
+.icon-size{
+  width: 35px;
+  height: 35px;
+}
+.icon-s-size{
+  width: 20px;
+  height: 20px;
 }
 
-.aurora-orange-color {
-  color: $aurora-orange !important;
-}
 
+/////////////////////////////////////
+// pointer
 .click {
   cursor: pointer;
 }
 
-.move {
-  cursor: move;
+/////////////////////////////////////
+// sticky
+.sticky-home{
+  position: sticky;
+  bottom: 2vh;
 }
 
-.nocursor {
-  cursor: none !important;
+/////////////////////////////////////
+// alert
+:host ::ng-deep .alert {
+  // margin-top: 8vh;
+  position: absolute !important;
+  width: 100%;
+  bottom: 0;
+  z-index: 10000;
+}
+.alert {
+  // margin-top: 2vh;
+  position: absolute !important;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  font-size: 1rem;
+  .close{
+    font-size: 1rem;
+  }
 }
 
-.notouch {
-  cursor: not-allowed;
-}
-
-.ag-header-cell-filtered {
-  background-color: #1b6d85 !important;
-  color: #fff !important;
-}
-
-.ag-header-cell-filtered span {
-  color: #fff !important;
-}
-
-// custom
-.btn-custom {
-  // background-color: $dark-purple;
-  // color: $main-color;
-  background-color: $erp-green;
-}
-
-.btn-erp-purple {
-  background-color: $erp-purple !important;
-}
-
-.modal-header {
-  background-color: $erp-purple;
-  color: $main-color;
-}
-
-.modal-header-erp-green {
-  background-color: $erp-green;
-  color: $dark-black;
-}
-
-.btn-default {
-  background-color: $erp-purple;
-  color: $main-color;
-}
-
-.page-title {
-  color: $dark-black !important;
-}
-
+/////////////////////////////////////
 // modal
 .modal-md {
   max-width: 1000px !important;
   width: 1000px !important;
+}
+.modal-msd {
+  max-width: 800px !important;
+  width: 800px !important;
 }
 
 .modal-md-sm {
@@ -125,6 +107,8 @@ $title: #EFEBE9;
   width: 800px !important;
 }
 
+/////////////////////////////////////
+// h-30-scroll
 .h-30-scroll {
   height: 30vh;
   overflow: auto;
@@ -139,33 +123,26 @@ $title: #EFEBE9;
   height: 60vh;
   overflow: auto;
 }
-
-.btn-erp-purple {
-  background-color: $erp-purple !important;
-  color: $main-color !important;
+.h-70-scroll {
+  height: 70vh;
+  overflow: auto;
+}
+.h-80-scroll {
+  height: 80vh;
+  overflow: auto;
 }
 
-.btn-erp-green {
-  background-color: $erp-green !important;
-  color: $dark-black !important;
+/////////////////////////////////////
+
+.ag-header-cell-filtered {
+  background-color: #1b6d85 !important;
+  color: #fff !important;
 }
 
-:host ::ng-deep .alert {
-  // margin-top: 8vh;
-  position: absolute !important;
-  width: 100%;
-  top: 0;
-  z-index: 10000;
+.ag-header-cell-filtered span {
+  color: #fff !important;
 }
-.alert {
-  margin-top: 2vh;
-  position: absolute !important;
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  z-index: 10000;
-  font-size: 1rem;
-  .close{
-    font-size: 1rem;
-  }
-}
+
+
+
+

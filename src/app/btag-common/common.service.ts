@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { AlertComponent } from 'ngx-bootstrap/alert';
 import { Filer, FilterOptions } from './common';
 
 @Injectable({
@@ -7,6 +8,8 @@ import { Filer, FilterOptions } from './common';
 export class CommonService {
 
   constructor() { }
+  // ag-grid
+
 	internationalization() {
 		return {
 			// Text Filter
@@ -147,9 +150,11 @@ export class CommonService {
 		}
 		return answer;
 	}
+
 	getTextValue(cssSelector: any) {
 		return document.querySelector(cssSelector).value;
 	}
+
 	getNumericValue(cssSelector: any) {
 		const value = parseFloat(this.getTextValue(cssSelector));
 		if (isNaN(value)) {
@@ -159,6 +164,7 @@ export class CommonService {
 		}
 		return value;
 	}
+
 	myColumnWidthCallback(params: any) {
 		const originalWidth = params.column.getActualWidth();
 		if (params.index < 7) {
@@ -166,4 +172,21 @@ export class CommonService {
 		}
 		return 30;
 	}
+
+   // alert
+	alerts: any[] = [];
+
+  addAlert(type: string, header: string, msg: string, dismissible: boolean ): void {
+  this.alerts.push({
+    type: type,
+    header: header,
+    msg: msg,
+    dismissible: dismissible,
+    timeout: 1000
+  });
+  }
+
+  onClosed(dismissedAlert: AlertComponent): void {
+  this.alerts = this.alerts.filter(alert => alert !== dismissedAlert);
+  }
 }

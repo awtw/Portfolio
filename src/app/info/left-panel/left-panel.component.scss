@@ -1,3 +1,4 @@
+@import '../../btag-common/main.scss';
 .info-image{
   width: 230px;
   height: 230px;
@@ -8,4 +9,7 @@
 }
 .h3 {
   letter-spacing: .5rem;
+}
+.font-size-auto{
+  font-size: .9rem;
 }

@@ -13,6 +13,9 @@ import { AddNewComponent } from './add-new/add-new.component';
 import { EditComponentComponent } from './edit-component/edit-component.component';
 import { EditHeaderComponent } from './edit-header/edit-header.component';
 import { AlertModule } from 'ngx-bootstrap/alert';
+import { CellDeleteComponent } from './cell-delete/cell-delete.component';
+import { CellRenderComponent } from './cell-render/cell-render.component';
+import { CellRenderWordComponent } from './cell-render-word/cell-render-word.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { AlertModule } from 'ngx-bootstrap/alert';
     ContainerComponent,
     AddNewComponent,
     EditComponentComponent,
-    EditHeaderComponent
+    EditHeaderComponent,
+    CellDeleteComponent,
+    CellRenderComponent,
+    CellRenderWordComponent
   ],
   imports: [
     ToastrModule.forRoot(),
@@ -29,7 +35,7 @@ import { AlertModule } from 'ngx-bootstrap/alert';
     AlertModule.forRoot(),
     CommonModule,
     FormsModule,
-		AgGridModule.withComponents(),
+		AgGridModule.withComponents([CellDeleteComponent, CellRenderComponent, CellRenderWordComponent]),
 		ReactiveFormsModule,
     ApiRegisterRoutingModule
   ],
@@ -37,7 +43,6 @@ import { AlertModule } from 'ngx-bootstrap/alert';
     CommonService, ApiRegisterService
   ],
   entryComponents: [
-
   ]
 })
 export class ApiRegisterModule { }

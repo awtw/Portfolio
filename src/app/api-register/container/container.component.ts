@@ -5,12 +5,15 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { CommonService } from 'src/app/btag-common/common.service';
 import { GridOptions } from 'ag-grid-community';
 import { ToastrService } from 'ngx-toastr';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ApiRegisterService } from '../api-register.service';
 import { EditComponentComponent } from '../edit-component/edit-component.component';
 import { EditHeaderComponent } from '../edit-header/edit-header.component';
 import { AddNewComponent } from '../add-new/add-new.component';
 import { AlertComponent } from 'ngx-bootstrap/alert';
+import { CellDeleteComponent } from '../cell-delete/cell-delete.component';
+import { CellRenderComponent } from '../cell-render/cell-render.component';
+import { CellRenderWordComponent } from '../cell-render-word/cell-render-word.component';
 
 @Component({
   encapsulation: ViewEncapsulation.None,
@@ -20,10 +23,11 @@ import { AlertComponent } from 'ngx-bootstrap/alert';
 })
 export class ContainerComponent implements OnInit {
 
-  imageUrl = '../assets/images/btag-api/browser.png';
-	filterImage = '../../../assets/btag-api/filter1.png';
-	imageSafeUrl: SafeUrl;
-	filterImageSafeUrl: SafeUrl;
+  iconImage = '../assets/images/api-register/verify.png';
+  infoImage = '../assets/images/api-register/info.png';
+  gotoImage = '../assets/images/api-register/go-to-location.png';
+
+
 	apiList: HierarchicalApiInfo[];
 	gridApi: any;
 	gridColumnApi: any;
@@ -45,8 +49,6 @@ export class ContainerComponent implements OnInit {
 	columnDefs: any[];
 
 	defaultColDef = {
-		// flex: 1,
-		// minWidth: 80,
 		filter: true,
 		sortable: true,
 		resizable: true,
@@ -55,7 +57,9 @@ export class ContainerComponent implements OnInit {
 	};
 	autoGroupColumnDef = { Width: 100 };
 	frameworkComponents = {
-
+    CellDeleteComponent,
+    CellRenderComponent,
+    CellRenderWordComponent
 	};
 	gridOptions: GridOptions = {
 		localeText: this.commonService.internationalization(),
@@ -65,24 +69,12 @@ export class ContainerComponent implements OnInit {
   constructor(
     private commonService: CommonService,
     private apiRegisterService: ApiRegisterService,
-    private sanitizer: DomSanitizer,
     private toastr: ToastrService,
 		private modalService: BsModalService,
-		private router: Router,
+		 private router: Router,
+    private activatedRoute: ActivatedRoute,
 		private title: Title  )
   {
-      this.imageSafeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.imageUrl);
-      this.filterImageSafeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.filterImage);
-      const urlLen = this.router.url.split('/').length;
-      const env = this.router.url.split('/');
-      env.forEach(data => {
-        if (data === 'TW') {
-          this.checkIfCN = false;
-        }
-        if (data === 'CN') {
-          this.checkIfCN = true;
-        }
-      });
       this.methodList.push('POST');
       this.methodList.push('GET');
       this.methodList.push('PUT');
@@ -97,14 +89,17 @@ export class ContainerComponent implements OnInit {
 
 
   notify() {
-		this.toastr.warning('註冊資料交換即集團內部所用的API， <br> 擁有者指的是API的維護單位或為廠商 <br> 若要添加資料交換的驗證訊息 (Header 或 QueryString) 請直接點選按鈕添加', '使用教學', {
-			disableTimeOut: true,
-			positionClass: 'toast-top-right',
-			closeButton: true,
-			enableHtml: true,
-			timeOut: 3000,
-		});
+    this.addAlert(
+      'warning',
+      '使用教學' ,
+      '註冊資料交換即集團內部所用的API， <br> 擁有者指的是API的維護單位或為廠商 <br> 若要添加資料交換的驗證訊息 (Header 或 QueryString) 請直接點選按鈕添加',
+      true,
+      2000);
 	}
+
+  goHome(){
+    this.router.navigate(['../../info'], { relativeTo: this.activatedRoute });
+  }
 
   getData() {
 		const checkCnInsert: CheckCn = {
@@ -160,8 +155,7 @@ export class ContainerComponent implements OnInit {
           {
             headerName: 'API名稱',
             field: 'API_NAME',
-            width: 300,
-            suppressSizeToFit: false,
+            suppressSizeToFit: true,
             editable: true,
             // checkboxSelection: true
             filterParams: {
@@ -173,7 +167,8 @@ export class ContainerComponent implements OnInit {
             headerName: 'URL',
             field: 'API_URL',
             width: 550,
-            // suppressSizeToFit: false,
+            columnGroupShow: 'open',
+            suppressSizeToFit: true,
             editable: true,
             filterParams: {
               buttons: ['reset', 'apply'],
@@ -183,9 +178,9 @@ export class ContainerComponent implements OnInit {
           {
             headerName: '啟用狀態',
             field: 'ApiIsEnable',
+            suppressSizeToFit: true,
             columnGroupShow: 'open',
             editable: true,
-            width: 120,
             cellEditor: 'agSelectCellEditor',
             cellEditorParams: {
               cellHeight: 50,
@@ -198,70 +193,44 @@ export class ContainerComponent implements OnInit {
           },
           {
             headerName: 'API Token',
+            suppressSizeToFit: true,
             field: 'API_TOKEN',
-            columnGroupShow: 'open',
+            // columnGroupShow: 'open',
+            width: 140,
             editable: true,
-            width: 120,
-            // cellEditor: 'agSelectCellEditor',
-            // cellEditorParams: {
-            // 	cellHeight: 50,
-            // 	values: ['啟用', '不啟用'],
-            // },
-            // filterParams: {
-            // 	buttons: ['reset', 'apply'],
-            // 	debounceMs: 200
-            // }
             cellRenderer: 'CellRenderComponent',
             cellRendererParams: {
               clicked: (field: any) => {
-                // this.toastr.success( '複製', 'Token', {
-                // 	timeOut: 500,
-                // 	positionClass: 'toast-top-right',
-                // 	closeButton: true
-                // });
                 this.copyToClipboard(field.API_TOKEN);
               }
             },
           },
           {
             headerName: 'Owner Token',
+            width: 140,
+            suppressSizeToFit: true,
             field: '_ownerToken',
-            columnGroupShow: 'open',
+            // columnGroupShow: 'open',
             editable: true,
-            width: 120,
-            // cellEditor: 'agSelectCellEditor',
-            // cellEditorParams: {
-            // 	cellHeight: 50,
-            // 	values: ['啟用', '不啟用'],
-            // },
-            // filterParams: {
-            // 	buttons: ['reset', 'apply'],
-            // 	debounceMs: 200
-            // }
             cellRenderer: 'CellRenderComponent',
             cellRendererParams: {
               clicked: (field: any) => {
-                // this.toastr.success( '複製', 'Token', {
-                // 	timeOut: 500,
-                // 	positionClass: 'toast-top-right',
-                // 	closeButton: true
-                // });
                 this.copyToClipboard(field._ownerToken);
               }
             },
           },
           {
             headerName: '內外部API',
+            suppressSizeToFit: true,
+            columnGroupShow: 'open',
             field: '_OwnerIsInternal',
-            width: 120,
             filterParams: this.commonService.createOwnerFIlterParams(this.apiOutsideList)
           },
           {
             headerName: '呼叫方法',
             field: 'REQUEST_METHOD',
             editable: true,
-            width: 120,
-            suppressSizeToFit: false,
+            suppressSizeToFit: true,
             cellEditor: 'agSelectCellEditor',
             cellEditorParams: {
               cellHeight: 50,
@@ -272,25 +241,21 @@ export class ContainerComponent implements OnInit {
           {
             headerName: '擁有單位',
             field: '_ownerName',
-            width: 120,
             cellEditor: 'agSelectCellEditor',
             editable: true,
+            suppressSizeToFit: true,
             cellEditorParams: {
               values: temp2
             },
-            // filterParams: {
-            // 	buttons: ['reset', 'apply'],
-            // 	debounceMs: 200
-            // },
             filterParams: this.commonService.createOwnerFIlterParams(this.ownerListName)
           },
           {
             headerName: '被使用專案數量',
+            suppressSizeToFit: true,
             field: 'ProjectCount',
             columnGroupShow: 'open',
             filter: false,
             // editable: true,
-            width: 130,
             filterParams: {
               buttons: ['reset', 'apply'],
               debounceMs: 200
@@ -300,13 +265,14 @@ export class ContainerComponent implements OnInit {
       },
       {
         headerName: '發布環境',
-        // width: 50,
+        width: 50,
         children: [
           {
             headerName: 'EDU',
             field: 'EduCount',
-            filter: false,
             width: 80,
+            suppressSizeToFit: true,
+            filter: false,
             // cellStyle: this.styleIncrease,
           },
           {
@@ -314,14 +280,16 @@ export class ContainerComponent implements OnInit {
             field: 'ItCount',
             filter: false,
             width: 80,
+            suppressSizeToFit: true,
             // cellStyle: this.styleIncrease,
           },
           {
             headerName: 'SYS',
             // columnGroupShow: 'open',
             field: 'SysCount',
-            filter: false,
             width: 80,
+            suppressSizeToFit: true,
+            filter: false,
             // cellStyle: this.styleIncrease,
           }
         ],
@@ -333,9 +301,10 @@ export class ContainerComponent implements OnInit {
           {
             headerName: 'QueryString',
             field: 'QueryStringCount',
-            width: 150,
             filter: false,
-            cellRenderer: 'CellRenderComponent',
+            width: 120,
+            suppressSizeToFit: true,
+            cellRenderer: 'CellRenderWordComponent',
             cellRendererParams: {
               clicked: (field: any) => {
                 const initialState = {
@@ -343,6 +312,7 @@ export class ContainerComponent implements OnInit {
                   title: 'QueryString'
                 };
                 this.modalRef = this.modalService.show(EditComponentComponent, { initialState });
+                this.modalRef.setClass('modal-msd');
                 this.modalRef.content.onClose.subscribe((result: boolean) => {
                   if (result) {
                     this.ngOnInit();
@@ -354,9 +324,10 @@ export class ContainerComponent implements OnInit {
           {
             headerName: 'Header',
             field: 'HeaderCount',
-            width: 120,
             filter: false,
-            cellRenderer: 'CellRenderComponent',
+            width: 120,
+            suppressSizeToFit: true,
+            cellRenderer: 'CellRenderWordComponent',
             cellRendererParams: {
               clicked: (field: any) => {
                 const initialState = {
@@ -364,6 +335,7 @@ export class ContainerComponent implements OnInit {
                   title: 'Header'
                 };
                 this.modalRef = this.modalService.show(EditHeaderComponent, { initialState });
+                this.modalRef.setClass('modal-msd');
                 this.modalRef.content.onClose.subscribe((result: boolean) => {
                   if (result) {
                     this.ngOnInit();
@@ -376,20 +348,17 @@ export class ContainerComponent implements OnInit {
       },
       {
         headerName: '編輯',
-        // width: 50,
         children: [
           {
-            headerName: '刪除',
-            field: 'QueryStringCount',
             width: 120,
+            headerName: '狀態',
+            field: 'QueryStringCount',
+            suppressSizeToFit: true,
+            filter: false,
             cellRenderer: 'CellDeleteComponent',
             cellRendererParams: {
               clicked: (field: any) => {
-                this.toastr.success('API刪除成功', field.API_NAME, {
-                  timeOut: 1500,
-                  positionClass: 'toast-top-right',
-                });
-                this.ngOnInit();
+               this.addAlert('warning', '提示' , '更新狀態', false, 1000);
               }
             },
           }
@@ -404,17 +373,9 @@ export class ContainerComponent implements OnInit {
 		const isIEOrEdge = /msie\s|trident\/|edge\//i.test(window.navigator.userAgent);
 		if (isIEOrEdge) {
 			(<any>window).clipboardData.setData('Text', item);
-			this.toastr.success('複製', 'Token', {
-				timeOut: 500,
-				positionClass: 'toast-top-right',
-				closeButton: true
-			});
+			this.addAlert('success', '提示' , '複製', false, 1000);
 		} else {
-			this.toastr.success('複製', 'Token', {
-				timeOut: 500,
-				positionClass: 'toast-top-right',
-				closeButton: true
-			});
+			this.addAlert('success', '提示' , '複製', false, 1000);
 			document.addEventListener('copy', (e: ClipboardEvent) => {
 				e.clipboardData.setData('text/plain', (item));
 				e.preventDefault();
@@ -472,22 +433,7 @@ export class ContainerComponent implements OnInit {
 			checkIfCN: this.checkIfCN
 		};
 		console.log(insertApi);
-		// const request = this.apiManageService.UpdateApiInfoRequest(insertApi);
-		// request.subscribe(x => {
-		// 	if (x.Code === 200) {
-		// 		this.toastr.success('資訊變更', insertApi.API_NAME, {
-		// 			timeOut: 1500,
-		// 			positionClass: 'toast-top-right',
-		// 		});
-		// 		// this.ngOnInit();
-		// 	} else {
-		// 		this.toastr.error('資訊變更失敗', insertApi.API_NAME, {
-		// 			timeOut: 1500,
-		// 			positionClass: 'toast-top-right',
-		// 		});
-		// 		// this.ngOnInit();
-		// 	}
-		// });
+
     this.toastr.success('資訊變更', insertApi.API_NAME, {
       timeOut: 1500,
       positionClass: 'toast-top-right',
@@ -603,9 +549,9 @@ export class ContainerComponent implements OnInit {
 	changeCN() {
 		this.checkIfCN = !this.checkIfCN;
     if(this.checkIfCN){
-      this.addAlert('info', '切換至 CN');
+      this.addAlert('warning', '提示' ,'切換至 CN', false, 1000);
     } else {
-      this.addAlert('info', '切換至 TW');
+      this.addAlert('warning', '提示' , '切換至 TW', false, 1000);
     }
 	}
 
@@ -624,19 +570,16 @@ export class ContainerComponent implements OnInit {
 		this.gridOptions.api.onFilterChanged();
 	}
 
-	downloadFile() {
-		window.open('./assets/file/api.pdf', '_blank');
-	}
-
   // alert
 	alerts: any[] = [];
-	dismissible = true;
 
-  addAlert(type: string, msg: string ): void {
+  addAlert(type: string, header: string, msg: string, dismissible: boolean, timeout: number ): void {
   this.alerts.push({
     type: type,
+    header: header,
     msg: msg,
-    timeout: 1500
+    dismissible: dismissible,
+    timeout: timeout
   });
   }
 
