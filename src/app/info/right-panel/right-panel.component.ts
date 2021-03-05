@@ -11,6 +11,7 @@ export class RightPanelComponent implements OnInit {
   github = '../../../assets/images/info/github.png';
   behance = '../../../assets/images/info/behance.png';
   support = '../../../assets/images/info/protest.png';
+  me = '../../../assets/images/info/me-sm.png';
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,

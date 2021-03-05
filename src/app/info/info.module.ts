@@ -10,13 +10,22 @@ import { InfoService } from './info.service';
 import { EnumToStringPipe } from './enum-to-string.pipe';
 import { RoleToStringPipe } from './role-to-string.pipe';
 import { ToolToStringPipe } from './tool-to-string.pipe';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 
 @NgModule({
-  declarations: [ContainerComponent, LeftPanelComponent, RightPanelComponent, CenterContentComponent, EnumToStringPipe, RoleToStringPipe, ToolToStringPipe],
+  declarations: [
+    ContainerComponent,
+    LeftPanelComponent,
+    RightPanelComponent,
+    CenterContentComponent,
+    EnumToStringPipe,
+    RoleToStringPipe,
+    ToolToStringPipe],
   imports: [
     CommonModule,
-    InfoRoutingModule
+    InfoRoutingModule,
+    TooltipModule.forRoot(),
   ],
   providers: [
     InfoService

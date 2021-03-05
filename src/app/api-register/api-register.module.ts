@@ -30,13 +30,13 @@ import { CellRenderWordComponent } from './cell-render-word/cell-render-word.com
   ],
   imports: [
     ToastrModule.forRoot(),
-		ModalModule.forRoot(),
-		TooltipModule.forRoot(),
+    ModalModule.forRoot(),
+    TooltipModule.forRoot(),
     AlertModule.forRoot(),
     CommonModule,
     FormsModule,
-		AgGridModule.withComponents([CellDeleteComponent, CellRenderComponent, CellRenderWordComponent]),
-		ReactiveFormsModule,
+    AgGridModule.withComponents([CellDeleteComponent, CellRenderComponent, CellRenderWordComponent]),
+    ReactiveFormsModule,
     ApiRegisterRoutingModule
   ],
   providers: [
