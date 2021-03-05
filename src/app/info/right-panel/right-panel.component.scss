@@ -1,0 +1,26 @@
+@import '../../btag-common/main.scss';
+.h3 {
+  letter-spacing: .3rem;
+}
+
+.font-size-auto {
+  font-size: .9rem;
+}
+.outline-button{
+  background-color: $mBlue;
+  padding: 10px;
+  border-radius: .3rem;
+}
+.outline-button-end{
+  background-color: $mGrey;
+  padding: 10px;
+  border-radius: .3rem;
+}
+
+.info-bottom{
+  position: absolute;
+  bottom: 2vh;
+}
+.vh-80{
+  height: 80vh;
+}

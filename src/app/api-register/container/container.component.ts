@@ -28,52 +28,54 @@ export class ContainerComponent implements OnInit {
   gotoImage = '../assets/images/api-register/go-to-location.png';
 
 
-	apiList: HierarchicalApiInfo[];
-	gridApi: any;
-	gridColumnApi: any;
-	editAble = false;
-	selectList: HierarchicalApiInfo[];
-	ownerList: OwnerInfo[];
-	ownerListName: string[] = [];
-	editType = 'fullRow';
-	rowSelection = 'multiple';
-	modalRef: BsModalRef;
-	checkIfAD: boolean;
-	checkIfCN = false;
+  apiList: HierarchicalApiInfo[];
+  gridApi: any;
+  gridColumnApi: any;
+  editAble = false;
+  selectList: HierarchicalApiInfo[];
+  ownerList: OwnerInfo[];
+  ownerListName: string[] = [];
+  editType = 'fullRow';
+  rowSelection = 'multiple';
+  modalRef: BsModalRef;
+  checkIfAD: boolean;
+  checkIfCN = false;
 
-	methodList: string[] = [];
-	apiOutsideList: string[] = [];
+  methodList: string[] = [];
+  apiOutsideList: string[] = [];
 
-	// grid
-	rowData: HierarchicalApiInfo[];
-	columnDefs: any[];
+  // grid
+  rowData: HierarchicalApiInfo[];
+  columnDefs: any[];
 
-	defaultColDef = {
-		filter: true,
-		sortable: true,
-		resizable: true,
-		autoHeight: true,
-		autoWidth: true
-	};
-	autoGroupColumnDef = { Width: 100 };
-	frameworkComponents = {
+  // alert
+  alerts: any[] = [];
+
+  defaultColDef = {
+    filter: true,
+    sortable: true,
+    resizable: true,
+    autoHeight: true,
+    autoWidth: true
+  };
+  autoGroupColumnDef = { Width: 100 };
+  frameworkComponents = {
     CellDeleteComponent,
     CellRenderComponent,
     CellRenderWordComponent
-	};
-	gridOptions: GridOptions = {
-		localeText: this.commonService.internationalization(),
-		paginationPageSize: 20,
-	};
+  };
+  gridOptions: GridOptions = {
+    localeText: this.commonService.internationalization(),
+    paginationPageSize: 20,
+  };
 
   constructor(
     private commonService: CommonService,
     private apiRegisterService: ApiRegisterService,
-    private toastr: ToastrService,
-		private modalService: BsModalService,
-		 private router: Router,
+    private modalService: BsModalService,
+    private router: Router,
     private activatedRoute: ActivatedRoute,
-		private title: Title  )
+    private title: Title  )
   {
       this.methodList.push('POST');
       this.methodList.push('GET');
@@ -88,26 +90,26 @@ export class ContainerComponent implements OnInit {
   }
 
 
-  notify() {
+  notify(): void {
     this.addAlert(
       'warning',
       '使用教學' ,
       '註冊資料交換即集團內部所用的API， <br> 擁有者指的是API的維護單位或為廠商 <br> 若要添加資料交換的驗證訊息 (Header 或 QueryString) 請直接點選按鈕添加',
       true,
       2000);
-	}
+  }
 
-  goHome(){
+  goHome(): void{
     this.router.navigate(['../../info'], { relativeTo: this.activatedRoute });
   }
 
-  getData() {
-		const checkCnInsert: CheckCn = {
-			checkIfCN: this.checkIfCN
-		};
-		const apiListRequest = this.apiRegisterService.GetAPiInfoListRequest(checkCnInsert);
+  getData(): void {
+    const checkCnInsert: CheckCn = {
+      checkIfCN: this.checkIfCN
+    };
+    const apiListRequest = this.apiRegisterService.GetAPiInfoListRequest(checkCnInsert);
     const temp2: string[] = [];
-    const temp = this.apiRegisterService.GetOwnerListRequest(checkCnInsert)
+    const temp = this.apiRegisterService.GetOwnerListRequest(checkCnInsert);
     temp.forEach(data => {
       temp2.push(data.OWNER_NAME);
     });
@@ -358,7 +360,7 @@ export class ContainerComponent implements OnInit {
             cellRenderer: 'CellDeleteComponent',
             cellRendererParams: {
               clicked: (field: any) => {
-               this.addAlert('warning', '提示' , '更新狀態', false, 1000);
+                this.addAlert('warning', '提示' , '更新狀態', false, 1000);
               }
             },
           }
@@ -367,223 +369,208 @@ export class ContainerComponent implements OnInit {
     ];
 
 
-	}
+  }
 
-  copyToClipboard(item: string) {
-		const isIEOrEdge = /msie\s|trident\/|edge\//i.test(window.navigator.userAgent);
-		if (isIEOrEdge) {
-			(<any>window).clipboardData.setData('Text', item);
-			this.addAlert('success', '提示' , '複製', false, 1000);
-		} else {
-			this.addAlert('success', '提示' , '複製', false, 1000);
-			document.addEventListener('copy', (e: ClipboardEvent) => {
-				e.clipboardData.setData('text/plain', (item));
-				e.preventDefault();
-				document.removeEventListener('copy', null);
-			});
-			document.execCommand('copy');
-		}
-	}
+  copyToClipboard(item: string): void {
+    const isIEOrEdge = /msie\s|trident\/|edge\//i.test(window.navigator.userAgent);
+    if (isIEOrEdge) {
+      (window as any).clipboardData.setData('Text', item);
+      this.addAlert('success', '提示' , '複製', false, 1000);
+    } else {
+      this.addAlert('success', '提示' , '複製', false, 1000);
+      document.addEventListener('copy', (e: ClipboardEvent) => {
+        e.clipboardData.setData('text/plain', (item));
+        e.preventDefault();
+        document.removeEventListener('copy', null);
+      });
+      document.execCommand('copy');
+    }
+  }
 
-  styleIncrease(params: any) {
-		if (params.value > 0) {
-			return { color: '#d32f2f', backgroundColor: '#ef9a9a' };
-		}
-		else if (params.value < 0) {
-			return { color: '#558B2F', backgroundColor: '#C5E1A5' };
-		}
-		else {
-			return null;
-		}
-	}
+  styleIncrease(params: any): any {
+    if (params.value > 0) {
+      return { color: '#d32f2f', backgroundColor: '#ef9a9a' };
+    }
+    else if (params.value < 0) {
+      return { color: '#558B2F', backgroundColor: '#C5E1A5' };
+    }
+    else {
+      return null;
+    }
+  }
 
-	onGridReady(params: any) {
-		this.gridApi = params.api;
-		params.api.setRowData(this.rowData);
-		this.gridColumnApi = params.columnApi;
-		params.columnApi.autoSizeColumns();
-		// params.api.sizeColumnsToFit();
-	}
+  onGridReady(params: any): void{
+    this.gridApi = params.api;
+    params.api.setRowData(this.rowData);
+    this.gridColumnApi = params.columnApi;
+    params.columnApi.autoSizeColumns();
+    // params.api.sizeColumnsToFit();
+  }
 
-	ngOnCellValueChanged(event: any) {
-		if (event.data.ApiIsEnable === '啟用') {
-			event.data.ApiIsEnable = 'Y';
-		}
-		if (event.data.ApiIsEnable === '不啟用') {
-			event.data.ApiIsEnable = 'N';
-		}
-		this.ownerList.forEach(data => {
-			if (event.data._ownerName === data.OWNER_NAME) {
-				event.data.OwnerInfo.OWNER_TOKEN = data.OWNER_TOKEN;
-			}
-		});
-		const insertApi: UpdateApiInfo = {
-			OWNER_TOKEN: event.data.OwnerInfo.OWNER_TOKEN,
-			REQUEST_METHOD: event.data.REQUEST_METHOD,
-			API_URL: event.data.API_URL,
-			API_NAME: event.data.API_NAME,
-			DESCRIPTION: event.data.ApiDescription,
-			IS_ENABLE: event.data.ApiIsEnable,
-			CREATOR: event.data.ApiCreator,
-			CREATE_TIME: event.data.ApiCreateTime,
-			EDITOR: 'insertBackEnd',
-			EDIT_TIME: 'insertBackEnd',
-			EMPNO: 'insertBackEnd',
-			API_TOKEN: event.data.API_TOKEN,
-			checkIfCN: this.checkIfCN
-		};
-		console.log(insertApi);
-
-    this.toastr.success('資訊變更', insertApi.API_NAME, {
-      timeOut: 1500,
-      positionClass: 'toast-top-right',
+  ngOnCellValueChanged(event: any): void {
+    if (event.data.ApiIsEnable === '啟用') {
+      event.data.ApiIsEnable = 'Y';
+    }
+    if (event.data.ApiIsEnable === '不啟用') {
+      event.data.ApiIsEnable = 'N';
+    }
+    this.ownerList.forEach(data => {
+      if (event.data._ownerName === data.OWNER_NAME) {
+        event.data.OwnerInfo.OWNER_TOKEN = data.OWNER_TOKEN;
+      }
     });
-	}
-  onRowEditingStarted($event: any) {
-		if (!$event.data.propertyToCheck === this.editAble) {
-			this.gridApi.stopEditing();
-		}
-	}
+    const insertApi: UpdateApiInfo = {
+      OWNER_TOKEN: event.data.OwnerInfo.OWNER_TOKEN,
+      REQUEST_METHOD: event.data.REQUEST_METHOD,
+      API_URL: event.data.API_URL,
+      API_NAME: event.data.API_NAME,
+      DESCRIPTION: event.data.ApiDescription,
+      IS_ENABLE: event.data.ApiIsEnable,
+      CREATOR: event.data.ApiCreator,
+      CREATE_TIME: event.data.ApiCreateTime,
+      EDITOR: 'insertBackEnd',
+      EDIT_TIME: 'insertBackEnd',
+      EMPNO: 'insertBackEnd',
+      API_TOKEN: event.data.API_TOKEN,
+      checkIfCN: this.checkIfCN
+    };
+    console.log(insertApi);
 
-	onSelectionChanged(event: any) {
-		const rowsSelection = event.api.getSelectedRows();
-		this.selectList = rowsSelection;
-		// console.log(rowsSelection);
-	}
+    this.addAlert('warning', '提示' , '資訊已變更', false, 1000);
+  }
+  onRowEditingStarted($event: any): void {
+    if (!$event.data.propertyToCheck === this.editAble) {
+      this.gridApi.stopEditing();
+    }
+  }
 
-	getOwnerList() {
-		const checkCnInsert: CheckCn = {
-			checkIfCN: this.checkIfCN
-		};
-		// const temp = this.apiManageService.GetOwnerListRequest(checkCnInsert);
-		// temp.subscribe(data => {
-		// 	this.ownerList = data;
-		// 	const temp2: string[] = [];
-		// 	data.forEach(data2 => {
-		// 		temp2.push(data2.OWNER_NAME);
-		// 	});
-		// 	this.ownerListName = temp2;
-		// });
-	}
+  onSelectionChanged(event: any): void{
+    const rowsSelection = event.api.getSelectedRows();
+    this.selectList = rowsSelection;
+    // console.log(rowsSelection);
+  }
 
-	getOwnerNameList() {
-		const checkCnInsert: CheckCn = {
-			checkIfCN: this.checkIfCN
-		};
-		// const temp = this.apiManageService.GetOwnerListRequest(checkCnInsert);
-		// const temp2: string[] = [];
-		// temp.subscribe(data => {
-		// 	this.ownerList = data;
-		// 	data.forEach(data2 => {
-		// 		temp2.push(data2.OWNER_NAME);
-		// 	});
-		// 	this.ownerListName = temp2;
-		// 	return {
-		// 		cellRenderer: this.ActiveCellRenderer,
-		// 		values: temp2
-		// 	};
-		// });
-	}
+  getOwnerList(): void {
+    const checkCnInsert: CheckCn = {
+      checkIfCN: this.checkIfCN
+    };
+    // const temp = this.apiManageService.GetOwnerListRequest(checkCnInsert);
+    // temp.subscribe(data => {
+    // 	this.ownerList = data;
+    // 	const temp2: string[] = [];
+    // 	data.forEach(data2 => {
+    // 		temp2.push(data2.OWNER_NAME);
+    // 	});
+    // 	this.ownerListName = temp2;
+    // });
+  }
 
-	ActiveCellRenderer(params: any) {
-		return params.value;
-	}
+  getOwnerNameList(): void {
+    const checkCnInsert: CheckCn = {
+      checkIfCN: this.checkIfCN
+    };
+    // const temp = this.apiManageService.GetOwnerListRequest(checkCnInsert);
+    // const temp2: string[] = [];
+    // temp.subscribe(data => {
+    // 	this.ownerList = data;
+    // 	data.forEach(data2 => {
+    // 		temp2.push(data2.OWNER_NAME);
+    // 	});
+    // 	this.ownerListName = temp2;
+    // 	return {
+    // 		cellRenderer: this.ActiveCellRenderer,
+    // 		values: temp2
+    // 	};
+    // });
+  }
 
-	openModal(template: TemplateRef<any>) {
-		this.modalRef = this.modalService.show(template);
-	}
+  ActiveCellRenderer(params: any): void {
+    return params.value;
+  }
 
-	addNew() {
-		const tempData: HierarchicalApiInfo = {
-			API_TOKEN: '',
-			REQUEST_METHOD: '',
-			API_URL: '',
-			API_NAME: '',
-			ApiDescription: '',
-			ApiIsEnable: 'Y',
-			ApiCreator: '',
-			ApiCreateTime: '',
-			EduCount: +'',
-			ItCount: +'',
-			SysCount: +'',
-			QueryStringCount: +'',
-			HeaderCount: +'',
-			ProjectCount: +'',
-			OwnerInfo: {
-				OWNER_TOKEN: '',
-				OwnerISENABLE: '',
-				OwnerCreator: '',
-				OwnerCreateTime: '',
-				OWNER_NAME: '',
-				OwnerIsInternal: '',
-				OwnerEnvList: []
-			},
-			ProjectInfo: [],
-			ApiHeaderInfo: [],
-			ApiQueryStringInfo: [],
-			checkIfCN: this.checkIfCN
-		};
-		const initialState = {
-			message: tempData,
-			title: '新增API'
-		};
-		this.modalRef = this.modalService.show(AddNewComponent, { initialState });
-		this.modalRef.setClass('modal-md');
-		this.modalRef.content.onClose.subscribe((result: boolean) => {
-			if (result) {
-				this.ngOnInit();
-			}
-		});
-	}
+  openModal(template: TemplateRef<any>): void {
+    this.modalRef = this.modalService.show(template);
+  }
 
-	clickedMain() {
-		this.router.navigate(['/A0A1/ADUP020S00A/manage']);
-	}
+  addNew(): void {
+    const tempData: HierarchicalApiInfo = {
+      API_TOKEN: '',
+      REQUEST_METHOD: '',
+      API_URL: '',
+      API_NAME: '',
+      ApiDescription: '',
+      ApiIsEnable: 'Y',
+      ApiCreator: '',
+      ApiCreateTime: '',
+      EduCount: +'',
+      ItCount: +'',
+      SysCount: +'',
+      QueryStringCount: +'',
+      HeaderCount: +'',
+      ProjectCount: +'',
+      OwnerInfo: {
+        OWNER_TOKEN: '',
+        OwnerISENABLE: '',
+        OwnerCreator: '',
+        OwnerCreateTime: '',
+        OWNER_NAME: '',
+        OwnerIsInternal: '',
+        OwnerEnvList: []
+      },
+      ProjectInfo: [],
+      ApiHeaderInfo: [],
+      ApiQueryStringInfo: [],
+      checkIfCN: this.checkIfCN
+    };
+    const initialState = {
+      message: tempData,
+      title: '新增API'
+    };
+    this.modalRef = this.modalService.show(AddNewComponent, { initialState });
+    this.modalRef.setClass('modal-md');
+    this.modalRef.content.onClose.subscribe((result: boolean) => {
+      if (result) {
+        this.ngOnInit();
+      }
+    });
+  }
 
-	ngOnDestroy() {
-		if (JSON.parse(localStorage.getItem('FirstTime-delete')) !== null) {
-			localStorage.setItem('FirstTime-delete', null);
-		}
-	}
-
-	changeCN() {
-		this.checkIfCN = !this.checkIfCN;
-    if(this.checkIfCN){
-      this.addAlert('warning', '提示' ,'切換至 CN', false, 1000);
+  changeCN(): void {
+    this.checkIfCN = !this.checkIfCN;
+    if (this.checkIfCN){
+      this.addAlert('warning', '提示' , '切換至 CN', false, 1000);
     } else {
       this.addAlert('warning', '提示' , '切換至 TW', false, 1000);
     }
-	}
+  }
 
-	downloadExcel() {
-		const params = {
-			skipHeader: false,
-			skipFooters: true,
-			skipGroups: true,
-			fileName: 'export.csv'
-		};
-		this.gridOptions.api.exportDataAsCsv(params);
-	}
+  downloadExcel(): void {
+    const params = {
+      skipHeader: false,
+      skipFooters: true,
+      skipGroups: true,
+      fileName: 'export.csv'
+    };
+    this.gridOptions.api.exportDataAsCsv(params);
+  }
 
-	clearFilter() {
-		this.gridOptions.api.setFilterModel(null);
-		this.gridOptions.api.onFilterChanged();
-	}
+  clearFilter(): void {
+    this.gridOptions.api.setFilterModel(null);
+    this.gridOptions.api.onFilterChanged();
+  }
 
   // alert
-	alerts: any[] = [];
-
   addAlert(type: string, header: string, msg: string, dismissible: boolean, timeout: number ): void {
   this.alerts.push({
-    type: type,
-    header: header,
-    msg: msg,
-    dismissible: dismissible,
-    timeout: timeout
+    type,
+    header,
+    msg,
+    dismissible,
+    timeout
   });
   }
 
   onClosed(dismissedAlert: AlertComponent): void {
   this.alerts = this.alerts.filter(alert => alert !== dismissedAlert);
   }
-}
+  }

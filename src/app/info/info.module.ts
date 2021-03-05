@@ -9,10 +9,11 @@ import { CenterContentComponent } from './center-content/center-content.componen
 import { InfoService } from './info.service';
 import { EnumToStringPipe } from './enum-to-string.pipe';
 import { RoleToStringPipe } from './role-to-string.pipe';
+import { ToolToStringPipe } from './tool-to-string.pipe';
 
 
 @NgModule({
-  declarations: [ContainerComponent, LeftPanelComponent, RightPanelComponent, CenterContentComponent, EnumToStringPipe, RoleToStringPipe],
+  declarations: [ContainerComponent, LeftPanelComponent, RightPanelComponent, CenterContentComponent, EnumToStringPipe, RoleToStringPipe, ToolToStringPipe],
   imports: [
     CommonModule,
     InfoRoutingModule

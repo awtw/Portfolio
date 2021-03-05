@@ -14,6 +14,8 @@ export class CenterContentComponent implements OnInit {
   searchImage = '../../../assets/images/info/loupe.png';
   projectImage = '../../../assets/images/info/tag.png';
   roleImage = '../../../assets/images/info/account.png';
+  toolImage = '../../../assets/images/info/tools.png';
+
   content: Content[] = [];
 
 

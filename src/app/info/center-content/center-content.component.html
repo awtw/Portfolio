@@ -21,12 +21,20 @@
         <div class="col-md-12 my-1">{{item.title}} . {{item.Date | date}}</div>
         <div class="col-md-12 my-1">
           <img [src]="projectImage" alt="..." class=" img-fluid icon-s-size mr-2">
-          <span class="badge badge-primary">{{item.project | enumToString}}</span>
+          <span class="badge badge-primary mr-1">{{item.project | enumToString}}</span>
+          <!-- <img [src]="toolImage" alt="..." class=" img-fluid icon-s-size mr-2 ml-2"> -->
+          <span class="mx-1">/</span>
+          <span *ngFor="let item of item.tool" class="badge badge-secondary mx-1">{{item | toolToString}}</span>
+
         </div>
         <div class="col-md-12 my-1">
           <img [src]="roleImage" alt="..." class=" img-fluid icon-s-size mr-2">
-          <span *ngFor="let item of item.role" class="badge badge-secondary mx-1">{{item | roleToString}}</span>
+          <span *ngFor="let item of item.role" class="badge badge-warning mx-1">{{item | roleToString}}</span>
         </div>
+        <!-- <div class="col-md-12 my-1">
+          <img [src]="toolImage" alt="..." class=" img-fluid icon-s-size mr-2">
+          <span *ngFor="let item of item.tool" class="badge badge-secondary mx-1">{{item | toolToString}}</span>
+        </div> -->
         <div class="col-md-12 mt-1">
           <small>{{item.content}}</small>
         </div>
