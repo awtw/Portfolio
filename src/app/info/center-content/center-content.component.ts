@@ -10,6 +10,7 @@ import { InfoService } from '../info.service';
 export class CenterContentComponent implements OnInit {
   building = '../../../assets/images/info/building3.png';
   person = '../../../assets/images/info/043.png';
+  person2 = '../../../assets/images/info/023.png';
   searchImage = '../../../assets/images/info/loupe.png';
   projectImage = '../../../assets/images/info/tag.png';
   roleImage = '../../../assets/images/info/account.png';

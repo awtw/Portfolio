@@ -7,8 +7,14 @@
 .person-image{
   position: absolute;
   bottom: 15vh;
-  left: -3vw;
+  left: -2vw;
   width: 50%;
+}
+.person2-image{
+  position: absolute;
+  top: 20vh;
+  right: -.8vw;
+  width: 40%;
 }
 .h3 {
   letter-spacing: .4rem;
@@ -50,7 +56,7 @@ label:focus,
   position: absolute;
   bottom: 0;
   height: 100%;
-  width: 3px;
+  width: 5px;
   background-color: $mBlue;
 }
 
