@@ -4,7 +4,7 @@ export class Content {
   project: ProjectType;
   role: RoleType[];
   content: string;
-  tool: ToolType[];
+  tool: ToolList[];
 }
 
 export class ExpByYear{
@@ -58,6 +58,17 @@ export enum ToolType {
   'PowerBI' = 6,
   'stored procedure' = 7,
   'exe' = 8,
+  '站台/VM' = 9,
+  'Azure' = 10
+}
+
+export enum SearchToolType {
+  'C#' = 0,
+  'Angular' = 1,
+  'Jenkins' = 2,
+  'Git' = 4,
+  'MSSQL' = 5,
+  'PowerBI' = 6,
   '站台/VM' = 9,
   'Azure' = 10
 }

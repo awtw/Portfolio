@@ -34,12 +34,20 @@ export class CenterContentComponent implements OnInit {
     this.contentStatic = this.infoService.getContent();
     const temp = this.ToArray(ToolType);
     temp.forEach(x => {
-      const tem: ToolList = {
-        toolName: x,
-        ifClick: false,
-        toolID: ToolType[x]
-      };
-      this.searchType.push(tem);
+      // if (x !== 'exe' && x !== 'Azure' && x !== 'Axure' && x !== 'stored procedure'){
+      //   const tem: ToolList = {
+      //     toolName: x,
+      //     ifClick: false,
+      //     toolID: ToolType[x]
+      //   };
+      //   this.searchType.push(tem);
+      // }
+       const tem: ToolList = {
+          toolName: x,
+          ifClick: false,
+          toolID: ToolType[x]
+        };
+       this.searchType.push(tem);
     });
     console.log(this.searchType);
 
@@ -50,12 +58,13 @@ export class CenterContentComponent implements OnInit {
   }
 
   clickTool(type: ToolList): void{
+    // 把選擇的tool存進list
     const getTypeInList = this.selectTypeList.findIndex(x => x.toolID === type.toolID);
     this.selectTypeList.some(x => x.toolID === type.toolID) ?
     this.selectTypeList.splice(getTypeInList, 1) :
     this.selectTypeList.push(type);
 
-    // check to true of false;
+    // 選擇後上色
     const findTool = this.searchType.find(x => x.toolID === type.toolID);
     this.searchType[findTool.toolID].ifClick = !this.searchType[findTool.toolID].ifClick;
 
@@ -63,18 +72,22 @@ export class CenterContentComponent implements OnInit {
     this.selectTypeList.forEach(select => {
       this.searchTypeInList(select);
     });
+    // 若沒有選擇則給全部列表
     if (this.selectTypeList.length  < 1) {
       this.content = this.contentStatic;
       this.searchType.map(x => x.ifClick = false);
+      this.contentStatic.map(x => x.tool.map(y => y.ifClick = false));
     }
     // console.log(this.selectTypeList);
-    // console.log(this.contentStatic);
+    // console.log(this.content);
   }
 
   searchTypeInList(type: ToolList): void{
+    console.log(type);
     this.contentStatic.forEach(data => {
-      data.tool.forEach(o => {
-        if (o === type.toolID) {
+      data.tool.forEach((o, index) => {
+        if (o.toolID === type.toolID) {
+          data.tool[index].ifClick = true;
           this.content.push(data);
         }
       });
