@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Content, RoleType, ProjectType, ToolType } from './content';
+import { Content, RoleType, ProjectType, ToolType, ExpByYear, LicenseType } from './content';
 
 @Injectable({
   providedIn: 'root'
@@ -95,10 +95,145 @@ export class InfoService {
     content: '協助公司導入 PowerBI，擔任各幕僚單位的窗口，與客服部門訪談需求，清理資料庫髒資料，協助資料正確性，提供滿意度分析演算法，製作 PowerBI 報表'
   }
 ];
+
+  ExpList: ExpByYear[] = [
+    {
+      year: new Date(2020, 8).getFullYear(),
+      License: [
+         {
+          month: new Date(2020, 8).getMonth(),
+          License: [
+            {
+              content: 'Certificate of Checkmarx',
+              type: LicenseType.證照
+            }
+          ]
+        },
+      ]
+    },
+    {
+      year: new Date(2018, 2).getFullYear(),
+      License: [
+         {
+          month: new Date(2018, 9).getMonth(),
+          License: [
+            {
+              content: '兵役 南投醫院-醫療役',
+              type: LicenseType.經歷
+            }
+          ]
+        },
+        {
+          month: new Date(2018, 8).getMonth(),
+          License: [
+            {
+              content:  '交大畢業-碩論: 慢性腎臟病菌相檢測套組開發',
+              type: LicenseType.學歷
+            }
+          ]
+        },
+        {
+          month: new Date(2018, 2).getMonth(),
+          License: [
+            {
+              content: '新創公司網站架設形象設計',
+              type: LicenseType.經歷
+            },
+            {
+              content: '交大程式設計課助教（ Python ）',
+              type: LicenseType.經歷
+            },
+            {
+              content: '交大創業學程結業',
+              type: LicenseType.證照
+            },
+          ]
+        },
+      ]
+    },
+    {
+      year: new Date(2017, 6).getFullYear(),
+      License: [
+        {
+          month: new Date(2017, 8).getMonth(),
+          License: [
+            {
+              content: '交大科法所網站架設及設計',
+              type: LicenseType.經歷
+            },
+            {
+              content: 'miRTarBase database paper 共同作者',
+              type: LicenseType.學歷
+            }
+          ]
+        },
+        {
+          month: new Date(2017, 6).getMonth(),
+          License: [
+            {
+              content: 'SNMG交大生科院網管小組',
+              type: LicenseType.經歷
+            }
+          ]
+        },
+      ]
+    },
+    {
+      year: new Date(2011, 5).getFullYear(),
+      License: [
+        {
+          month: new Date(2011, 5).getMonth(),
+          License: [
+            {
+              content: '造園丙級技術士',
+              type: LicenseType.證照
+            }
+          ]
+        }
+      ]
+    },
+    {
+      year: new Date(2010, 7).getFullYear(),
+      License: [
+        {
+          month: new Date(2010, 7).getMonth(),
+          License: [
+            {
+              content: '澳洲遊學 TAFE',
+              type: LicenseType.學歷
+            },
+            {
+              content: '園藝丙級技術士',
+              type: LicenseType.證照
+            }
+          ]
+        },
+      ]
+    },
+    {
+      year: new Date(2009, 11).getFullYear(),
+      License: [
+        {
+          month: new Date(2009, 11).getMonth() + 1,
+          License: [
+             {
+              content: '日本遊學 巨摩高校',
+              type: LicenseType.學歷
+            },
+          ]
+        },
+      ]
+    },
+  ];
+
   constructor() { }
 
   getContent(): Content[] {
     return this.content;
+  }
+
+  getExpList(): ExpByYear[] {
+    return this.ExpList;
   }
 
 }

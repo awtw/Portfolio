@@ -1,71 +1,75 @@
 <div class="container position-relative">
   <div class="col-md-12 mt-5">
     <div class="mx-2">
-      <div class="vh-80">
+      <div class="vh-80 d-block">
         <div class="col-md-12 mt-3 h3">
         延伸作品
       </div>
 
-      <div class="row ml-2 mt-5 outline-button click" (click)="apiRegister()">
-        <div class="col-md-2">
+      <div class="row ml-2 mt-5 outline-button click center-sm" (click)="apiRegister()">
+        <div class="col-md-2 col-2">
           <img [src]="rocket" alt="..." class="icon-m-size">
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 col-10">
           <span class="font-weight-bold">API register project</span>
         </div>
       </div>
 
 
-      <div class="row ml-2 mt-3 outline-button">
-        <div class="col-md-2">
+      <div class="row ml-2 mt-4 outline-button center-sm">
+        <div class="col-md-2 col-2">
           <img [src]="rocket" alt="..." class="icon-m-size">
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 col-10">
           <span class="font-weight-bold">案件管理系統</span>
         </div>
       </div>
 
-       <div class="row ml-2 mt-3 outline-button">
-        <div class="col-md-2">
+       <div class="row ml-2 mt-4 outline-button center-sm">
+        <div class="col-md-2 col-2">
           <img [src]="rocket" alt="..." class="icon-m-size">
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 col-10">
           <span class="font-weight-bold">目錄設定系統</span>
         </div>
       </div>
 
-       <div class="row ml-2 mt-3 outline-button">
-        <div class="col-md-2">
+       <div class="row ml-2 mt-4 outline-button center-sm">
+        <div class="col-md-2 col-2">
           <img [src]="rocket" alt="..." class="icon-m-size">
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 col-10">
           <span class="font-weight-bold">新冠肺炎與企業影響分析</span>
         </div>
       </div>
 
-        <div class="row ml-2 mt-3 outline-button">
-        <div class="col-md-2">
+        <div class="row ml-2 mt-4 outline-button center-sm">
+        <div class="col-md-2 col-2">
           <img [src]="rocket" alt="..." class="icon-m-size">
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 col-10 col-10">
           <span class="font-weight-bold">新冠肺炎資料串接</span>
         </div>
       </div>
       </div>
 
-       <div class="row ml-2 mt-3 outline-button-end">
-        <div class="col"> <img [src]="github" alt="..."
+       <div class="row ml-2 mt-3 outline-button-end center-sm">
+        <div class="col click"> <img [src]="github" alt="..."
           tooltip="Github"
-          class="icon-size mb-1 click"></div>
-        <div class="col"> <img [src]="behance" alt="..."
+          (click)="gitHub()"
+          class="icon-size mb-1 click dis-sm"></div>
+        <div class="col click"> <img [src]="behance" alt="..."
           tooltip="Behance"
-          class="icon-size click"></div>
-        <div class="col">  <img [src]="support" alt="..."
+          (click)="beHance()"
+          class="icon-size click dis-sm"></div>
+        <div class="col click">  <img [src]="support" alt="..."
           tooltip="支持我"
-          class="icon-size click"></div>
-        <div class="col"> <img [src]="me" alt="..."
-          tooltip="了解我"
-          class="icon-size me-image click"></div>
+          (click)="supportMe()"
+          class="icon-size click dis-sm"></div>
+        <div class="col click"> <img [src]="me" alt="..."
+          tooltip="認識我"
+          (click)="aboutMe()"
+          class="icon-size me-image click dis-sm"></div>
       </div>
 
 

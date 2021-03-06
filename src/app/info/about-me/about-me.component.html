@@ -1,0 +1,42 @@
+<div class="modal-header modal-header-erp-green">
+	<h4 class="modal-title pull-left">{{title}}</h4>
+	<button type="button" class="close pull-right" aria-label="Close" (click)="notSave()">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+<div class="modal-body">
+  <div class="container h-70-scroll overflow-auto position-relative">
+    <div class="card mx-3 bg-true-White opacity-9" *ngFor="let item of ExpByYearList">
+      <div class="line"></div>
+      <div class="mx-2 my-2">
+        <div class="col-md-12 my-1">{{item.year}} 年</div>
+        <div class="col-md-12 my-1">
+          <div class="" *ngFor="let license of item.License">
+            <div class="col-md-12">
+              <span class="badge badge-secondary"> {{license.month}} 月</span>
+            </div>
+            <div class="col-md-12" *ngFor="let content of license.License">
+             <div class="col-md-12">
+                 <img [src]="licenseImage" alt="..." class=" img-fluid icon-s-size mr-2"  *ngIf="content.type == 0">
+                 <img [src]="study" alt="..." class=" img-fluid icon-s-size mr-2"  *ngIf="content.type == 1">
+                 <img [src]="exp" alt="..." class=" img-fluid icon-s-size mr-2"  *ngIf="content.type == 2">
+                <small>{{content.content}}</small>
+             </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div class="col-md-12 my-1">
+          <img [src]="roleImage" alt="..." class=" img-fluid icon-s-size mr-2">
+          <span *ngFor="let item of item.role" class="badge badge-warning mx-1">{{item | roleToString}}</span>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+	<button type="submit" class="btn btn-erp-green" (click)="notSave()">
+		關閉
+	</button>
+</div>

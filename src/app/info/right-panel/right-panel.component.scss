@@ -7,7 +7,7 @@
   font-size: .9rem;
 }
 .outline-button{
-  background-color: $mBlue;
+  background-color: rgba($mBlue, 0.7);
   padding: 10px;
   border-radius: .3rem;
 }
@@ -27,4 +27,22 @@
 .me-image{
   border-radius: 5rem;
   background-size: contain;
+}
+@media screen and (max-width: 600px) {
+  .center-sm{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  .dis-sm{
+    width: 30px;
+    height: 30px;
+  }
+  .dis-xs{
+    width: 20px;
+    height: 20px;
+  }
+  .font-small{
+    font-size: 0.8rem;
+  }
 }

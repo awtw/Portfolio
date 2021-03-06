@@ -1,0 +1,31 @@
+@import '../../btag-common/main.scss';
+/* Chrome, Safari, Opera */
+@-webkit-keyframes blink {
+  from {
+    color: $mYellow;
+  }
+
+  to {
+    color: $mWhite;
+  }
+}
+/* Standard syntax */
+@keyframes blink {
+  from {
+    color: $mYellow;
+  }
+  to {
+    color: $mWhite;
+  }
+}
+.blink {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  -webkit-animation-name: blink;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: .5s;
+  /* Chrome, Safari, Opera */
+  animation-name: blink;
+  animation-duration: .5s;
+}

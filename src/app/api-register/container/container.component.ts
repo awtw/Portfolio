@@ -181,7 +181,8 @@ export class ContainerComponent implements OnInit {
             headerName: '啟用狀態',
             field: 'ApiIsEnable',
             suppressSizeToFit: true,
-            columnGroupShow: 'open',
+            // columnGroupShow: 'open',
+            width: 100,
             editable: true,
             cellEditor: 'agSelectCellEditor',
             cellEditorParams: {

@@ -3,6 +3,7 @@
 // self color pattern
 $mWhite: #FAFAFA;
 $mBlue: #8FACFF;
+$sBlue: #BBDEFB;
 $mYellow: #FFCC3E;
 $mPink: #E34BA7;
 $mGrey: #FAFAFA;
@@ -28,7 +29,7 @@ $mGrey: #FAFAFA;
   opacity: 0.8;
 }
 .opacity-9{
-  opacity: 0.95;
+  opacity: 0.97;
 }
 
 /////////////////////////////////////
@@ -130,6 +131,10 @@ $mGrey: #FAFAFA;
 }
 .h-70-scroll {
   height: 70vh;
+  overflow: auto;
+}
+.h-75-scroll {
+  height: 75vh;
   overflow: auto;
 }
 .h-80-scroll {

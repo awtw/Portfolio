@@ -11,6 +11,10 @@ import { EnumToStringPipe } from './enum-to-string.pipe';
 import { RoleToStringPipe } from './role-to-string.pipe';
 import { ToolToStringPipe } from './tool-to-string.pipe';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { AlertModule } from 'ngx-bootstrap/alert';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { PaymeComponent } from './payme/payme.component';
 
 
 @NgModule({
@@ -21,11 +25,15 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     CenterContentComponent,
     EnumToStringPipe,
     RoleToStringPipe,
-    ToolToStringPipe],
+    ToolToStringPipe,
+    AboutMeComponent,
+    PaymeComponent],
   imports: [
     CommonModule,
     InfoRoutingModule,
     TooltipModule.forRoot(),
+    ModalModule.forRoot(),
+    AlertModule.forRoot(),
   ],
   providers: [
     InfoService

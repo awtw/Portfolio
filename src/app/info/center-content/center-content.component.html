@@ -10,11 +10,23 @@
             <img [src]="searchImage" alt="..." class=" img-fluid icon-s-size">
           </span>
         </div>
-        <input type="text" class="form-control" aria-label="search experience">
+        <!-- <input type="text" class="form-control" aria-label="search experience"> -->
+        <div class="col-md-12 form-control input-tag">
+          <span class="badge badge-secondary mr-1 font-md click"
+          [class.badge-dark]="item.ifClick"
+          *ngFor="let item of searchType" (click)="clickTool(item)">
+            {{item.toolName}}
+          </span>
+        </div>
+         <div class="input-group-prepend mr-3 click" (click)="clear()">
+          <span class="input-group-text" id="basic-addon1">
+            <img [src]="eraserImage" alt="..." class=" img-fluid icon-s-size">
+          </span>
+        </div>
       </div>
    </div>
   </div>
-  <div class="container h-70-scroll overflow-auto position-relative">
+  <div class="container h-75-scroll overflow-auto position-relative">
     <div class="card mx-3 bg-true-White opacity-9" *ngFor="let item of content">
       <div class="line"></div>
       <div class="mx-2 my-2">
