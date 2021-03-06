@@ -31,6 +31,10 @@ export class RightPanelComponent implements OnInit {
     this.router.navigate(['../api-register'], { relativeTo: this.activatedRoute });
   }
 
+  projectManage(): void {
+    this.router.navigate(['../project-manage'], { relativeTo: this.activatedRoute });
+  }
+
   aboutMe(): void {
     const initialState = {
       title: '關於我'

@@ -1,58 +1,58 @@
 export class EventList {
-	type: string;
-	name: string;
-	eventDate: string;
-	message: string;
-	file: string;
-	ifSee: boolean;
-	appShow: boolean;
-	caseId: string;
+  type: string;
+  name: string;
+  eventDate: string;
+  message: string;
+  file: string;
+  ifSee: boolean;
+  appShow: boolean;
+  caseId: string;
 }
 
 export class CreateNewCase {
-	custno: string;
-	servItem: string;
-	caseTitle: string;
-	caseSubtitle: string;
-	appShow: boolean;
-	ofContact: string;
-	custContact: string;
+  custno: string;
+  servItem: string;
+  caseTitle: string;
+  caseSubtitle: string;
+  appShow: boolean;
+  ofContact: string;
+  custContact: string;
 }
 
 export class CreateNewEvent {
-	custno: string;
-	eventServItem: string;
-	eventTitle: string;
-	eventSubtitle: string;
-	appShow: boolean;
-	caseId: string;
+  custno: string;
+  eventServItem: string;
+  eventTitle: string;
+  eventSubtitle: string;
+  appShow: boolean;
+  caseId: string;
 }
 
 export class Participant {
-	name: string;
-	id: string;
-	caseId?: string;
-	eventId?: string;
+  name: string;
+  id: string;
+  caseId?: string;
+  eventId?: string;
 }
 
 export class FileUpload {
-	fileName: string;
-	fileType: string;
-	caseId?: string;
-	eventId?: string;
-	ifFinial: boolean;
-	file?: File;
+  fileName: string;
+  fileType: string;
+  caseId?: string;
+  eventId?: string;
+  ifFinial: boolean;
+  file?: File;
 }
 
 export class CreateMeeting {
-	name: string;
-	location: string;
-	date: string;
-	time: string;
-	caseId?: string;
-	eventId?: string;
-	notify: boolean;
-	dateFormat: string;
+  name: string;
+  location: string;
+  date: string;
+  time: string;
+  caseId?: string;
+  eventId?: string;
+  notify: boolean;
+  dateFormat: string;
 }
 
 export class CreateMessage {
@@ -65,17 +65,17 @@ export class CreateMessage {
 }
 
 export class SearchProject {
-	division: string;
-	dpt: string;
-	empno: string;
-	caseTitle: string;
-	eventTitle: string;
-	dateTime1: string;
-	dateTime2: string;
-	caseType: string;
-	cstatus: string;
-	custno: string;
-	date?: string;
+  division: string;
+  dpt: string;
+  empno: string;
+  caseTitle: string;
+  eventTitle: string;
+  dateTime1: string;
+  dateTime2: string;
+  caseType: string;
+  cstatus: string;
+  custno: string;
+  date?: string;
 }
 
 export const InitialF318: CaseScreening = {
@@ -359,24 +359,24 @@ export class F327OutputEventList {
 	eventList: E327EventList[];
 }
 export class E327EventList {
-	appShow: boolean;
-	eventId: string;
-	eventName: string;
-	title: string;
-	meetingBeginTime: Date;
-	meetingEndTime: Date;
-	messageContent: string;
-	newMessage: string;
-	fileName: string;
+  appShow: boolean;
+  eventId: string;
+  eventName: string;
+  title: string;
+  meetingBeginTime: Date;
+  meetingEndTime: Date;
+  messageContent: string;
+  newMessage: string;
+  fileName: string;
 }
 
 export const InitialF309 = <F309Output>{
-	totalPage: 0, page: 0, fileList: []
+  totalPage: 0, page: 0, fileList: []
 };
 export class F309Output {
-	totalPage: number;
-	page: number;
-	fileList: F309FileList[];
+  totalPage: number;
+  page: number;
+  fileList: F309FileList[];
 }
 
 export class F309FileList {

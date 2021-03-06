@@ -14,7 +14,7 @@ const routes: Routes = [
         component: ProjectListComponent
       },
       {
-        path: 'page',
+        path: ':id',
         component: ProjectContentComponent
       }
     ]

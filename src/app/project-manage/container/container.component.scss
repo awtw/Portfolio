@@ -2,6 +2,10 @@
 @import '../main.scss';
 @import '../../btag-common/main.scss';
 
+.bg-blue {
+  background-color: #1E88E5 !important;
+}
+
 body,
 html {
 	margin: 0;
@@ -40,4 +44,8 @@ html {
 }
 .navbar {
 	min-height: 5vh;
+}
+.sticky-home {
+  position: sticky;
+  bottom: 2vh;
 }

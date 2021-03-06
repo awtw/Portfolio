@@ -1,0 +1,10 @@
+<div class="row d-fex justify-content-center align-items-center full">
+	<div *ngIf="params.value" class="ml-2">
+		<img [src]="imageUrlSafeUrl2" width="28" height="28" class="d-inline-block align-top click mt-1 mr-3" alt="search"
+			loading="lazy">
+	</div>
+	<div *ngIf="!params.value" class="ml-2">
+		<img [src]="imageUrlSafeUrlhiden" width="28" height="28" class="d-inline-block align-top click mt-1 mr-3" alt="search"
+			loading="lazy">
+	</div>
+</div>

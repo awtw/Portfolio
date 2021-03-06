@@ -1,0 +1,229 @@
+@import "../main.scss";
+
+.card {
+  position: relative;
+  width: 25rem;
+  height: 25.5rem;
+}
+
+.goback {
+  width: 20rem;
+  height: 4rem;
+}
+
+.bage-pedding {
+  margin: 5px;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+.card-customer-title {
+  width: 25rem;
+  height: 4rem;
+}
+
+.card-customer-back {
+  width: 8rem;
+  height: 3rem;
+}
+
+.card-customer-name-1 {
+  width: 20rem;
+  height: 3rem;
+}
+
+.card-customer-name {
+  width: 20rem;
+  height: 5rem;
+}
+
+.card-customer-width {
+  width: 100%;
+  height: 100%;
+}
+
+.card-customer-width-back {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-customer-width-width {
+  width: 800px;
+  height: 50px;
+}
+
+.card-customer-width-width2 {
+  width: 500px;
+  height: 50px;
+}
+
+.card-customer-width-width2 {
+  width: 500px;
+  height: 80px;
+}
+
+.card-customer-names {
+  width: 20rem;
+  height: 10rem;
+}
+
+.card-customer-names-content {
+  height: 5rem;
+}
+
+.card-customer-right {
+  width: 90rem;
+  height: 38rem;
+}
+
+.card-text {
+  font-weight: bold;
+  font-size: large;
+  border-bottom: 2px solid $main-grey;
+}
+
+.horizontal-width {
+  width: 100%;
+}
+
+.list-group-item {
+  padding: 5px;
+}
+
+.list-name {
+  width: 150px;
+}
+
+.list-content {
+  width: 200px;
+}
+
+.card.active::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 3em;
+  background-color: $red;
+}
+
+.bar {
+  width: 0.4rem;
+  height: 1.2rem;
+  background-color: $main-green;
+}
+
+.small-title {
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding-left: 5px;
+}
+
+.offset-1 {
+  margin-left: 3rem;
+}
+
+.arrow-image {
+  margin-left: -10px;
+  font-weight: bold;
+}
+
+.title-image {
+  margin-bottom: 8px;
+}
+
+.card-item {
+  width: 100%;
+  height: 4rem;
+}
+
+.green-bg {
+  background-color: $main-green;
+  color: $main-white;
+  border: 0px solid $main-green;
+}
+
+.grey {
+  color: $black-2;
+  font-style: italic;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+}
+
+.ag-grid-size {
+  width: 100%;
+  height: 83vh;
+}
+
+.h-90 {
+  height: 90vh;
+  // overflow: auto;
+}
+
+.h-85 {
+  height: 85vh;
+  // overflow: auto;
+}
+
+.small-text {
+  font-size: 0.7rem;
+  color: $black-2;
+}
+
+.card-title {
+  font-size: 0.9rem;
+
+  color: gray;
+}
+
+.select-btn {
+  height: 30px;
+  padding: 0;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: bold;
+}
+
+.mh-85 {
+  min-height: 85vh;
+}
+
+.mh-90 {
+  min-height: 90vh;
+}
+
+.scroll-h-80 {
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.finish {
+  color: red;
+}
+
+.file {
+  height: 100px;
+}
+
+.close-btn {
+  border-width: 1.5px;
+  font-weight: bold;
+}
+
+.addCase {
+  // background-color: #E67E22;
+  font-weight: bold;
+}

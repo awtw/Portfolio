@@ -26,6 +26,8 @@ import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { CaseTypePipe } from './case-type.pipe';
+import { ButtonCellAlertComponent } from './button-cell-alert/button-cell-alert.component';
+import { ButtonCellNewMessageComponent } from './button-cell-new-message/button-cell-new-message.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { CaseTypePipe } from './case-type.pipe';
     EditParticipantComponent,
     AddNewProjectComponent,
     AddNewEventComponent,
-    CaseTypePipe],
+    CaseTypePipe,
+    ButtonCellAlertComponent,
+    ButtonCellNewMessageComponent],
   imports: [
     TabsModule.forRoot(),
     BsDatepickerModule.forRoot(),
