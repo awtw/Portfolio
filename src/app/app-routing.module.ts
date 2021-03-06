@@ -7,14 +7,19 @@ const routes: Routes = [
     children: [
       {
         path: 'api-register',
-        loadChildren: ()=> import('./api-register/api-register.module').then(m => m.ApiRegisterModule)
+        loadChildren: () => import('./api-register/api-register.module').then(m => m.ApiRegisterModule)
       },
       {
         path: 'project-manage',
-        loadChildren: ()=> import('./project-manage/project-manage.module').then(m => m.ProjectManageModule)
-      },{
+        loadChildren: () => import('./project-manage/project-manage.module').then(m => m.ProjectManageModule)
+      },
+      {
         path: 'info',
-        loadChildren: ()=> import('./info/info.module').then(m => m.InfoModule)
+        loadChildren: () => import('./info/info.module').then(m => m.InfoModule)
+      },
+      {
+        path: 'covid',
+        loadChildren: () => import('./covid19/covid19.module').then(m => m.Covid19Module)
       }
     ]
   }
