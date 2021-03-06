@@ -63,10 +63,12 @@ export class CenterContentComponent implements OnInit {
     this.selectTypeList.forEach(select => {
       this.searchTypeInList(select);
     });
-    if (this.selectTypeList.length  === 0) {
+    if (this.selectTypeList.length  < 1) {
       this.content = this.contentStatic;
+      this.searchType.map(x => x.ifClick = false);
     }
-    console.log(this.selectTypeList);
+    // console.log(this.selectTypeList);
+    // console.log(this.contentStatic);
   }
 
   searchTypeInList(type: ToolList): void{

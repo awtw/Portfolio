@@ -20,7 +20,7 @@ export class InfoService {
     Date: new Date(2020, 12, 12),
     project: ProjectType['CI/CD'],
     role: [RoleType.PM, RoleType.SA, RoleType.軟體開發],
-    tool: [ToolType.Git, ToolType.Jenkins, ToolType['stored procedure']],
+    tool: [ToolType.Git, ToolType.Jenkins, ToolType['stored procedure'], ToolType.exe],
     content:
     '整合 AzureDevops 及 Jenkins，將每次分支合併到主分支時透過 Jenkins Hooks 觸發，建置及發布到各個環境。 建立 Jenkins slave 避免排程過於繁重導致站台速度緩慢及工作失敗。'
   },
@@ -162,7 +162,7 @@ export class InfoService {
               type: LicenseType.經歷
             },
             {
-              content: 'miRTarBase database paper 共同作者',
+              content: 'miRTarBase database paper 共同作者 (Impact Facter: 11.501)',
               type: LicenseType.學歷
             }
           ]

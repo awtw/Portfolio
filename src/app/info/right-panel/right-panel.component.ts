@@ -17,7 +17,6 @@ export class RightPanelComponent implements OnInit {
   me = '../../../assets/images/info/me-sm.png';
   modalRef: BsModalRef;
 
-
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
@@ -36,7 +35,7 @@ export class RightPanelComponent implements OnInit {
       title: '關於我'
     };
     this.modalRef = this.modalService.show(AboutMeComponent, { initialState });
-    this.modalRef.setClass('modal-md');
+    this.modalRef.setClass('modal-msd');
     // this.modalRef.content.onClose.subscribe((result: boolean) => {
     // });
   }
@@ -45,7 +44,7 @@ export class RightPanelComponent implements OnInit {
       title: '支持我'
     };
     this.modalRef = this.modalService.show(PaymeComponent, { initialState });
-    this.modalRef.setClass('modal-md');
+    // this.modalRef.setClass('modal-md');
     // this.modalRef.content.onClose.subscribe((result: boolean) => {
     // });
   }
