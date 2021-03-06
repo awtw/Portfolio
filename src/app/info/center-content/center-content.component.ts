@@ -69,6 +69,7 @@ export class CenterContentComponent implements OnInit {
     this.searchType[findTool.toolID].ifClick = !this.searchType[findTool.toolID].ifClick;
 
     this.content = [];
+    this.contentStatic.map(x => x.tool.map(y => y.ifClick = false));
     this.selectTypeList.forEach(select => {
       this.searchTypeInList(select);
     });
@@ -97,6 +98,7 @@ export class CenterContentComponent implements OnInit {
   clear(): void {
     this.content = this.contentStatic;
     this.searchType.map(x => x.ifClick = false);
+    this.contentStatic.map(x => x.tool.map(y => y.ifClick = false));
   }
 
 }

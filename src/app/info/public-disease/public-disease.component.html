@@ -1,0 +1,14 @@
+<div class="modal-header modal-header-erp-green">
+	<h4 class="modal-title pull-left">{{title}}</h4>
+	<button type="button" class="close pull-right" aria-label="Close" (click)="notSave()">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
+<div class="modal-body">
+    <img [src]="powerbi" alt="..." class="img-fluid click" (click)="publicDisease()">
+</div>
+<div class="modal-footer">
+	<button type="submit" class="btn btn-erp-green" (click)="notSave()">
+		關閉
+	</button>
+</div>

@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { AboutMeComponent } from '../about-me/about-me.component';
 import { PaymeComponent } from '../payme/payme.component';
+import { PublicDiseaseComponent } from '../public-disease/public-disease.component';
 
 @Component({
   selector: 'app-right-panel',
@@ -55,6 +56,14 @@ export class RightPanelComponent implements OnInit {
 
   gitHub(): void{
     window.open('https://github.com/awtw', '_blank');
+  }
+
+  publicDisease(): void {
+    const initialState = {
+      title: 'PowerBI 專案'
+    };
+    this.modalRef = this.modalService.show(PublicDiseaseComponent, { initialState });
+    this.modalRef.setClass('modal-msd');
   }
 
 }

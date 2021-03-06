@@ -1,8 +1,10 @@
+import { ProjectManageService } from './../project-manage.service';
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeUrl, Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { CaseScreening, CaseScreeningIn } from '../of';
+import { Case } from '../project';
 
 @Component({
   selector: 'app-project-list',
@@ -11,52 +13,34 @@ import { CaseScreening, CaseScreeningIn } from '../of';
 })
 export class ProjectListComponent implements OnInit {
   modalRef: BsModalRef;
-	projectType: string;
-	projectTypeName: string;
-	imageUrlPurchase = './assets/images/of-project/purchase.png';
-	imageUrlFix = './assets/images/of-project/fix.png';
-	imagePurchaseSafeUrl: SafeUrl;
-	imageFixSafeUrl2: SafeUrl;
-	CaseScreeningLisit: CaseScreening;
-	checkTab: boolean;
-	caseScreeningIn: CaseScreeningIn = {
-		division: '',
-		dpt: '',
-		empno: '',
-		caseTitle: '',
-		eventTitle: '',
-		dateTime1: '',
-		dateTime2: '',
-		caseType: '',
-		cstatus: '',
-		custno: '',
-		Buystatus: ['A'],
-		Repairstatus: ['A', 'B']
-	};
+  imageUrlPurchase = './assets/images/of-project/purchase.png';
+  imageUrlFix = './assets/images/of-project/fix.png';
+  caseList: Case[] = [];
+
 
   constructor(
     private sanitizer: DomSanitizer,
     private title: Title,
-		private modalService: BsModalService,
+    private modalService: BsModalService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private projectManageService: ProjectManageService,
   ) {
-    this.imagePurchaseSafeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.imageUrlPurchase);
-		this.imageFixSafeUrl2 = this.sanitizer.bypassSecurityTrustResourceUrl(this.imageUrlFix);
   }
 
   ngOnInit(): void {
+    this.caseList = this.projectManageService.getCase();
   }
 
-  goToProject(string: any){
-    this.router.navigate(['page'], { relativeTo: this.activatedRoute });
+  goToProject(id: number): void{
+    this.router.navigate(['id'], { relativeTo: this.activatedRoute });
   }
 
-  clickTab(){
-
+  goHomePage(): void{
+    this.router.navigate(['../../info'], { relativeTo: this.activatedRoute });
   }
 
-  addNew(string: any){
+  addNew(string: any): void{
 
   }
 

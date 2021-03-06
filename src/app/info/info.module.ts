@@ -15,6 +15,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { PaymeComponent } from './payme/payme.component';
+import { PublicDiseaseComponent } from './public-disease/public-disease.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { PaymeComponent } from './payme/payme.component';
     RoleToStringPipe,
     ToolToStringPipe,
     AboutMeComponent,
-    PaymeComponent],
+    PaymeComponent,
+    PublicDiseaseComponent],
   imports: [
     CommonModule,
     InfoRoutingModule,

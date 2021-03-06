@@ -25,6 +25,7 @@ import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { AlertModule } from 'ngx-bootstrap/alert';
+import { CaseTypePipe } from './case-type.pipe';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AlertModule } from 'ngx-bootstrap/alert';
     EditProjectComponent,
     EditParticipantComponent,
     AddNewProjectComponent,
-    AddNewEventComponent],
+    AddNewEventComponent,
+    CaseTypePipe],
   imports: [
     TabsModule.forRoot(),
     BsDatepickerModule.forRoot(),
