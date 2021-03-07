@@ -8,14 +8,14 @@ import { InfoService } from '../info.service';
   styleUrls: ['./center-content.component.scss']
 })
 export class CenterContentComponent implements OnInit {
-  building = '../../../assets/images/info/building3.png';
-  person = '../../../assets/images/info/043.png';
-  person2 = '../../../assets/images/info/023.png';
-  searchImage = '../../../assets/images/info/loupe.png';
-  projectImage = '../../../assets/images/info/tag.png';
-  roleImage = '../../../assets/images/info/account.png';
-  toolImage = '../../../assets/images/info/tools.png';
-  eraserImage = '../../../assets/images/info/eraser.png';
+  building = 'assets/images/info/building3.png';
+  person = 'assets/images/info/043.png';
+  person2 = 'assets/images/info/023.png';
+  searchImage = 'assets/images/info/loupe.png';
+  projectImage = 'assets/images/info/tag.png';
+  roleImage = 'assets/images/info/account.png';
+  toolImage = 'assets/images/info/tools.png';
+  eraserImage = 'assets/images/info/eraser.png';
   // searchType = ToolType;
   searchType: ToolList[] = [];
   selectTypeList: ToolList[] = [];
@@ -49,7 +49,7 @@ export class CenterContentComponent implements OnInit {
         };
        this.searchType.push(tem);
     });
-    console.log(this.searchType);
+    // console.log(this.searchType);
 
   }
 
@@ -84,7 +84,7 @@ export class CenterContentComponent implements OnInit {
   }
 
   searchTypeInList(type: ToolList): void{
-    console.log(type);
+    // console.log(type);
     this.contentStatic.forEach(data => {
       data.tool.forEach((o, index) => {
         if (o.toolID === type.toolID) {

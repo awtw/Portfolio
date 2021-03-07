@@ -15,10 +15,10 @@ import { ProjectManageService } from '../project-manage.service';
 })
 export class ContainerComponent implements OnInit {
   modalRef: BsModalRef;
-  imageUrl = './assets/images/of-project/aof-logo.png';
-  imageSearchUrl = './assets/images/of-project/search-white.png';
-  imagearrow = './assets/images/of-project/left-arrow-white.png';
-  gotoImage = '../assets/images/api-register/go-to-location.png';
+  imageUrl = 'assets/images/of-project/aof-logo.png';
+  imageSearchUrl = 'assets/images/of-project/search-white.png';
+  imagearrow = 'assets/images/of-project/left-arrow-white.png';
+  gotoImage = 'assets/images/api-register/go-to-location.png';
   imageSafeUrl: SafeUrl;
   imageSearchSafeUrl: SafeUrl;
   imageArrowSafeUrl: SafeUrl;

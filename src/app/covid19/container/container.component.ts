@@ -13,15 +13,21 @@ export class ContainerComponent implements OnInit {
   constructor(private covid19Service: Covid19Service) { }
 
   ngOnInit(): void {
-    this.covid19Service.getDaily().subscribe(res => {
-      const response: HttpResponse<States[]> = res;
-      // const status: number = res.status;
-      // const statusText: string = res.statusText;
-      // const headers: HttpHeaders = res.headers;
-      this.status = res;
-      console.log(this.status);
+    this.covid19Service.getDaily()
+      .subscribe(
+        (data: any[]) => this.status = data,
+        (error: any) => console.log(error),
+        () => console.log('finish')
+      );
+    // this.covid19Service.getDaily().subscribe(res => {
+    //   const response: HttpResponse<States[]> = res;
+    //   // const status: number = res.status;
+    //   // const statusText: string = res.statusText;
+    //   // const headers: HttpHeaders = res.headers;
+    //   this.status = res;
+    //   console.log(this.status);
 
-    });
+    // });
   }
 
 }

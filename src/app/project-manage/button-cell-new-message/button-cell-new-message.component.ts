@@ -9,8 +9,8 @@ import { ICellRendererAngularComp } from 'ag-grid-angular';
 })
 export class ButtonCellNewMessageComponent implements ICellRendererAngularComp, OnDestroy {
 
-  imageUrl = './assets/images/of-project/comment.png';
-  imageUrl2 = './assets/images/of-project/app.png';
+  imageUrl = 'assets/images/of-project/comment.png';
+  imageUrl2 = 'assets/images/of-project/app.png';
   imageUrlSafeUrl: SafeUrl;
   imageUrlSafeUrl2: SafeUrl;
   params: any;

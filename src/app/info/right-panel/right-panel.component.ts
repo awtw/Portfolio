@@ -11,11 +11,11 @@ import { PublicDiseaseComponent } from '../public-disease/public-disease.compone
   styleUrls: ['./right-panel.component.scss']
 })
 export class RightPanelComponent implements OnInit {
-  rocket = '../../../assets/images/info/rocket.png';
-  github = '../../../assets/images/info/github.png';
-  behance = '../../../assets/images/info/behance.png';
-  support = '../../../assets/images/info/protest.png';
-  me = '../../../assets/images/info/me-sm.png';
+  rocket = 'assets/images/info/rocket.png';
+  github = 'assets/images/info/github.png';
+  behance = 'assets/images/info/behance.png';
+  support = 'assets/images/info/protest.png';
+  me = 'assets/images/info/me-sm.png';
   modalRef: BsModalRef;
 
   constructor(

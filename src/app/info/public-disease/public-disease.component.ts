@@ -10,7 +10,7 @@ import { Subject } from 'rxjs';
 export class PublicDiseaseComponent implements OnInit {
   title: string;
   public onClose: Subject<boolean>;
-  powerbi = '../../../assets/images/info/powerbi.png';
+  powerbi = 'assets/images/info/powerbi.png';
   constructor( private bsModalRef: BsModalRef) { }
 
   ngOnInit(): void {

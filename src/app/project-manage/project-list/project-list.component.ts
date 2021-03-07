@@ -13,8 +13,8 @@ import { Case } from '../project';
 })
 export class ProjectListComponent implements OnInit {
   modalRef: BsModalRef;
-  imageUrlPurchase = './assets/images/of-project/purchase.png';
-  imageUrlFix = './assets/images/of-project/fix.png';
+  imageUrlPurchase = 'assets/images/of-project/purchase.png';
+  imageUrlFix = 'assets/images/of-project/fix.png';
   caseList: Case[] = [];
 
 

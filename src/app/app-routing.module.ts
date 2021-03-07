@@ -20,13 +20,21 @@ const routes: Routes = [
       {
         path: 'covid',
         loadChildren: () => import('./covid19/covid19.module').then(m => m.Covid19Module)
+      },
+      {
+        path: 'test',
+        loadChildren: () => import('./test-project/test-project.module').then(m => m.TestProjectModule)
       }
     ]
+  },
+  {
+    path: '**',
+    redirectTo: 'center/info'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,  { useHash: true /** , enableTracing: true // debugging purposes only */ })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

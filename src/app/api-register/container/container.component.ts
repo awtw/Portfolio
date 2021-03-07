@@ -23,9 +23,9 @@ import { CellRenderWordComponent } from '../cell-render-word/cell-render-word.co
 })
 export class ContainerComponent implements OnInit {
 
-  iconImage = '../assets/images/api-register/verify.png';
-  infoImage = '../assets/images/api-register/info.png';
-  gotoImage = '../assets/images/api-register/go-to-location.png';
+  iconImage = 'assets/images/api-register/verify.png';
+  infoImage = 'assets/images/api-register/info.png';
+  gotoImage = 'assets/images/api-register/go-to-location.png';
 
 
   apiList: HierarchicalApiInfo[];
@@ -148,7 +148,7 @@ export class ContainerComponent implements OnInit {
     });
     this.apiList = apiListRequest;
     this.rowData = apiListRequest;
-    console.log(apiListRequest);
+    // console.log(apiListRequest);
 
     this.columnDefs = [
       {

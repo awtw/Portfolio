@@ -7,7 +7,7 @@ import { ICellRendererAngularComp } from 'ag-grid-angular';
   styleUrls: ['./cell-render.component.scss']
 })
 export class CellRenderComponent implements ICellRendererAngularComp, OnDestroy {
-  copyImage = '../assets/images/api-register/copy.png';
+  copyImage = 'assets/images/api-register/copy.png';
   public params: any;
 
 	agInit(params: any): void {

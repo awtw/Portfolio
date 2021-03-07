@@ -12,10 +12,10 @@ import { InfoService } from '../info.service';
 export class AboutMeComponent implements OnInit {
   title: string;
   public onClose: Subject<boolean>;
-  licenseImage = '../../../assets/images/info/medal.png';
-  study = '../../../assets/images/info/graduation-hat.png';
-  exp = '../../../assets/images/info/drivers-license.png';
-  searchImage = '../../../assets/images/info/loupe.png';
+  licenseImage = 'assets/images/info/medal.png';
+  study = 'assets/images/info/graduation-hat.png';
+  exp = 'assets/images/info/drivers-license.png';
+  searchImage = 'assets/images/info/loupe.png';
   ExpByYearList: ExpByYear[];
   type: any = LicenseType.證照;
 

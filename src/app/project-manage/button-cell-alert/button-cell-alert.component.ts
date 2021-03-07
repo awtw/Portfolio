@@ -9,9 +9,9 @@ import { ICellRendererAngularComp } from 'ag-grid-angular';
 })
 export class ButtonCellAlertComponent implements ICellRendererAngularComp, OnDestroy  {
 
-  imageUrl = './assets/images/of-project/email.png';
-  imageUrl2 = './assets/images/of-project/show.png';
-  imageUrlhiden = './assets/images/of-project/hide.png';
+  imageUrl = 'assets/images/of-project/email.png';
+  imageUrl2 = 'assets/images/of-project/show.png';
+  imageUrlhiden = 'assets/images/of-project/hide.png';
   imageUrlSafeUrlhiden: SafeUrl;
   imageUrlSafeUrl: SafeUrl;
   imageUrlSafeUrl2: SafeUrl;

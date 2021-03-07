@@ -11,7 +11,7 @@ declare var paypal;
 })
 export class PaymeComponent implements OnInit {
   public onClose: Subject<boolean>;
-  heartImage = '../../../assets/images/info/heart.png';
+  heartImage = 'assets/images/info/heart.png';
   title: string;
   @ViewChild('paypal', { static: true }) paypalElement: ElementRef;
   product = {
