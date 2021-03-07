@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'center',
+    path: 'project',
     children: [
       {
         path: 'api-register',
@@ -29,7 +29,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'center/info'
+    redirectTo: 'project/info'
   }
 ];
 
