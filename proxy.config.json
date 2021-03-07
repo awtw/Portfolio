@@ -1,0 +1,11 @@
+{
+	"/covid": {
+		"target": "https://covidtracking.com",
+		"secure": false,
+		"logLevel": "debug",
+		"changeOrigin": true,
+		"pathRewrite": {
+			"^/covid": "/api/"
+		}
+	}
+}

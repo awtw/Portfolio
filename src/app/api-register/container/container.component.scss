@@ -14,3 +14,36 @@
   align-items: center;
 }
 
+.sticky-home {
+  position: sticky !important;
+  bottom: 2vh !important;
+}
+:host ::ng-deep .alert {
+  // margin-top: 8vh;
+  position: absolute !important;
+  width: 100%;
+  bottom: 0;
+  z-index: 10000;
+}
+
+:host ::ng-deep .alert {
+  // margin-top: 8vh;
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+}
+
+.alert {
+  // margin-top: 2vh;
+  position: absolute !important;
+  width: 100%;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+  font-size: 1rem;
+
+  .close {
+    font-size: 1rem;
+  }
+}

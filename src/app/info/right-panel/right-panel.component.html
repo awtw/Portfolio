@@ -29,7 +29,7 @@
         <div class="col-md-2 col-2 click">
           <img [src]="rocket" alt="..." class="icon-m-size">
         </div>
-        <div class="col-md-10 col-10">
+        <div class="col-md-10 col-10 click" (click)="covidApi()">
           <span class="font-weight-bold">目錄設定系統</span>
         </div>
       </div>
@@ -46,7 +46,7 @@
         <div class="col-md-2 col-2 click">
           <img [src]="rocket" alt="..." class="icon-m-size">
         </div>
-        <div class="col-md-10 col-10 col-10">
+        <div class="col-md-10 col-10 col-10 click" (click)="covidApi()">
           <span class="font-weight-bold">新冠肺炎資料串接</span>
         </div>
       </div>
@@ -70,17 +70,13 @@
           (click)="aboutMe()"
           class="icon-size me-image click dis-sm"></div>
       </div>
-
-
-
-
   </div>
 </div>
-<!-- <div class="container">
-   <div class="row ml-3 outline-button-end info-bottom">
-    <div class="col"> <img [src]="github" alt="..." class="icon-size mb-1"></div>
-    <div class="col"> <img [src]="behance" alt="..." class="icon-size"></div>
-    <div class="col">  <img [src]="support" alt="..." class="icon-size"></div>
-    <div class="col"> <img [src]="github" alt="..." class="icon-size mb-1"></div>
-  </div>
-</div> -->
+
+<!-- 提示訊息 -->
+<div *ngFor="let alert of alerts">
+  <alert [type]="alert.type" [dismissOnTimeout]="alert.timeout" [dismissible]="alert.dismissible"  (onClosed)="onClosed(alert)">
+    <span class="font-weight-bold mr-2"> {{alert.header}} </span> {{ alert.msg }}
+  </alert>
+</div>
+  <!-- 提示訊息 -->

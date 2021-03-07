@@ -46,6 +46,6 @@ html {
 	min-height: 5vh;
 }
 .sticky-home {
-  position: sticky;
-  bottom: 2vh;
+  position: sticky !important;
+  bottom: 2vh !important;
 }

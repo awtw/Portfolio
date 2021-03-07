@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AlertComponent } from 'ngx-bootstrap/alert';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { AboutMeComponent } from '../about-me/about-me.component';
 import { PaymeComponent } from '../payme/payme.component';
@@ -17,6 +18,8 @@ export class RightPanelComponent implements OnInit {
   support = 'assets/images/info/protest.png';
   me = 'assets/images/info/me-sm.png';
   modalRef: BsModalRef;
+  // alert
+  alerts: any[] = [];
 
   constructor(
     private router: Router,
@@ -68,6 +71,25 @@ export class RightPanelComponent implements OnInit {
     };
     this.modalRef = this.modalService.show(PublicDiseaseComponent, { initialState });
     this.modalRef.setClass('modal-msd');
+  }
+
+  covidApi(): void{
+    this.addAlert('warning', '提示' , '維護中', false, 1000);
+  }
+
+  // alert
+  addAlert(type: string, header: string, msg: string, dismissible: boolean, timeout: number ): void {
+  this.alerts.push({
+    type,
+    header,
+    msg,
+    dismissible,
+    timeout
+  });
+  }
+
+  onClosed(dismissedAlert: AlertComponent): void {
+  this.alerts = this.alerts.filter(alert => alert !== dismissedAlert);
   }
 
 }

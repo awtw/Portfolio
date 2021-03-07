@@ -81,7 +81,7 @@ $mGrey: #FAFAFA;
   // margin-top: 8vh;
   position: absolute !important;
   width: 100%;
-  bottom: 0;
+  top: 0;
   z-index: 10000;
 }
 .alert {
@@ -89,7 +89,7 @@ $mGrey: #FAFAFA;
   position: absolute !important;
   width: 100%;
   right: 0;
-  bottom: 0;
+  top: 0;
   z-index: 10000;
   font-size: 1rem;
   .close{
