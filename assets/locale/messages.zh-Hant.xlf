@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2"
+	xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="zh-Hant" datatype="plaintext" original="ng2.template" target-language="zh-Hant">
+		<body>
+			<trans-unit id="8fac9d7d111d869a7636014ad144f72d6bcbd60d" datatype="html">
+				<source>忘記密碼</source>
+				<target state="final">忘記密碼</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-forget-password/login-forget-password.component.html</context>
+					<context context-type="linenumber">8</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-circle/login-circle.component.html</context>
+					<context context-type="linenumber">31</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="6e99203a02b58254dfd764ef4831961fe6073b5c" datatype="html">
+				<source>請輸入員工編號</source>
+				<target state="final">請輸入員工編號</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-forget-password/login-forget-password.component.html</context>
+					<context context-type="linenumber">22</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="b68d2bd543044fa891cc6cf6164d9fc00300d75f" datatype="html">
+				<source>請確認員工編號有沒有輸入錯誤</source>
+				<target state="final">請確認員工編號有沒有輸入錯誤</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-forget-password/login-forget-password.component.html</context>
+					<context context-type="linenumber">30</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2c5da5fb3f8a921596bb4536e26c94db971f5e6d" datatype="html">
+				<source>換一張圖</source>
+				<target state="final">換一張圖</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-forget-password/login-forget-password.component.html</context>
+					<context context-type="linenumber">45</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="e2ed3f7e02d4b4d0b8aec5fbe880027008bb072c" datatype="html">
+				<source>請輸入驗證碼</source>
+				<target state="final">請輸入驗證碼</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-forget-password/login-forget-password.component.html</context>
+					<context context-type="linenumber">50</context>
+				</context-group>
+			</trans-unit>
+
+			<trans-unit id="7105f5df96b4b271428279990467006b0a3d2d12" datatype="html">
+				<source>驗證碼要求4碼</source>
+				<target state="final">驗證碼要求4碼</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-forget-password/login-forget-password.component.html</context>
+					<context context-type="linenumber">55</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="07740c74fa15667b240d8da7e4618298eddd291b" datatype="html">
+				<source>變更密碼</source>
+				<target state="final">變更密碼</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/change-password/change-password.component.html</context>
+					<context context-type="linenumber">7</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/smart-home-container.component.html</context>
+					<context context-type="linenumber">51</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-alert/smart-home-alert.component.html</context>
+					<context context-type="linenumber">53</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="9832494a7e83c18467009646b4784d5606b1298f" datatype="html">
+				<source>新密碼</source>
+				<target state="final">新密碼</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/change-password/change-password.component.html</context>
+					<context context-type="linenumber">19</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="c02e992355a83491df90ba7cb7c69cd8ffcbb9ba" datatype="html">
+				<source>輸入新密碼</source>
+				<target state="final">輸入新密碼</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/change-password/change-password.component.html</context>
+					<context context-type="linenumber">23</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="de86c8977a33c276290987fd95496ff0f6163bdc" datatype="html">
+				<source>請輸入新密碼(最小6碼，最大10碼)</source>
+				<target state="final">請輸入新密碼(最小6碼，最大10碼)</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/change-password/change-password.component.html</context>
+					<context context-type="linenumber">30</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="aac566981d99c005656b5cec72433cf8feedc6e1" datatype="html">
+				<source>確認新密碼</source>
+				<target state="final">確認新密碼</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/change-password/change-password.component.html</context>
+					<context context-type="linenumber">34</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="439c680d645b8057e0969346792ff4282ff7b040" datatype="html">
+				<source>再次輸入新密碼</source>
+				<target state="final">再次輸入新密碼</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/change-password/change-password.component.html</context>
+					<context context-type="linenumber">38</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="4b3f4963dbfa1ad9b1bbcfe0e33e8d40aaa2ba8c" datatype="html">
+				<source>請確認新密碼(最小6碼，最大10碼)</source>
+				<target state="final">請確認新密碼(最小6碼，最大10碼)</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/change-password/change-password.component.html</context>
+					<context context-type="linenumber">45</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="954a9ca6d8c8edbbf66185c9978b988ce52121c7" datatype="html">
+				<source>確認</source>
+				<target state="final">確認</target>
+
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-forget-password/login-forget-password.component.html</context>
+					<context context-type="linenumber">67</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/change-password/change-password.component.html</context>
+					<context context-type="linenumber">57</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="e81bc577e08b01e7ebe9351760c0c845b3bb2fb4" datatype="html">
+				<source>返回</source>
+				<target state="final">返回</target>
+
+
+
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-forget-password/login-forget-password.component.html</context>
+					<context context-type="linenumber">74</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/change-password/change-password.component.html</context>
+					<context context-type="linenumber">64</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/smart-home-container.component.html</context>
+					<context context-type="linenumber">24</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-switch-agent/smart-home-switch-agent.component.html</context>
+					<context context-type="linenumber">13</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-switch-agent/smart-home-switch-agent.component.html</context>
+					<context context-type="linenumber">9</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="395e74c0964baaab1d1cac88387bb59ecd9540dc" datatype="html">
+				<source>系統提示</source>
+				<target state="final">系統提示</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-send-mail/login-send-mail.component.html</context>
+					<context context-type="linenumber">7</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="a225b418bb6a3a98f63aaf2814e06404103e9a67" datatype="html">
+				<source>帳號：</source>
+				<target state="final">帳號：</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-send-mail/login-send-mail.component.html</context>
+					<context context-type="linenumber">17</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="249f1399c852d6dfa135b53ba775047a585e8227" datatype="html">
+				<source>姓名：</source>
+				<target state="final">姓名：</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-send-mail/login-send-mail.component.html</context>
+					<context context-type="linenumber">21</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="f83fb7aad3bacd0fe344a502f82fcf5c26a6c2d2" datatype="html">
+				<source>已寄送帳號認證信到您的郵件信箱：</source>
+				<target state="final">已寄送帳號認證信到您的郵件信箱：</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-send-mail/login-send-mail.component.html</context>
+					<context context-type="linenumber">25</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="9ee754c82d0e83eeaeeb0cc9ec0a863ca95d7132" datatype="html">
+				<source>請於15分鐘內收信並做認證動作, 才可重設密碼或帳號解鎖</source>
+				<target state="final">請於15分鐘內收信並做認證動作, 才可重設密碼或帳號解鎖</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-send-mail/login-send-mail.component.html</context>
+					<context context-type="linenumber">29</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5958ec9590f88caf236f776278be2e4dcf0d4a3c" datatype="html">
+				<source>員工編號</source>
+				<target state="final">員工編號</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-circle/login-circle.component.html</context>
+					<context context-type="linenumber">12</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="718a25b6908c6722bfe640b6da01084fbccb24ad" datatype="html">
+				<source>密碼</source>
+				<target state="final">密碼</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-circle/login-circle.component.html</context>
+					<context context-type="linenumber">20</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5ab0b3429c283706131aea420c8dd35838399bf4" datatype="html">
+				<source>登入</source>
+				<target state="final">登入</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-circle/login-circle.component.html</context>
+					<context context-type="linenumber">40</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="f2db103db8561e527fef4ad73c2ff0359bc672c0" datatype="html">
+				<source>E-Mail 驗證</source>
+				<target state="final">E-Mail 驗證</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/login/login-verify-mail-url/login-verify-mail-url.component.html</context>
+					<context context-type="linenumber">7</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="92cf9ab5cf5a5ad7a323c301ca76ade2c9bf85ae" datatype="html">
+				<source>選擇檔案</source>
+				<target state="final">選擇檔案</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/upload/feedback-upload.component.html</context>
+					<context context-type="linenumber">4</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="050836d7363f5383459184049ef5393ab71f8c27" datatype="html">
+				<source>請拖曳圖片進來</source>
+				<target state="final">請拖曳圖片進來</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/upload/feedback-upload.component.html</context>
+					<context context-type="linenumber">11</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="923ae4af5b8a881a998dd7b0236c11a64fd42cec" datatype="html">
+				<source>名稱</source>
+				<target state="final">名稱</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/upload/feedback-upload.component.html</context>
+					<context context-type="linenumber">25</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="487f798ae08f58d5e0e795b271da18805a84c84e" datatype="html">
+				<source>檔案大小</source>
+				<target state="final">檔案大小</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/upload/feedback-upload.component.html</context>
+					<context context-type="linenumber">26</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="bec749dd92daab05dbe6145a0350b7ed949cfc22" datatype="html">
+				<source>處理進度</source>
+				<target state="final">處理進度</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/upload/feedback-upload.component.html</context>
+					<context context-type="linenumber">27</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/upload/feedback-upload.component.html</context>
+					<context context-type="linenumber">72</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="744fbd8cff9e1daaf8f97294422ce5c578faa580" datatype="html">
+				<source>狀態</source>
+				<target state="final">狀態</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/upload/feedback-upload.component.html</context>
+					<context context-type="linenumber">28</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="b341b50a932134f8a8c97adf7192eaa147abf929" datatype="html">
+				<source>編號</source>
+				<target state="final">編號</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/reply/feedback-reply.component.html</context>
+					<context context-type="linenumber">34</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="4df4f5c98dc55c119f181b6eaa342f2acdda5256" datatype="html">
+				<source>留言</source>
+				<target state="final">留言</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/reply/feedback-reply.component.html</context>
+					<context context-type="linenumber">61</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="b8b4fe055b47860b6e408b29ccf1101899575ef7" datatype="html">
+				<source>測試區</source>
+				<target state="final">測試區</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/smart-home-container.component.html</context>
+					<context context-type="linenumber">12</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="4b8a548b295234b1e4905f7871e3c03d06cd3b63" datatype="html">
+				<source>您現在歷史資料區</source>
+				<target state="final">您現在歷史資料區</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/smart-home-container.component.html</context>
+					<context context-type="linenumber">19</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="407bc83155c32a287055f00e4862f17316140277" datatype="html">
+				<source>歡迎 您是來自</source>
+				<target state="final">歡迎 您是來自</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/smart-home-container.component.html</context>
+					<context context-type="linenumber">21</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="60ba97b3bb87763806ed9d415afa11c3e6bb4b77" datatype="html">
+				<source>工具箱</source>
+				<target state="final">工具箱</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/smart-home-container.component.html</context>
+					<context context-type="linenumber">28</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="8482674d8d9077206496766ab46dada4268da7a2" datatype="html">
+				<source>問題回饋</source>
+				<target state="final">問題回饋</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">7</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/smart-home-container.component.html</context>
+					<context context-type="linenumber">34</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3e0cab52f4268769c8ab2812eb4cca09085e400b" datatype="html">
+				<source>說明</source>
+				<target state="final">說明</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">14</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="63e86e95a186ad7086f248e967e49df16597faf7" datatype="html">
+				<source>使用上有任何問題或建議，歡迎回饋給我們!</source>
+				<target state="final">使用上有任何問題或建議，歡迎回饋給我們!</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">16</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="125b6d804552cf7f0c50a77ab4d9ce395e482416" datatype="html">
+				<source>標題</source>
+				<target state="final">標題</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">22</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="445b083636f241bbbc0bd15cfea035d3fdcd56f0" datatype="html">
+				<source>標題...</source>
+				<target state="final">標題...</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">27</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7f658eebaee925331d6384c8cf03ba96b140053e" datatype="html">
+				<source>標題不可空白</source>
+				<target state="final">標題不可空白</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">31</context>
+				</context-group>
+			</trans-unit>
+
+			<trans-unit id="778ba9281cd6fdb961c23a8dd910fb5e49b41f79" datatype="html">
+				<source>問題類型</source>
+				<target state="final">問題類型</target>
+
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">36</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/feedback-track.component.html</context>
+					<context context-type="linenumber">10</context>
+				</context-group>
+			</trans-unit>
+
+			<trans-unit id="f8d20cd849d58c956e633fa45e5cedcdcdc6eca4" datatype="html">
+				<source>Bug回報</source>
+				<target state="final">Bug回報</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">41</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="a5f3490243716be049018c627ba0b51253345d0f" datatype="html">
+				<source>功能建議</source>
+				<target state="final">功能建議</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">43</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="54a64850cc82e3fe0a12ebb0915e066be9e99c7a" datatype="html">
+				<source>營業小Me</source>
+				<target state="final">營業小Me</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">45</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7ad5fd1a6baf543ee1fe0a182de8090a58e5ca5a" datatype="html">
+				<source>服務小Me</source>
+				<target state="final">服務小Me</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">47</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="a30f77d33928629f0dc8033ae1c83e68311288b6" datatype="html">
+				<source>請選擇</source>
+				<target state="final">請選擇</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">49</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="f887e0271af8b1c861b9d7a876b5e0cf684f7c62" datatype="html">
+				<source>內容</source>
+				<target state="final">內容</target>
+
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">55</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-announcement/item/smart-home-announcement-item.component.html</context>
+					<context context-type="linenumber">32</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="e9afb86e376f8957c83cd031e409077838f497af" datatype="html">
+				<source>描述...</source>
+				<target state="final">描述...</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">63</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="bc887b075a52137e3f35c8d4544c698d74b8de94" datatype="html">
+				<source>內容不可空白</source>
+				<target state="final">內容不可空白</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">66</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="123661ea4ac027b4341a88ea514fe0d1fa8c88d3" datatype="html">
+				<source>內容字數最多為100字</source>
+				<target state="final">內容字數最多為100字</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">69</context>
+				</context-group>
+			</trans-unit>
+
+
+			<trans-unit id="052506a31e678f8b8f151628afd0832615a521cd" datatype="html">
+				<source>送出</source>
+				<target state="final">送出</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-request/feedback-request.component.html</context>
+					<context context-type="linenumber">81</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="d44490c7a1f73883dc54362d7862ddacdc97262a" datatype="html">
+				<source>問題追蹤清單</source>
+				<target state="final">問題追蹤清單</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/feedback-track.component.html</context>
+					<context context-type="linenumber">4</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="12b558c3f207f6c9f89a2c2986ecabeff3904f00" datatype="html">
+				<source>未處理</source>
+				<target state="final">未處理</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/feedback-track.component.html</context>
+					<context context-type="linenumber">47</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="147c00328232b80d0c912dd360fc46266bd50deb" datatype="html">
+				<source>處理中</source>
+				<target state="final">處理中</target>
+
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/feedback-track.component.html</context>
+					<context context-type="linenumber">52</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/reply/feedback-reply.component.html</context>
+					<context context-type="linenumber">71</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="30dd2c261250a127c0c70357d817de4b3227e0af" datatype="html">
+				<source>已處理</source>
+				<target state="final">已處理</target>
+
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/feedback-track.component.html</context>
+					<context context-type="linenumber">57</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/reply/feedback-reply.component.html</context>
+					<context context-type="linenumber">82</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="4b7a19531e9617b6fe5e78579cafbb900a39432b" datatype="html">
+				<source>回覆</source>
+				<target state="final">回覆</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/reply/feedback-reply.component.html</context>
+					<context context-type="linenumber">108</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="a0c1213016f3faf721c5eb2364a6a0dcd2bf2e76" datatype="html">
+				<source>新回覆</source>
+				<target state="final">新回覆</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/feedback-track.component.html</context>
+					<context context-type="linenumber">62</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="e15862bcf008289a5a45d4d01573f8991b634f60" datatype="html">
+				<source>來源</source>
+				<target state="final">來源</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/feedback-track.component.html</context>
+					<context context-type="linenumber">22</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5c913b15c97d80dccb5caf0506f8e4c8521f66d6" datatype="html">
+				<source>只看自己</source>
+				<target state="final">只看自己</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/feedback-track.component.html</context>
+					<context context-type="linenumber">35</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3af221ff823b2044f56bf9823d211bae85828814" datatype="html">
+				<source>附件</source>
+				<target state="final">附件</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/attachment/feedback-attachment.component.html</context>
+					<context context-type="linenumber">6</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/attachment/feedback-attachment.component.html</context>
+					<context context-type="linenumber">30</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="452bf51706b16031d788d33160cb2b10817d0165" datatype="html">
+				<source>關閉</source>
+				<target state="final">關閉</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/feedback/feedback-track/attachment/feedback-attachment.component.html</context>
+					<context context-type="linenumber">43</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="33065066cc1f7491ef047841d54b5e83a73e15c5" datatype="html">
+				<source>匯入與會同仁
+				</source>
+				<target state="final">匯入與會同仁
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/schedule/schedule-create/uploader/schedule-upload.component.html</context>
+					<context context-type="linenumber">4</context>
+				</context-group>
+			</trans-unit>
+
+			<trans-unit id="544264dfe7c548731079f58c5e2924ef1445a73c" datatype="html">
+				<source>切換歷史資訊</source>
+				<target state="final">切換歷史資訊</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/smart-home-container.component.html</context>
+					<context context-type="linenumber">42</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="c2d86fd868dbf43daf05b2d6047a44bab687d226" datatype="html">
+				<source>相關下載</source>
+				<target state="final">相關下載</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/smart-home-container.component.html</context>
+					<context context-type="linenumber">46</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="18c3a3bcdbcfaae0c4908c7d2e597280c0ec0044" datatype="html">
+				<source>登出</source>
+				<target state="final">登出</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/smart-home-container.component.html</context>
+					<context context-type="linenumber">55</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="e043c53130abf0bc9a742056ba5176eeec599449" datatype="html">
+				<source>更多圖表</source>
+				<target state="final">更多圖表</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-service-chart/smart-home-service-chart.component.html</context>
+					<context context-type="linenumber">6</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="cb58af602efe21529c5719e3b5a9e1fe8c8aad8e" datatype="html">
+				<source>更新</source>
+				<target state="final">更新</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-service-chart/smart-home-service-chart.component.html</context>
+					<context context-type="linenumber">10</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="4048818050c5eb30a8eefa5daa71d64a6b2c53e2" datatype="html">
+				<source>小工具</source>
+				<target state="final">小工具</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/box-hidden/smart-home-box-hidden.component.html</context>
+					<context context-type="linenumber">5</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="801e8f0bbfa67bd07391641573c4d9e2424cef68" datatype="html">
+				<source>點選小工具後，即可加入至首頁中。</source>
+				<target state="final">點選小工具後，即可加入至首頁中。</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/box-hidden/smart-home-box-hidden.component.html</context>
+					<context context-type="linenumber">9</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="f55f5eb1eb39f3db15eb004687a0a29df14c5370" datatype="html">
+				<source>樣版</source>
+				<target state="final">樣版</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/box-theme/smart-home-box-theme.component.html</context>
+					<context context-type="linenumber">5</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ee7389be101f5e844a086b7feaa1fd5048f6efe5" datatype="html">
+				<source>點選樣版後，即可變更首頁樣式。</source>
+				<target state="final">點選樣版後，即可變更首頁樣式。</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-container/box-theme/smart-home-box-theme.component.html</context>
+					<context context-type="linenumber">9</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="dca331290815177c9eee1ceb3fd901f387a75c2c" datatype="html">
+				<source>搜尋結果</source>
+				<target state="final">搜尋結果</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-program-menu/smart-home-program-menu.component.html</context>
+					<context context-type="linenumber">10</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/smart-home-approve-list.component.html</context>
+					<context context-type="linenumber">27</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="9074a9b6a3301e0cf30d698607ac48d900916a16" datatype="html">
+				<source>精選</source>
+				<target state="final">精選</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-program-menu/smart-home-program-menu.component.html</context>
+					<context context-type="linenumber">17</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="d0f4443499e5993ea0c63cd6a3d6f6b72ef40d91" datatype="html">
+				<source>分類</source>
+				<target state="final">分類</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-program-menu/smart-home-program-menu.component.html</context>
+					<context context-type="linenumber">25</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2d9e4b574ec91cb3eacc464543ca3536111c85a2" datatype="html">
+				<source>我的最愛</source>
+				<target state="final">我的最愛</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-program-menu/item/smart-home-program-menu-item.component.html</context>
+					<context context-type="linenumber">9</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="a652ba94e51fa1f0a3435adb61038ed5924d38fc" datatype="html">
+				<source>常用程式</source>
+				<target state="final">常用程式</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-program-menu/item/smart-home-program-menu-item.component.html</context>
+					<context context-type="linenumber">11</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="17d12c0895f169db038b3d08cc3280104e499454" datatype="html">
+				<source>請輸入程式名稱或代號</source>
+				<target state="final">請輸入程式名稱或代號</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-program-menu/search/smart-home-program-menu-search.component.html</context>
+					<context context-type="linenumber">8</context>
+				</context-group>
+			</trans-unit>
+
+			<trans-unit id="e86befed61c831991c2524324efe2e4c1bd63a6f" datatype="html">
+				<source>代理人姓名</source>
+				<target state="final">代理人姓名</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-switch-agent/smart-home-switch-agent.component.html</context>
+					<context context-type="linenumber">23</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3cb3cee6a17126156277013805b7533c556ed542" datatype="html">
+				<source>代理人部門</source>
+				<target state="final">代理人部門</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-switch-agent/smart-home-switch-agent.component.html</context>
+					<context context-type="linenumber">24</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="8a8ccdb450f3d0e274137baaf449ec629114eaa5" datatype="html">
+				<source>切換</source>
+				<target state="final">切換</target>
+
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-switch-agent/smart-home-switch-agent.component.html</context>
+					<context context-type="linenumber">25</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-switch-agent/smart-home-switch-agent.component.html</context>
+					<context context-type="linenumber">35</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="c46797cdc9961574c22b23ea2fd7b9fd23acdab6" datatype="html">
+				<source>查無代理人資料</source>
+				<target state="final">查無代理人資料</target>
+
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-switch-agent/smart-home-switch-agent.component.html</context>
+					<context context-type="linenumber">48</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="39811aecbdb8414b1e4446fe3598d0bbd51139e0" datatype="html">
+				<source>提示</source>
+				<target state="final">提示</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/smart-home-approve-list.component.html</context>
+					<context context-type="linenumber">52</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/smart-home-approve-list.component.html</context>
+					<context context-type="linenumber">60</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/smart-home-care-list.component.html</context>
+					<context context-type="linenumber">39</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/smart-home-care-list.component.html</context>
+					<context context-type="linenumber">47</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="9dd347feae3fb1ea6fd0b2b2c9f49cb10cb73db8" datatype="html">
+				<source>無待處理明細。</source>
+				<target state="final">無待處理明細。</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/smart-home-approve-list.component.html</context>
+					<context context-type="linenumber">54</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/smart-home-care-list.component.html</context>
+					<context context-type="linenumber">41</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="dba1f51994a012d0bf9a8001c02af00c31e794f5" datatype="html">
+				<source>資料讀取中斷，請重新整理。</source>
+				<target state="final">資料讀取中斷，請重新整理。</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/smart-home-approve-list.component.html</context>
+					<context context-type="linenumber">62</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/smart-home-care-list.component.html</context>
+					<context context-type="linenumber">49</context>
+				</context-group>
+			</trans-unit>
+
+
+			<trans-unit id="b9e3a4aebbe8813ad2292aeaf7679a65fb877b4b" datatype="html">
+				<source>功能</source>
+				<target state="final">功能</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/item/smart-home-approve-list-item.component.html</context>
+					<context context-type="linenumber">8</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/item/smart-home-care-list-item.component.html</context>
+					<context context-type="linenumber">8</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="fe71bb26399840e5ea1f58f84a9a3356f53c7668" datatype="html">
+				<source>單號/訊息</source>
+				<target state="final">單號/訊息</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/item/smart-home-approve-list-item.component.html</context>
+					<context context-type="linenumber">10</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/item/smart-home-care-list-item.component.html</context>
+					<context context-type="linenumber">10</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="20718263d9451d4b6f145a02e347d6b6828d8ea8" datatype="html">
+				<source>填表人</source>
+				<target state="final">填表人</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/item/smart-home-approve-list-item.component.html</context>
+					<context context-type="linenumber">12</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2caab4f7f0fc24f079299c564e106379f05c0b91" datatype="html">
+				<source>送簽時間</source>
+				<target state="final">送簽時間</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/item/smart-home-approve-list-item.component.html</context>
+					<context context-type="linenumber">14</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="fdc572d60ae7f950c32084fc4c106db6db9c8600" datatype="html">
+				<source>下位簽核者</source>
+				<target state="final">下位簽核者</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/item/smart-home-care-list-item.component.html</context>
+					<context context-type="linenumber">12</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="b4ad37eb90d8ace7c23c6555ec4d508820727b1c" datatype="html">
+				<source>簽呈狀態</source>
+				<target state="final">簽呈狀態</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/item/smart-home-care-list-item.component.html</context>
+					<context context-type="linenumber">14</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="85e5db1596cffcbbfb119723182c8aee523fb29a" datatype="html">
+				<source>單據狀態</source>
+				<target state="final">單據狀態</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/item/smart-home-care-list-item.component.html</context>
+					<context context-type="linenumber">16</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="b54d0e4b1a953c486383738a542733bf2f874aa8" datatype="html">
+				<source>開啟單據</source>
+				<target state="final">開啟單據</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/item/smart-home-approve-list-item.component.html</context>
+					<context context-type="linenumber">25</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/item/smart-home-care-list-item.component.html</context>
+					<context context-type="linenumber">25</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="approveSearch" datatype="html">
+				<source>請輸入程式名稱或代號</source>
+				<target state="final">請輸入程式名稱或代號</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-approve-list/search/smart-home-approve-list-search.component.html</context>
+					<context context-type="linenumber">7</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="cdddb7a4cd779c77a3059193a2fe06bcdf4eaa4b" datatype="html">
+				<source>取消關心</source>
+				<target state="final">取消關心</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-care-list/item/smart-home-care-list-item.component.html</context>
+					<context context-type="linenumber">40</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3fdc6cad9e4d275f7353f8eb1ce4e008a7f7ebd8" datatype="html">
+				<source>系統建議拜訪</source>
+				<target state="final">系統建議拜訪</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">6</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="d3aa36d376fe019e9bd11d19c244cc4b00388c10" datatype="html">
+				<source>看更多 </source>
+				<target state="final">看更多 </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">13</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2126aa22b92ffcc1c6e4e47fd55f854277913edf" datatype="html">
+				<source>預覽列印 </source>
+				<target state="final">預覽列印 </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">18</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">97</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">170</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="b0ed74a9bbe188744f2ee769e142e1b819bbf8e2" datatype="html">
+				<source>序號</source>
+				<target state="final">序號</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">30</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">109</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">182</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="6fc62361387f324107379a9b0b7e81bbdbf73f45" datatype="html">
+				<source>建議原因</source>
+				<target state="final">建議原因</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">33</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="bc1b57c18acea9a4955d5f84ecc70271dfb559ad" datatype="html">
+				<source>顧客名稱</source>
+				<target state="final">顧客名稱</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">36</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">115</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">188</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="326c5e87b747ead1e72bcbd5bd01c70ac8834056" datatype="html">
+				<source>聯絡人</source>
+				<target state="final">聯絡人</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">38</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">117</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">190</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="76efd28317275d266ae48c8e474a1c1b08f8dd71" datatype="html">
+				<source>連絡電話</source>
+				<target state="final">連絡電話</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">40</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">119</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">192</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="90397c0b993512d0a2b17450bff5305f62b38490" datatype="html">
+				<source>地址</source>
+				<target state="final">地址</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">42</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">121</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">194</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7ab51bfe2f163dec22647e890d8d19f579117e4d" datatype="html">
+				<source>前次拜訪人</source>
+				<target state="final">前次拜訪人</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">45</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">197</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7c43b916770f84f5cc4eeec6b6f4be6dc23b55a0" datatype="html">
+				<source>前次拜訪日</source>
+				<target state="final">前次拜訪日</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">47</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">199</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3758bd7b5f2561a59b4a6b4f8a834e13f0ae90d0" datatype="html">
+				<source>前次拜訪內容</source>
+				<target state="final">前次拜訪內容</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">49</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">201</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="b7a9f35fe670daba801f2fcec4e5caf35f5ea3ad" datatype="html">
+				<source>連結日報</source>
+				<target state="final">連結日報</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">52</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">204</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="dca0c8acc336f58c65a369fd81ba443e91736564" datatype="html">
+				<source>新顧客未拜訪(建議初訪)</source>
+				<target state="final">新顧客未拜訪(建議初訪)</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">91</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="65607a909c85cd04705fed25082f4e6f35af2549" datatype="html">
+				<source>建檔時間</source>
+				<target state="final">建檔時間</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">112</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="fb410c6d25b68d3742cbc58e017b089492864529" datatype="html">
+				<source>行業別</source>
+				<target state="final">行業別</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">124</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="d6e9aabdcdf68146146746668c831a8e871abce3" datatype="html">
+				<source>連結日行程</source>
+				<target state="final">連結日行程</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">127</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="575fc1d8e1dcc0f9e53a1e6aaa76ffb011a3dfb4" datatype="html">
+				<source>未依約定拜訪(異常)</source>
+				<target state="final">未依約定拜訪(異常)</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">164</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="6bc9d554c9ba5733471839e8b9bb4628299b59fe" datatype="html">
+				<source>預定拜訪日</source>
+				<target state="final">預定拜訪日</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-visit-list/smart-home-visit-list.component.html</context>
+					<context context-type="linenumber">185</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="a2cdafd23bd1b9d122b7f14e8250bee2c64df673" datatype="html">
+				<source>系統公告</source>
+				<target state="final">系統公告</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-announcement/smart-home-announcement.component.html</context>
+					<context context-type="linenumber">5</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="0da35efd1e6769ea619879ee52cb60da74976b9e" datatype="html">
+				<source>事業部內網</source>
+				<target state="final">事業部內網</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-announcement/smart-home-announcement.component.html</context>
+					<context context-type="linenumber">14</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="b6df9fa65cc8c74604819cf8d5b3d53dd59982f4" datatype="html">
+				<source>共</source>
+				<target state="final">共</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-alert/smart-home-alert.component.html</context>
+					<context context-type="linenumber">10</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-alert/smart-home-alert.component.html</context>
+					<context context-type="linenumber">29</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ac82be507564d2bf95460672762dc2ba1adc213d" datatype="html">
+				<source>異常 IP 登入此帳號</source>
+				<target state="final">異常 IP 登入此帳號</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-alert/smart-home-alert.component.html</context>
+					<context context-type="linenumber">12</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="741401615114cf7198d792db39f403f254da6572" datatype="html">
+				<source>強制登出</source>
+				<target state="final">強制登出</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-alert/smart-home-alert.component.html</context>
+					<context context-type="linenumber">21</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="1dd341e8535d1932f93f0e04087076a66960ccad" datatype="html">
+				<source>筆訊息</source>
+				<target state="final">筆訊息</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-alert/smart-home-alert.component.html</context>
+					<context context-type="linenumber">31</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="50edfb28083c03d6388b95a8d52841e798cc49f9" datatype="html">
+				<source>解鎖</source>
+				<target state="final">解鎖</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-alert/smart-home-alert.component.html</context>
+					<context context-type="linenumber">60</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="6b1e9c580fc52c87168954f601fc618b0b6cdddb" datatype="html">
+				<source>主旨</source>
+				<target state="final">主旨</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-announcement/item/smart-home-announcement-item.component.html</context>
+					<context context-type="linenumber">21</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="fe2d8398c9a4ec587928f58f698c4d97cffa4444" datatype="html">
+				<source>時間</source>
+				<target state="final">時間</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/smart-home/smart-home-announcement/item/smart-home-announcement-item.component.html</context>
+					<context context-type="linenumber">26</context>
+				</context-group>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
