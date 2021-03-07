@@ -37,8 +37,8 @@
           <!-- <img [src]="toolImage" alt="..." class=" img-fluid icon-s-size mr-2 ml-2"> -->
           <span class="mx-1">/</span>
           <span *ngFor="let item of item.tool"
-          [class.badge-dark]="item.ifClick"
-          class="badge badge-secondary mx-1">{{item.toolName}}</span>
+          [class.badge-dark]="item.ifClick" (click)="clickTool(item)"
+          class="badge badge-secondary mx-1 click">{{item.toolName}}</span>
 
         </div>
         <div class="col-md-12 my-1 disable-text-selection ">
